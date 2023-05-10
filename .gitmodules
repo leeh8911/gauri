@@ -4,3 +4,12 @@
 [submodule "3rdparty/imgui"]
 	path = 3rdparty/imgui
 	url = https://github.com/TheCherno/imgui.git
+[submodule "3rdparty/spdlog"]
+	path = 3rdparty/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "3rdparty/gtest"]
+	path = 3rdparty/gtest
+	url = git@github.com:leeh8911/googletest.git
+[submodule "3rdparty/yaml-cpp"]
+	path = 3rdparty/yaml-cpp
+	url = https://github.com/TheCherno/yaml-cpp.git
