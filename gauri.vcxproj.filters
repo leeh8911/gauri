@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\gauri">
+      <UniqueIdentifier>{50F549A5-BCB5-C5DB-85F0-0E59F16F0AB8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gauri">
+      <UniqueIdentifier>{F41B3BB5-6086-EF2B-A9C4-A0D1156ECD80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\gauri.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\application.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\entry_point.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
+    <ClInclude Include="src\grpch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gauri\application.cpp">
+      <Filter>src\gauri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\grpch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -3,12 +3,14 @@
     language "C++"
     cppdialect "C++20"
     staticruntime "off"
+    warnings "Extra"
+    buildoptions { "/WX" }
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
-    pchheader "gauri_pch.h"
-    pchsource "src/gauri_pch.cpp"
+    pchheader "grpch.h"
+    pchsource "src/grpch.cpp"
 
     files
     {
@@ -31,7 +33,7 @@
     {
         "GLFW",
         "ImGui",
-        "opengl32.lib"
+        "opengl32"
     }
 
     filter "system:windows"
@@ -43,8 +45,8 @@
 
         links
         {
-            "%{Library.winSock}",
-            "%{Library.winMM}",
+            "%{Library.WinSock}",
+            "%{Library.WinMM}",
             "%{Library.WinVersion}",
             "%{Library.BCrypt}"
         }
@@ -87,8 +89,8 @@ project "gauri-test"
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
-    pchheader "test/gauri_test_pch.h"
-    pchsource "test/gauri_test_pch.cpp"
+    pchheader "test_grpch.h"
+    pchsource "test/test_grpch.cpp"
 
     files
     {
@@ -97,7 +99,9 @@ project "gauri-test"
 
     includedirs
     {
+        "test",
         "include",
+        "%{IncludeDir.gtest}",
     }
 
     links
@@ -114,8 +118,8 @@ project "gauri-test"
 
         links
         {
-            "%{Library.winSock}",
-            "%{Library.winMM}",
+            "%{Library.WinSock}",
+            "%{Library.WinMM}",
             "%{Library.WinVersion}",
             "%{Library.BCrypt}"
         }
