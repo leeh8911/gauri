@@ -1,10 +1,12 @@
 #pragma once
 
+#include <algorithm>
+#include <cstdint>
+#include <functional>
 #include <iostream>
-#include <vector>
+#include <memory>
+#include <string>
 #include <unordered_map>
 #include <unordered_set>
-#include <memory>
 #include <utility>
-#include <algorithm>
-
+#include <vector>

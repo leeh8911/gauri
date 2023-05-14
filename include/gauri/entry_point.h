@@ -9,9 +9,9 @@ extern Application *CreateApplication();
 
 int main(int /* argc */, char * /*argv[]*/)
 {
-    auto app = gauri::CreateApplication();
+    gauri::Log::Init();
 
-    std::cout << "Start entry point!\n";
+    auto app = gauri::CreateApplication();
 
     app->Run();
 

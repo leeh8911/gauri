@@ -7,6 +7,9 @@
     <Filter Include="include\gauri">
       <UniqueIdentifier>{50F549A5-BCB5-C5DB-85F0-0E59F16F0AB8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\gauri\event">
+      <UniqueIdentifier>{C14269B7-2DA4-46C5-B611-8D7722727D84}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
@@ -24,12 +27,21 @@
     <ClInclude Include="include\gauri\entry_point.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\event\event.h">
+      <Filter>include\gauri\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\logger.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
+      <Filter>src\gauri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\logger.cpp">
       <Filter>src\gauri</Filter>
     </ClCompile>
     <ClCompile Include="src\grpch.cpp">

@@ -3,11 +3,17 @@
     language "C++"
     cppdialect "C++20"
     staticruntime "off"
+    externalwarnings "Off"
     warnings "Extra"
     buildoptions { "/WX" }
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
+
+    defines
+    {
+        "FMT_HEADER_ONLY"
+    }
 
     pchheader "grpch.h"
     pchsource "src/grpch.cpp"
@@ -24,7 +30,10 @@
     {
         "src",
         "include",
-        "3rdparty/spdlog/include",
+    }
+    externalincludedirs 
+    {
+        "%{wks.location}/gauri/3rdparty/spdlog/include",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.ImGui}",
     }
@@ -85,6 +94,8 @@ project "gauri-test"
     language "C++"
     cppdialect "C++20"
     staticruntime "off"
+    externalwarnings "Off"
+    warnings "Default"
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
@@ -101,6 +112,10 @@ project "gauri-test"
     {
         "test",
         "include",
+    }
+    externalincludedirs 
+    {
+        "%{wks.location}/gauri/3rdparty/spdlog/include",
         "%{IncludeDir.gtest}",
     }
 

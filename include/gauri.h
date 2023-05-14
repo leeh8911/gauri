@@ -9,6 +9,7 @@
 #pragma once
 
 #include "gauri/application.h"
+#include "gauri/logger.h"
 
 /*!
  * Entry point.
