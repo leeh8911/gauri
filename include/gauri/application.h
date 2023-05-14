@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "gauri/window.h"
+
 namespace gauri
 {
 
@@ -21,6 +23,10 @@ class Application
 
   private:
     bool m_IsRunning = true;
+
+    std::unique_ptr<Window> m_Window;
 };
+
+Application *CreateApplication();
 
 } // namespace gauri

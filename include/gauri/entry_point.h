@@ -2,11 +2,6 @@
 
 #include "gauri.h"
 
-namespace gauri
-{
-extern Application *CreateApplication();
-}
-
 int main(int /* argc */, char * /*argv[]*/)
 {
     gauri::Log::Init();

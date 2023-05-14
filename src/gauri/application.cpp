@@ -1,3 +1,13 @@
+/*!
+ * @file application.cpp
+ * @author leeh8
+ * @brief
+ * @version 0.1
+ * @date 2023-05-$DAY
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 
 #include "grpch.h"
 
@@ -9,6 +19,7 @@ namespace gauri
 {
 Application::Application()
 {
+    m_Window = std::unique_ptr<Window>(Window::Create());
 }
 
 Application::~Application()
@@ -17,18 +28,11 @@ Application::~Application()
 
 void Application::Run()
 {
-    WindowResizeEvent e(1280, 720);
-    if (e.IsInCategory(EventCategoryApplication))
-    {
-        GR_TRACE(e.ToString());
-    }
-    if (e.IsInCategory(EventCategoryInput))
-    {
-        GR_TRACE(e.ToString());
-    }
-
     while (m_IsRunning)
-        ;
+    {
+
+        m_Window->OnUpdate();
+    }
 }
 
 } // namespace gauri

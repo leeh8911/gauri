@@ -6,7 +6,8 @@
 #include <sstream>
 #include <string>
 
-template <uint32_t N> constexpr uint32_t bit = (1 << N);
+#include "gauri/core.h"
+
 
 namespace gauri
 {
@@ -156,7 +157,7 @@ class KeyPressedEvent : public KeyEvent
 class KeyReleasedEvent : public KeyEvent
 {
   public:
-    KeyReleasedEvent(int32_t keycode, int repeatCount) : KeyEvent(keycode)
+    KeyReleasedEvent(int32_t keycode) : KeyEvent(keycode)
     {
     }
 

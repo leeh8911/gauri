@@ -35,14 +35,15 @@
     {
         "%{wks.location}/gauri/3rdparty/spdlog/include",
         "%{IncludeDir.GLFW}",
-        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.imgui}",
     }
 
     links
     {
         "GLFW",
-        "ImGui",
-        "opengl32"
+        "imgui",
+        "opengl32.lib",
+        "Dwmapi.lib", 
     }
 
     filter "system:windows"
@@ -62,7 +63,7 @@
 
 
 	filter "configurations:Debug"
-		defines "GR_DEBUG"
+		defines {"GR_DEBUG", "GR_ENABLE_ASSERTS"}
 		runtime "Debug"
 		symbols "on"
 

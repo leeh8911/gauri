@@ -37,4 +37,5 @@ class Log
 #define GR_WARN(...) ::gauri::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define GR_INFO(...) ::gauri::Log::GetClientLogger()->info(__VA_ARGS__)
 #define GR_TRACE(...) ::gauri::Log::GetClientLogger()->trace(__VA_ARGS__)
+
 } // namespace gauri
