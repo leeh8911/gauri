@@ -9,6 +9,7 @@
 #pragma once
 
 #include "gauri/window.h"
+#include "gauri/event/event.h"
 
 namespace gauri
 {
@@ -21,8 +22,12 @@ class Application
 
     void Run();
 
+    void OnEvent(Event &e);
+
   private:
     bool m_IsRunning = true;
+    bool OnWindowClose(WindowCloseEvent &e);
+    
 
     std::unique_ptr<Window> m_Window;
 };
