@@ -158,18 +158,22 @@
     <ClInclude Include="include\gauri\core.h" />
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
+    <ClInclude Include="include\gauri\layer.h" />
+    <ClInclude Include="include\gauri\layer_stack.h" />
     <ClInclude Include="include\gauri\logger.h" />
-    <ClInclude Include="include\gauri\platform\windows\windows_window.h" />
     <ClInclude Include="include\gauri\window.h" />
+    <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp" />
+    <ClCompile Include="src\gauri\layer.cpp" />
+    <ClCompile Include="src\gauri\layer_stack.cpp" />
     <ClCompile Include="src\gauri\logger.cpp" />
-    <ClCompile Include="src\gauri\platform\windows\windows_window.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\platform\windows\windows_window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="3rdparty\GLFW\GLFW.vcxproj">

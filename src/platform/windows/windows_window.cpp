@@ -13,13 +13,13 @@
 #include "gauri/core.h"
 #include "gauri/event/event.h"
 #include "gauri/logger.h"
-#include "gauri/platform/windows/windows_window.h"
+#include "platform/windows/windows_window.h"
 
 namespace gauri
 {
 static bool s_GLFWInitialized = false;
 
-static void GLFWErrorCallback(int error, const char* description)
+static void GLFWErrorCallback(int error, const char *description)
 {
     GR_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
 }

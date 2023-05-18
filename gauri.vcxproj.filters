@@ -10,11 +10,11 @@
     <Filter Include="include\gauri\event">
       <UniqueIdentifier>{C14269B7-2DA4-46C5-B611-8D7722727D84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\gauri\platform">
-      <UniqueIdentifier>{C4C7832B-B0C1-AC7D-992E-438E85C712EA}</UniqueIdentifier>
+    <Filter Include="include\platform">
+      <UniqueIdentifier>{1D12BC81-090B-DBD3-323D-C0581E95BADF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\gauri\platform\windows">
-      <UniqueIdentifier>{1E8EF60E-0AB4-C075-F3F9-4541DFBEE541}</UniqueIdentifier>
+    <Filter Include="include\platform\windows">
+      <UniqueIdentifier>{77211C95-6346-6B15-8C91-50A578156A33}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
@@ -22,11 +22,11 @@
     <Filter Include="src\gauri">
       <UniqueIdentifier>{F41B3BB5-6086-EF2B-A9C4-A0D1156ECD80}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\gauri\platform">
-      <UniqueIdentifier>{E8A6E4E2-D48A-A538-3DEB-9F8B29EE8FBA}</UniqueIdentifier>
+    <Filter Include="src\platform">
+      <UniqueIdentifier>{41663D6D-2DC9-CC11-D64E-05C8C2909894}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\gauri\platform\windows">
-      <UniqueIdentifier>{425146EE-2E61-F2BE-971A-57DD8349E157}</UniqueIdentifier>
+    <Filter Include="src\platform\windows">
+      <UniqueIdentifier>{9B5931A8-87E8-BA71-3007-CF6C1C75CB17}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -45,14 +45,20 @@
     <ClInclude Include="include\gauri\event\event.h">
       <Filter>include\gauri\event</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\layer.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\layer_stack.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\logger.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\platform\windows\windows_window.h">
-      <Filter>include\gauri\platform\windows</Filter>
-    </ClInclude>
     <ClInclude Include="include\gauri\window.h">
       <Filter>include\gauri</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\windows\windows_window.h">
+      <Filter>include\platform\windows</Filter>
     </ClInclude>
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
@@ -62,14 +68,20 @@
     <ClCompile Include="src\gauri\application.cpp">
       <Filter>src\gauri</Filter>
     </ClCompile>
+    <ClCompile Include="src\gauri\layer.cpp">
+      <Filter>src\gauri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\layer_stack.cpp">
+      <Filter>src\gauri</Filter>
+    </ClCompile>
     <ClCompile Include="src\gauri\logger.cpp">
       <Filter>src\gauri</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\platform\windows\windows_window.cpp">
-      <Filter>src\gauri\platform\windows</Filter>
-    </ClCompile>
     <ClCompile Include="src\grpch.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\windows_window.cpp">
+      <Filter>src\platform\windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

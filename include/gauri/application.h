@@ -10,6 +10,7 @@
 
 #include "gauri/window.h"
 #include "gauri/event/event.h"
+#include "gauri/layer_stack.h"
 
 namespace gauri
 {
@@ -24,12 +25,15 @@ class Application
 
     void OnEvent(Event &e);
 
+    void PushLayer(Layer *layer);
+    void PushOverlay(Layer *overlay);
+
   private:
-    bool m_IsRunning = true;
     bool OnWindowClose(WindowCloseEvent &e);
     
-
-    std::unique_ptr<Window> m_Window;
+    bool m_IsRunning = true;
+    std::unique_ptr<Window> m_Window = nullptr;
+    LayerStack m_LayerStack{};
 };
 
 Application *CreateApplication();
