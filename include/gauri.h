@@ -9,8 +9,9 @@
 #pragma once
 
 #include "gauri/application.h"
-#include "gauri/logger.h"
+#include "gauri/imgui/imgui_layer.h"
 #include "gauri/layer.h"
+#include "gauri/logger.h"
 
 /*!
  * Entry point.

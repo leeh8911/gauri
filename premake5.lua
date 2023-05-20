@@ -4,15 +4,16 @@
     cppdialect "C++20"
     staticruntime "off"
     externalwarnings "Off"
-    warnings "Extra"
-    buildoptions { "/WX" }
+    -- warnings "Extra"
+    -- buildoptions { "/WX" }
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
     defines
     {
-        "FMT_HEADER_ONLY"
+        "FMT_HEADER_ONLY",
+        "_CRT_SECURE_NO_WARNINGS"
     }
 
     pchheader "grpch.h"
@@ -34,6 +35,7 @@
     externalincludedirs 
     {
         "%{wks.location}/gauri/3rdparty/spdlog/include",
+        "%{IncludeDir.Glad}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.imgui}",
     }

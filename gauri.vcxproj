@@ -58,35 +58,34 @@
     <IntDir>..\bin-int\Debug-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\bin\Release-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Release-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <OutDir>..\bin\Dist-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Dist-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/WX %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
     </ClCompile>
@@ -102,8 +101,8 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -112,7 +111,6 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/WX %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
     </ClCompile>
@@ -129,8 +127,8 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -139,7 +137,6 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/WX %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
     </ClCompile>
@@ -158,21 +155,26 @@
     <ClInclude Include="include\gauri\core.h" />
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
+    <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
     <ClInclude Include="include\gauri\layer.h" />
     <ClInclude Include="include\gauri\layer_stack.h" />
     <ClInclude Include="include\gauri\logger.h" />
     <ClInclude Include="include\gauri\window.h" />
+    <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp" />
+    <ClCompile Include="src\gauri\imgui\imgui_layer.cpp" />
     <ClCompile Include="src\gauri\layer.cpp" />
     <ClCompile Include="src\gauri\layer_stack.cpp" />
     <ClCompile Include="src\gauri\logger.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
     <ClCompile Include="src\platform\windows\windows_window.cpp" />
   </ItemGroup>
   <ItemGroup>

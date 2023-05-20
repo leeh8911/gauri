@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include "gauri/window.h"
 #include "gauri/event/event.h"
 #include "gauri/layer_stack.h"
+#include "gauri/window.h"
 
 namespace gauri
 {
@@ -28,12 +28,24 @@ class Application
     void PushLayer(Layer *layer);
     void PushOverlay(Layer *overlay);
 
+    inline Window &GetWindow()
+    {
+        return *m_Window;
+    }
+
+    static inline Application &Get()
+    {
+        return *s_Instance;
+    }
+
   private:
     bool OnWindowClose(WindowCloseEvent &e);
-    
+
     bool m_IsRunning = true;
     std::unique_ptr<Window> m_Window = nullptr;
     LayerStack m_LayerStack{};
+
+    static Application *s_Instance;
 };
 
 Application *CreateApplication();

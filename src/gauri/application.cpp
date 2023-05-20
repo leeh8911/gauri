@@ -21,8 +21,13 @@
 
 namespace gauri
 {
+Application *Application::s_Instance = nullptr;
+
 Application::Application()
 {
+    GR_CORE_ASSERT(!s_Instance, "Application already exists!")
+    s_Instance = this;
+
     m_Window = std::unique_ptr<Window>(Window::Create());
     m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
 }
@@ -43,21 +48,24 @@ void Application::OnEvent(Event &e)
         (*--it)->OnEvent(e);
         if (e.IsHandled())
         {
-        break;}
+            break;
+        }
     }
 }
 
 void Application::PushLayer(Layer *layer)
 {
     m_LayerStack.PushLayer(layer);
+    layer->OnAttach();
 }
 
 void Application::PushOverlay(Layer *overlay)
 {
     m_LayerStack.PushOverlay(overlay);
+    overlay->OnAttach();
 }
 
-bool Application::OnWindowClose(WindowCloseEvent &/*e*/)
+bool Application::OnWindowClose(WindowCloseEvent & /*e*/)
 {
     m_IsRunning = false;
     return false;
@@ -70,7 +78,7 @@ void Application::Run()
         glClearColor(1, 0, 1, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        for (Layer* layer : m_LayerStack)
+        for (Layer *layer : m_LayerStack)
         {
             layer->OnUpdate();
         }
