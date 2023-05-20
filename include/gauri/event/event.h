@@ -8,7 +8,6 @@
 
 #include "gauri/core.h"
 
-
 namespace gauri
 {
 
@@ -25,6 +24,7 @@ enum class EventType
     AppRender,
     KeyPressed,
     KeyReleased,
+    KeyTyped,
     MouseButtonPressed,
     MouseButtonReleased,
     MouseMoved,
@@ -157,6 +157,25 @@ class KeyPressedEvent : public KeyEvent
 
   private:
     int32_t m_RepeatCount;
+};
+
+class KeyTypedEvent : public KeyEvent
+{
+  public:
+    KeyTypedEvent(int32_t keycode) : KeyEvent(keycode)
+    {
+    }
+
+    std::string ToString() const override
+    {
+        std::stringstream ss;
+        ss << "KeyTypedEvent: " << m_KeyCode;
+        return ss.str();
+    }
+
+    EVENT_CLASS_TYPE(KeyTyped);
+
+  private:
 };
 
 class KeyReleasedEvent : public KeyEvent

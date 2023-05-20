@@ -12,12 +12,11 @@
 #include "grpch.h"
 
 #include "gauri/application.h"
+#include "gauri/core.h"
 #include "gauri/event/event.h"
 #include "gauri/logger.h"
 
 #include <GLFW/glfw3.h>
-
-#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 namespace gauri
 {
@@ -29,7 +28,7 @@ Application::Application()
     s_Instance = this;
 
     m_Window = std::unique_ptr<Window>(Window::Create());
-    m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+    m_Window->SetEventCallback(GR_BIND_EVENT_FN(Application::OnEvent));
 }
 
 Application::~Application()
@@ -39,7 +38,7 @@ Application::~Application()
 void Application::OnEvent(Event &e)
 {
     EventDispatcher dispatcher(e);
-    dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+    dispatcher.Dispatch<WindowCloseEvent>(GR_BIND_EVENT_FN(Application::OnWindowClose));
 
     GR_CORE_TRACE("Application::OnEvent: {0}", e.ToString());
 
