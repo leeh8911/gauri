@@ -16,7 +16,10 @@
 #include "gauri/event/event.h"
 #include "gauri/logger.h"
 
+// clang-format off
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
+// clang-format on
 
 namespace gauri
 {

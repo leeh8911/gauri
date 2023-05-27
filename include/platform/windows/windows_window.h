@@ -10,9 +10,9 @@
 
 #pragma once
 
-#include <GLFW/glfw3.h>
-
 #include "gauri/window.h"
+
+struct GLFWwindow;
 
 namespace gauri
 {
@@ -39,6 +39,12 @@ class WindowsWindow : public Window
     }
     void SetVSync(bool enabled) override;
     bool IsVSync() const override;
+
+    inline void *GetNativeWindow() const override
+    {
+        return m_Window;
+    }
+
   private:
     virtual void Init(const WindowProperty &props);
     virtual void Shutdown();

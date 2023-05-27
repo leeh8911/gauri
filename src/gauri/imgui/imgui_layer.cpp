@@ -4,7 +4,7 @@
 
 // Temporary
 #include <GLFW/glfw3.h>
-// #include <glad/glad.h>
+#include <glad/glad.h>
 
 #include "gauri/application.h"
 #include "gauri/core.h"

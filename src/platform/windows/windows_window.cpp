@@ -15,6 +15,11 @@
 #include "gauri/logger.h"
 #include "platform/windows/windows_window.h"
 
+// clang-format off
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+// clang-format on
+
 namespace gauri
 {
 static bool s_GLFWInitialized = false;
@@ -55,6 +60,8 @@ void WindowsWindow::Init(const WindowProperty &props)
         GR_CORE_ASSERT(false, "Could not create GLFW Window!");
     }
     glfwMakeContextCurrent(m_Window);
+    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+    GR_CORE_ASSERT(status, "Failed to initialize Glad!");
     glfwSetWindowUserPointer(m_Window, &m_Data);
     SetVSync(true);
 

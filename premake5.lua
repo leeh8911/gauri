@@ -13,7 +13,7 @@
     defines
     {
         "FMT_HEADER_ONLY",
-        "_CRT_SECURE_NO_WARNINGS"
+        "_CRT_SECURE_NO_WARNINGS",
     }
 
     pchheader "grpch.h"
@@ -43,6 +43,7 @@
     links
     {
         "GLFW",
+        "Glad",
         "imgui",
         "opengl32.lib",
         "Dwmapi.lib", 
@@ -53,6 +54,7 @@
 
         defines
         {
+        "GLFW_INCLUDE_NONE",
         }
 
         links

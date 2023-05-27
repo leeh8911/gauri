@@ -79,7 +79,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -102,7 +102,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -128,7 +128,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -162,7 +162,9 @@
     <ClInclude Include="include\gauri\window.h" />
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
     <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
+    <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
+    <ClInclude Include="include\gauri\input.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -176,10 +178,14 @@
     </ClCompile>
     <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
     <ClCompile Include="src\platform\windows\windows_window.cpp" />
+    <ClCompile Include="src\platform\windows\windows_input.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="3rdparty\GLFW\GLFW.vcxproj">
       <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="3rdparty\glad\Glad.vcxproj">
+      <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
     </ProjectReference>
     <ProjectReference Include="3rdparty\imgui\ImGui.vcxproj">
       <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
