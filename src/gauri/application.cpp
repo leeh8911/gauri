@@ -14,6 +14,7 @@
 #include "gauri/application.h"
 #include "gauri/core.h"
 #include "gauri/event/event.h"
+#include "gauri/input.h"
 #include "gauri/logger.h"
 
 // clang-format off
@@ -85,6 +86,8 @@ void Application::Run()
             layer->OnUpdate();
         }
 
+        auto [x, y] = Input::GetMousePosition();
+        GR_CORE_TRACE("{0}, {1}", x, y);
         m_Window->OnUpdate();
     }
 }
