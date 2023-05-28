@@ -156,6 +156,7 @@
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
+    <ClInclude Include="include\gauri\input.h" />
     <ClInclude Include="include\gauri\key_codes.h" />
     <ClInclude Include="include\gauri\layer.h" />
     <ClInclude Include="include\gauri\layer_stack.h" />
@@ -163,9 +164,9 @@
     <ClInclude Include="include\gauri\mouse_button_codes.h" />
     <ClInclude Include="include\gauri\window.h" />
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
-    <ClInclude Include="include\gauri\input.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -178,8 +179,9 @@
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\windows_window.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
     <ClCompile Include="src\platform\windows\windows_input.cpp" />
+    <ClCompile Include="src\platform\windows\windows_window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="3rdparty\GLFW\GLFW.vcxproj">

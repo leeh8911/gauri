@@ -60,6 +60,12 @@
     <ClInclude Include="include\gauri\imgui\imgui_layer.h">
       <Filter>include\gauri\imgui</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\input.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\key_codes.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\layer.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
@@ -69,11 +75,20 @@
     <ClInclude Include="include\gauri\logger.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\mouse_button_codes.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\window.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h">
       <Filter>include\platform\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h">
+      <Filter>include\platform\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\windows\windows_input.h">
+      <Filter>include\platform\windows</Filter>
     </ClInclude>
     <ClInclude Include="include\platform\windows\windows_window.h">
       <Filter>include\platform\windows</Filter>
@@ -81,14 +96,13 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\input.h" />
-    <ClInclude Include="include\platform\windows\windows_input.h" />
-    <ClInclude Include="include\gauri\key_codes.h" />
-    <ClInclude Include="include\gauri\mouse_button_codes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
       <Filter>src\gauri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\imgui\imgui_build.cpp">
+      <Filter>src\gauri\imgui</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\imgui\imgui_layer.cpp">
       <Filter>src\gauri\imgui</Filter>
@@ -105,10 +119,14 @@
     <ClCompile Include="src\grpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp">
+      <Filter>src\platform\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\windows_input.cpp">
+      <Filter>src\platform\windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\windows_input.cpp" />
-    <ClCompile Include="src\gauri\imgui\imgui_build.cpp" />
   </ItemGroup>
 </Project>
