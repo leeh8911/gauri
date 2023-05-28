@@ -19,7 +19,6 @@
 
 // clang-format off
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
 // clang-format on
 
 namespace gauri
@@ -86,8 +85,6 @@ void Application::Run()
             layer->OnUpdate();
         }
 
-        auto [x, y] = Input::GetMousePosition();
-        GR_CORE_TRACE("{0}, {1}", x, y);
         m_Window->OnUpdate();
     }
 }

@@ -86,6 +86,8 @@
     </ClInclude>
     <ClInclude Include="include\gauri\input.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
+    <ClInclude Include="include\gauri\key_codes.h" />
+    <ClInclude Include="include\gauri\mouse_button_codes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">

@@ -156,9 +156,11 @@
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
+    <ClInclude Include="include\gauri\key_codes.h" />
     <ClInclude Include="include\gauri\layer.h" />
     <ClInclude Include="include\gauri\layer_stack.h" />
     <ClInclude Include="include\gauri\logger.h" />
+    <ClInclude Include="include\gauri\mouse_button_codes.h" />
     <ClInclude Include="include\gauri\window.h" />
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
     <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
