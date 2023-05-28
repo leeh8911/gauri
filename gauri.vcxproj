@@ -163,7 +163,6 @@
     <ClInclude Include="include\gauri\mouse_button_codes.h" />
     <ClInclude Include="include\gauri\window.h" />
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="include\gauri\input.h" />
@@ -171,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp" />
+    <ClCompile Include="src\gauri\imgui\imgui_build.cpp" />
     <ClCompile Include="src\gauri\imgui\imgui_layer.cpp" />
     <ClCompile Include="src\gauri\layer.cpp" />
     <ClCompile Include="src\gauri\layer_stack.cpp" />
@@ -178,7 +178,6 @@
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
     <ClCompile Include="src\platform\windows\windows_window.cpp" />
     <ClCompile Include="src\platform\windows\windows_input.cpp" />
   </ItemGroup>

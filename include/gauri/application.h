@@ -9,6 +9,7 @@
 #pragma once
 
 #include "gauri/event/event.h"
+#include "gauri/imgui/imgui_layer.h"
 #include "gauri/layer_stack.h"
 #include "gauri/window.h"
 
@@ -43,6 +44,7 @@ class Application
 
     bool m_IsRunning = true;
     std::unique_ptr<Window> m_Window = nullptr;
+    ImGuiLayer *m_ImGuiLayer = nullptr;
     LayerStack m_LayerStack{};
 
     static Application *s_Instance;

@@ -75,9 +75,6 @@
     <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h">
       <Filter>include\platform\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h">
-      <Filter>include\platform\opengl</Filter>
-    </ClInclude>
     <ClInclude Include="include\platform\windows\windows_window.h">
       <Filter>include\platform\windows</Filter>
     </ClInclude>
@@ -108,12 +105,10 @@
     <ClCompile Include="src\grpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp">
-      <Filter>src\platform\opengl</Filter>
-    </ClCompile>
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
     <ClCompile Include="src\platform\windows\windows_input.cpp" />
+    <ClCompile Include="src\gauri\imgui\imgui_build.cpp" />
   </ItemGroup>
 </Project>
