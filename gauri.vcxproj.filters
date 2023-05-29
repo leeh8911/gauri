@@ -84,6 +84,8 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\renderer\graphics_context.h" />
+    <ClInclude Include="include\platform\opengl\opengl_context.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
@@ -113,5 +115,6 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\opengl\opengl_context.cpp" />
   </ItemGroup>
 </Project>

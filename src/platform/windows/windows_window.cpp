@@ -10,15 +10,17 @@
 
 #include "grpch.h"
 
-#include "gauri/core.h"
-#include "gauri/event/event.h"
-#include "gauri/logger.h"
 #include "platform/windows/windows_window.h"
 
 // clang-format off
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 // clang-format on
+
+#include "gauri/core.h"
+#include "gauri/event/event.h"
+#include "gauri/logger.h"
+#include "platform/opengl/opengl_context.h"
 
 namespace gauri
 {
@@ -47,6 +49,8 @@ void WindowsWindow::Init(const WindowProperty &props)
 
     GR_CORE_INFO("Create window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
+    // To be
+
     if (!s_GLFWInitialized)
     {
         int32_t success = glfwInit();
@@ -55,13 +59,10 @@ void WindowsWindow::Init(const WindowProperty &props)
         s_GLFWInitialized = true;
     }
     m_Window = glfwCreateWindow((int)(props.Width), (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
-    if (m_Window == nullptr)
-    {
-        GR_CORE_ASSERT(false, "Could not create GLFW Window!");
-    }
-    glfwMakeContextCurrent(m_Window);
-    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-    GR_CORE_ASSERT(status, "Failed to initialize Glad!");
+
+    m_Context = new OpenGLContext(m_Window);
+    m_Context->Init();
+
     glfwSetWindowUserPointer(m_Window, &m_Data);
     SetVSync(true);
 
@@ -159,7 +160,7 @@ void WindowsWindow::Shutdown()
 void WindowsWindow::OnUpdate()
 {
     glfwPollEvents();
-    glfwSwapBuffers(m_Window);
+    m_Context->SwapBuffers();
 }
 
 void WindowsWindow::SetVSync(bool enabled)

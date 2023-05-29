@@ -12,7 +12,9 @@
 
 #include "gauri/window.h"
 
-struct GLFWwindow;
+#include <GLFW/glfw3.h>
+
+#include "gauri/renderer/graphics_context.h"
 
 namespace gauri
 {
@@ -59,5 +61,7 @@ class WindowsWindow : public Window
 
     GLFWwindow *m_Window;
     WindowData m_Data;
+
+    GraphicsContext *m_Context;
 };
 } // namespace gauri
