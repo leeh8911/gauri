@@ -45,8 +45,8 @@
         "GLFW",
         "Glad",
         "imgui",
-        "opengl32.lib",
         "Dwmapi.lib", 
+        "opengl32.lib",
     }
 
     filter "system:windows"

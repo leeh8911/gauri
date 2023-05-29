@@ -29,7 +29,7 @@ class LayerStack
     }
 
   private:
-    std::vector<Layer *> m_Layers;
-    uint32_t m_LayerInsertIndex;
+    std::vector<Layer *> m_Layers{};
+    uint32_t m_LayerInsertIndex = 0;
 };
 } // namespace gauri

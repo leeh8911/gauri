@@ -16,9 +16,6 @@
     <Filter Include="include\platform">
       <UniqueIdentifier>{1D12BC81-090B-DBD3-323D-C0581E95BADF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\platform\opengl">
-      <UniqueIdentifier>{11B1AA47-7DE8-F2DE-86F2-5602F2A819D8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\platform\windows">
       <UniqueIdentifier>{77211C95-6346-6B15-8C91-50A578156A33}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
     </Filter>
     <Filter Include="src\platform">
       <UniqueIdentifier>{41663D6D-2DC9-CC11-D64E-05C8C2909894}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\platform\opengl">
-      <UniqueIdentifier>{B57427EB-21D6-04F9-AA43-4BAB16A43BB8}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\platform\windows">
       <UniqueIdentifier>{9B5931A8-87E8-BA71-3007-CF6C1C75CB17}</UniqueIdentifier>
@@ -81,12 +75,6 @@
     <ClInclude Include="include\gauri\window.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h">
-      <Filter>include\platform\opengl</Filter>
-    </ClInclude>
-    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h">
-      <Filter>include\platform\opengl</Filter>
-    </ClInclude>
     <ClInclude Include="include\platform\windows\windows_input.h">
       <Filter>include\platform\windows</Filter>
     </ClInclude>
@@ -118,9 +106,6 @@
     </ClCompile>
     <ClCompile Include="src\grpch.cpp">
       <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp">
-      <Filter>src\platform\opengl</Filter>
     </ClCompile>
     <ClCompile Include="src\platform\windows\windows_input.cpp">
       <Filter>src\platform\windows</Filter>

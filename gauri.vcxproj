@@ -94,7 +94,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>opengl32.lib;Dwmapi.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Dwmapi.lib;opengl32.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -120,7 +120,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>opengl32.lib;Dwmapi.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Dwmapi.lib;opengl32.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -146,7 +146,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>opengl32.lib;Dwmapi.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Dwmapi.lib;opengl32.lib;Ws2_32.lib;Winmm.lib;Version.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -163,8 +163,6 @@
     <ClInclude Include="include\gauri\logger.h" />
     <ClInclude Include="include\gauri\mouse_button_codes.h" />
     <ClInclude Include="include\gauri\window.h" />
-    <ClInclude Include="include\platform\opengl\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="include\platform\opengl\imgui_opengl_renderer.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="src\grpch.h" />
@@ -179,7 +177,6 @@
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
     <ClCompile Include="src\platform\windows\windows_input.cpp" />
     <ClCompile Include="src\platform\windows\windows_window.cpp" />
   </ItemGroup>
