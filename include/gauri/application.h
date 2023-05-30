@@ -13,6 +13,8 @@
 #include "gauri/layer_stack.h"
 #include "gauri/window.h"
 
+#include "gauri/renderer/shader.h"
+
 namespace gauri
 {
 
@@ -50,6 +52,7 @@ class Application
     static Application *s_Instance;
 
     unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+    std::unique_ptr<Shader> m_Shader = nullptr;
 };
 
 Application *CreateApplication();
