@@ -162,8 +162,11 @@
     <ClInclude Include="include\gauri\layer_stack.h" />
     <ClInclude Include="include\gauri\logger.h" />
     <ClInclude Include="include\gauri\mouse_button_codes.h" />
+    <ClInclude Include="include\gauri\renderer\buffer.h" />
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
+    <ClInclude Include="include\gauri\renderer\renderer.h" />
     <ClInclude Include="include\gauri\renderer\shader.h" />
+    <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\gauri\window.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
@@ -177,7 +180,10 @@
     <ClCompile Include="src\gauri\layer.cpp" />
     <ClCompile Include="src\gauri\layer_stack.cpp" />
     <ClCompile Include="src\gauri\logger.cpp" />
+    <ClCompile Include="src\gauri\renderer\buffer.cpp" />
+    <ClCompile Include="src\gauri\renderer\renderer.cpp" />
     <ClCompile Include="src\gauri\renderer\shader.cpp" />
+    <ClCompile Include="src\platform\opengl\opengl_buffer.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_context.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

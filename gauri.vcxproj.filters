@@ -87,6 +87,9 @@
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\gauri\renderer\shader.h" />
+    <ClInclude Include="include\gauri\renderer\buffer.h" />
+    <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
+    <ClInclude Include="include\gauri\renderer\renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
@@ -118,5 +121,8 @@
     </ClCompile>
     <ClCompile Include="src\platform\opengl\opengl_context.cpp" />
     <ClCompile Include="src\gauri\renderer\shader.cpp" />
+    <ClCompile Include="src\gauri\renderer\buffer.cpp" />
+    <ClCompile Include="src\platform\opengl\opengl_buffer.cpp" />
+    <ClCompile Include="src\gauri\renderer\renderer.cpp" />
   </ItemGroup>
 </Project>
