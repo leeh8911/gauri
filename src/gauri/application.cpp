@@ -24,37 +24,6 @@ namespace gauri
 {
 Application *Application::s_Instance = nullptr;
 
-static GLenum ShaderDataTypeToOpenGLBaseType(ShaderDataType type)
-{
-    switch (type)
-    {
-    case ShaderDataType::Float:
-        [[fallthrough]];
-    case ShaderDataType::Float2:
-        [[fallthrough]];
-    case ShaderDataType::Float3:
-        [[fallthrough]];
-    case ShaderDataType::Float4:
-        [[fallthrough]];
-    case ShaderDataType::Mat3:
-        [[fallthrough]];
-    case ShaderDataType::Mat4:
-        return GL_FLOAT;
-    case ShaderDataType::Int:
-        [[fallthrough]];
-    case ShaderDataType::Int2:
-        [[fallthrough]];
-    case ShaderDataType::Int3:
-        [[fallthrough]];
-    case ShaderDataType::Int4:
-        return GL_INT;
-    case ShaderDataType::Bool:
-        return GL_BOOL;
-    }
-    GR_CORE_ASSERT(false, "Unknown ShaderDataType!");
-    return 0;
-}
-
 Application::Application()
 {
     GR_CORE_ASSERT(!s_Instance, "Application already exists!")
@@ -66,8 +35,7 @@ Application::Application()
     m_ImGuiLayer = new ImGuiLayer();
     PushOverlay(m_ImGuiLayer);
 
-    glGenVertexArrays(1, &m_VertexArray);
-    glBindVertexArray(m_VertexArray);
+    m_VertexArray.reset(VertexArray::Create());
 
     // clang-format off
     // triangle {x, y, z}
@@ -76,26 +44,36 @@ Application::Application()
                               0.0f, 0.5f, 0.0f, 0.8f, 0.8f, 0.2f, 1.0f};
     // clang-format on
 
-    m_VertexBuffer.reset(VertexBuffer::Create(vertices, sizeof(vertices)));
+    std::shared_ptr<VertexBuffer> vertexBuffer;
+    vertexBuffer.reset(VertexBuffer::Create(vertices, sizeof(vertices)));
 
-    {
-        BufferLayout layout = {{ShaderDataType::Float3, "a_Position"}, {ShaderDataType::Float4, "a_Color"}};
-        m_VertexBuffer->SetLayout(layout);
-    }
-
-    uint32_t index = 0;
-    const auto &layout = m_VertexBuffer->GetLayout();
-    for (const auto &element : layout)
-    {
-        glEnableVertexAttribArray(index);
-        glVertexAttribPointer(index, element.GetComponentCount(), ShaderDataTypeToOpenGLBaseType(element.Type),
-                              element.Normalized ? GL_TRUE : GL_FALSE, layout.GetStride(),
-                              (const void *)element.Offset);
-        ++index;
-    }
+    BufferLayout layout = {{ShaderDataType::Float3, "a_Position"}, {ShaderDataType::Float4, "a_Color"}};
+    vertexBuffer->SetLayout(layout);
+    m_VertexArray->AddVertexBuffer(vertexBuffer);
 
     uint32_t indices[3] = {0, 1, 2};
-    m_IndexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
+    std::shared_ptr<IndexBuffer> indexBuffer;
+    indexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
+    m_VertexArray->SetIndexBuffer(indexBuffer);
+
+    m_SquareVA.reset(VertexArray::Create());
+
+    // clang-format off
+    // triangle {x, y, z}
+    float squareVertices[3 * 4] = {-0.75f, -0.75f, 0.0f,
+                                    0.75f, -0.75f, 0.0f, 
+                                    0.75f, 0.75f, 0.0f, 
+                                   -0.75f, 0.75f, 0.0f};
+    // clang-format on
+    std::shared_ptr<VertexBuffer> squareVB;
+    squareVB.reset(VertexBuffer::Create(squareVertices, sizeof(squareVertices)));
+    squareVB->SetLayout({{ShaderDataType::Float3, "a_Position"}});
+    m_SquareVA->AddVertexBuffer(squareVB);
+
+    uint32_t squareIndices[6] = {0, 1, 2, 2, 3, 0};
+    std::shared_ptr<IndexBuffer> suqareIB;
+    suqareIB.reset(IndexBuffer::Create(squareIndices, sizeof(squareIndices) / sizeof(uint32_t)));
+    m_SquareVA->SetIndexBuffer(suqareIB);
 
     std::string vertexSrc = R"(
         #version 330 core
@@ -113,7 +91,6 @@ Application::Application()
             gl_Position = vec4(a_Position, 1.0);
         }
     )";
-
     std::string framgmentSrc = R"(
         #version 330 core
         
@@ -129,6 +106,34 @@ Application::Application()
     )";
 
     m_Shader.reset(new Shader(vertexSrc, framgmentSrc));
+
+    std::string blueShaderVertexSrc = R"(
+        #version 330 core
+        
+        layout(location = 0) in vec3 a_Position;        
+        
+        out vec3 v_Position;
+
+        void main()
+        {
+            v_Position = a_Position;
+            gl_Position = vec4(a_Position, 1.0);
+        }
+    )";
+    std::string blueShaderFragmentSrc = R"(
+        #version 330 core
+        
+        layout(location = 0) out vec4 color;
+
+        in vec3 v_Position;
+
+        void main()
+        {
+            color = vec4(0.2, 0.3, 0.8, 1.0);
+        }
+    )";
+
+    m_BlueShader.reset(new Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
 }
 
 Application::~Application()
@@ -177,9 +182,13 @@ void Application::Run()
         glClearColor(0.1f, 0.1f, 0.1f, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        m_BlueShader->Bind();
+        m_SquareVA->Bind();
+        glDrawElements(GL_TRIANGLES, m_SquareVA->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+
         m_Shader->Bind();
-        glBindVertexArray(m_VertexArray);
-        glDrawElements(GL_TRIANGLES, m_IndexBuffer->GetCount(), GL_UNSIGNED_INT, nullptr);
+        m_VertexArray->Bind();
+        glDrawElements(GL_TRIANGLES, m_VertexArray->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
 
         for (Layer *layer : m_LayerStack)
         {

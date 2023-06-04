@@ -90,6 +90,8 @@
     <ClInclude Include="include\gauri\renderer\buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\gauri\renderer\renderer.h" />
+    <ClInclude Include="include\gauri\renderer\vertex_array.h" />
+    <ClInclude Include="include\platform\opengl\opengl_vertex_array.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
@@ -124,5 +126,7 @@
     <ClCompile Include="src\gauri\renderer\buffer.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_buffer.cpp" />
     <ClCompile Include="src\gauri\renderer\renderer.cpp" />
+    <ClCompile Include="src\gauri\renderer\vertex_array.cpp" />
+    <ClCompile Include="src\platform\opengl\opengl_vertex_array.cpp" />
   </ItemGroup>
 </Project>

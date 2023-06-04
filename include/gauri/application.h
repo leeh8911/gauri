@@ -15,6 +15,7 @@
 
 #include "gauri/renderer/buffer.h"
 #include "gauri/renderer/shader.h"
+#include "gauri/renderer/vertex_array.h"
 
 namespace gauri
 {
@@ -52,10 +53,13 @@ class Application
 
     static Application *s_Instance;
 
-    unsigned int m_VertexArray;
-    std::unique_ptr<Shader> m_Shader = nullptr;
-    std::unique_ptr<VertexBuffer> m_VertexBuffer = nullptr;
-    std::unique_ptr<IndexBuffer> m_IndexBuffer = nullptr;
+    std::shared_ptr<Shader> m_Shader = nullptr;
+    std::shared_ptr<VertexArray> m_VertexArray = nullptr;
+    std::shared_ptr<VertexBuffer> m_VertexBuffer = nullptr;
+    std::shared_ptr<IndexBuffer> m_IndexBuffer = nullptr;
+
+    std::shared_ptr<Shader> m_BlueShader = nullptr;
+    std::shared_ptr<VertexArray> m_SquareVA = nullptr;
 };
 
 Application *CreateApplication();

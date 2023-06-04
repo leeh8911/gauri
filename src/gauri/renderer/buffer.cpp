@@ -34,6 +34,7 @@ VertexBuffer *VertexBuffer::Create(float *vertices, uint32_t size)
     GR_CORE_ASSERT(false, "Unknown RendererAPI!");
     return nullptr;
 }
+
 IndexBuffer *IndexBuffer::Create(uint32_t *indices, uint32_t size)
 {
     switch (Renderer::GetAPI())
