@@ -1359,6 +1359,9 @@
     <ClInclude Include="include\gauri\renderer\graphics_context.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\renderer\orthographic_camera.h">
+      <Filter>include\gauri\renderer</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\renderer\render_command.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
@@ -1419,6 +1422,9 @@
       <Filter>src\gauri</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\renderer\buffer.cpp">
+      <Filter>src\gauri\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\renderer\orthographic_camera.cpp">
       <Filter>src\gauri\renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\renderer\render_command.cpp">
