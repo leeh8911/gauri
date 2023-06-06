@@ -1,13 +1,9 @@
 #pragma once
 
+#include <glm/glm.hpp>
 #include <memory>
 
 #include "gauri/renderer/vertex_array.h"
-
-struct Vec4
-{
-    float x, y, z, w;
-};
 
 namespace gauri
 {
@@ -19,7 +15,7 @@ class RendererAPI
         None = 0,
         OpenGL = 1,
     };
-    virtual void SetClearColor(const Vec4 &color) = 0;
+    virtual void SetClearColor(const glm::vec4 &color) = 0;
     virtual void Clear() = 0;
 
     virtual void DrawIndexed(const std::shared_ptr<VertexArray> &vertexArray) = 0;

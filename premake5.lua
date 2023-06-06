@@ -24,6 +24,8 @@
         "src/**.h",
         "src/**.cpp",
         "include/**.h",
+		"3rdparty/glm/glm/**.hpp",
+		"3rdparty/glm/glm/**.inl",
     }
     removefiles {"src/test/**.cpp", "src/test/**.h"}
 
@@ -38,6 +40,7 @@
         "%{IncludeDir.Glad}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.imgui}",
+		"%{IncludeDir.glm}",
     }
 
     links

@@ -6,7 +6,7 @@
 
 namespace gauri
 {
-void OpenGLRendererAPI::SetClearColor(const Vec4 &color)
+void OpenGLRendererAPI::SetClearColor(const glm::vec4 &color)
 {
     glClearColor(color.x, color.y, color.z, color.w);
 }

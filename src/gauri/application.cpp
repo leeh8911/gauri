@@ -11,15 +11,14 @@
 #include "grpch.h"
 
 #include "gauri/application.h"
+
+#include <glad/glad.h>
+
 #include "gauri/core.h"
 #include "gauri/event/event.h"
 #include "gauri/input.h"
 #include "gauri/logger.h"
 #include "gauri/renderer/renderer.h"
-
-// clang-format off
-#include <glad/glad.h>
-// clang-format on
 
 namespace gauri
 {
