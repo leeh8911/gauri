@@ -8,6 +8,7 @@
 
 #pragma once
 
+#include "gauri/core/time_step.h"
 #include "gauri/event/event.h"
 #include "gauri/imgui/imgui_layer.h"
 #include "gauri/layer_stack.h"
@@ -46,6 +47,9 @@ class Application
     std::unique_ptr<Window> m_Window = nullptr;
     ImGuiLayer *m_ImGuiLayer = nullptr;
     LayerStack m_LayerStack{};
+
+    Timestep m_Timestep;
+    float m_LastFrameTime = 0.0f;
 
     static Application *s_Instance;
 };

@@ -12,6 +12,8 @@
 #include "gauri/layer.h"
 #include "gauri/logger.h"
 
+#include "gauri/core/time_step.h"
+
 #include "gauri/input.h"
 #include "gauri/key_codes.h"
 #include "gauri/mouse_button_codes.h"

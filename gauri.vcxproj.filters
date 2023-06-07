@@ -1401,6 +1401,7 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\core\time_step.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
