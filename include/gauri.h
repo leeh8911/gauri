@@ -18,6 +18,18 @@
 
 #include "gauri/imgui/imgui_layer.h"
 
+// ---- Renderer --------------------
+#include "gauri/renderer/render_command.h"
+#include "gauri/renderer/renderer.h"
+
+#include "gauri/renderer/buffer.h"
+#include "gauri/renderer/shader.h"
+#include "gauri/renderer/vertex_array.h"
+
+#include "gauri/renderer/orthographic_camera.h"
+
+#include "gauri/renderer/renderer_api.h"
+
 /*!
  * Entry point.
  */
