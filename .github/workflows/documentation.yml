@@ -10,6 +10,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: move Doxygen file
+        run: |
+          mv Doxyfile docs/Doxygen/Doxyfile
+          
       - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
