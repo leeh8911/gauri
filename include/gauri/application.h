@@ -11,10 +11,6 @@
 #include "gauri/event/event.h"
 #include "gauri/imgui/imgui_layer.h"
 #include "gauri/layer_stack.h"
-#include "gauri/renderer/buffer.h"
-#include "gauri/renderer/orthographic_camera.h"
-#include "gauri/renderer/shader.h"
-#include "gauri/renderer/vertex_array.h"
 #include "gauri/window.h"
 
 namespace gauri

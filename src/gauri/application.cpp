@@ -18,7 +18,6 @@
 #include "gauri/event/event.h"
 #include "gauri/input.h"
 #include "gauri/logger.h"
-#include "gauri/renderer/renderer.h"
 
 namespace gauri
 {
