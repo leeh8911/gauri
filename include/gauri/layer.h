@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gauri/core.h"
+#include "gauri/core/time_step.h"
 #include "gauri/event/event.h"
 
 namespace gauri
@@ -13,7 +14,7 @@ class Layer
 
     virtual void OnAttach(){};
     virtual void OnDetach(){};
-    virtual void OnUpdate(){};
+    virtual void OnUpdate(Timestep ts){};
     virtual void OnImGuiRender(){};
     virtual void OnEvent(Event & /*event*/){};
 

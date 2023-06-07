@@ -569,6 +569,7 @@
     <ClInclude Include="include\gauri.h" />
     <ClInclude Include="include\gauri\application.h" />
     <ClInclude Include="include\gauri\core.h" />
+    <ClInclude Include="include\gauri\core\time_step.h" />
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />

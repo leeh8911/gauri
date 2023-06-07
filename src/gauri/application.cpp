@@ -12,9 +12,11 @@
 
 #include "gauri/application.h"
 
+#include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
 #include "gauri/core.h"
+#include "gauri/core/time_step.h"
 #include "gauri/event/event.h"
 #include "gauri/input.h"
 #include "gauri/logger.h"
@@ -30,6 +32,7 @@ Application::Application()
 
     m_Window = std::unique_ptr<Window>(Window::Create());
     m_Window->SetEventCallback(GR_BIND_EVENT_FN(Application::OnEvent));
+    m_Window->SetVSync(false);
 
     m_ImGuiLayer = new ImGuiLayer();
     PushOverlay(m_ImGuiLayer);
@@ -78,10 +81,13 @@ void Application::Run()
 {
     while (m_IsRunning)
     {
+        float time = (float)glfwGetTime(); // Platform::GetTime()
+        Timestep timestep = time - m_LastFrameTime;
+        m_LastFrameTime = time;
 
         for (Layer *layer : m_LayerStack)
         {
-            layer->OnUpdate();
+            layer->OnUpdate(timestep);
         }
 
         m_ImGuiLayer->Begin();
