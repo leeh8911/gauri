@@ -1,7 +1,0 @@
-﻿.vs/
-.vscode/
-bin/
-bin-int/
-
-*/bin/*
-*/bin-int/*
