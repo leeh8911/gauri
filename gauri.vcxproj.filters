@@ -1402,6 +1402,7 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\core\time_step.h" />
+    <ClInclude Include="include\platform\opengl\opengl_shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gauri\application.cpp">
@@ -1464,5 +1465,6 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\opengl\opengl_shader.cpp" />
   </ItemGroup>
 </Project>

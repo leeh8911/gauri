@@ -592,6 +592,7 @@
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_renderer_api.h" />
     <ClInclude Include="include\platform\opengl\opengl_vertex_array.h" />
+    <ClInclude Include="include\platform\opengl\opengl_shader.h" />
     <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="src\grpch.h" />
@@ -613,6 +614,7 @@
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\platform\opengl\opengl_shader.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_buffer.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_context.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_renderer_api.cpp" />
