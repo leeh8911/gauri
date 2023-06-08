@@ -47,8 +47,6 @@ void Application::OnEvent(Event &e)
     EventDispatcher dispatcher(e);
     dispatcher.Dispatch<WindowCloseEvent>(GR_BIND_EVENT_FN(Application::OnWindowClose));
 
-    GR_CORE_TRACE("Application::OnEvent: {0}", e.ToString());
-
     for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
     {
         (*--it)->OnEvent(e);
