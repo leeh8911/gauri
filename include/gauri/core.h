@@ -10,6 +10,9 @@
 #pragma once
 
 #include <cstdint>
+#include <memory>
+
+#include "gauri/logger.h"
 
 #ifdef GR_ENABLE_ASSERTS
 #define GR_ASSERT(x, ...)                                                                                              \
@@ -36,3 +39,9 @@
 template <uint32_t N> constexpr uint32_t bit = (1 << N);
 
 #define GR_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
+
+namespace gauri
+{
+template <typename T> using Scope = std::unique_ptr<T>;
+template <typename T> using Ref = std::shared_ptr<T>;
+} // namespace gauri

@@ -24,6 +24,8 @@
         "src/**.h",
         "src/**.cpp",
         "include/**.h",
+        "3rdparty/stb_image/**.h",
+        "3rdparty/stb_image/**.cpp",
 		"3rdparty/glm/glm/**.hpp",
 		"3rdparty/glm/glm/**.inl",
     }
@@ -41,6 +43,7 @@
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.imgui}",
 		"%{IncludeDir.glm}",
+		"%{IncludeDir.stb_image}",
     }
 
     links
