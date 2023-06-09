@@ -56,7 +56,7 @@ void OpenGLVertexArray::Unbind() const
 {
     glBindVertexArray(0);
 }
-void OpenGLVertexArray::AddVertexBuffer(const std::shared_ptr<VertexBuffer> &vertexBuffer)
+void OpenGLVertexArray::AddVertexBuffer(const Ref<VertexBuffer> &vertexBuffer)
 {
     GR_CORE_ASSERT(vertexBuffer->GetLayout().GetElements().size(), "Vertex Buffer has no layout!");
 
@@ -76,18 +76,18 @@ void OpenGLVertexArray::AddVertexBuffer(const std::shared_ptr<VertexBuffer> &ver
 
     m_VertexBuffers.push_back(vertexBuffer);
 }
-void OpenGLVertexArray::SetIndexBuffer(const std::shared_ptr<IndexBuffer> &indexBuffer)
+void OpenGLVertexArray::SetIndexBuffer(const Ref<IndexBuffer> &indexBuffer)
 {
     glBindVertexArray(m_RendererID);
     indexBuffer->Bind();
 
     m_IndexBuffer = indexBuffer;
 }
-inline const std::vector<std::shared_ptr<VertexBuffer>> &OpenGLVertexArray::GetVertexBuffers() const
+inline const std::vector<Ref<VertexBuffer>> &OpenGLVertexArray::GetVertexBuffers() const
 {
     return m_VertexBuffers;
 }
-inline const std::shared_ptr<IndexBuffer> &OpenGLVertexArray::GetIndexBuffer() const
+inline const Ref<IndexBuffer> &OpenGLVertexArray::GetIndexBuffer() const
 {
     return m_IndexBuffer;
 }
