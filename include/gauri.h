@@ -26,6 +26,7 @@
 
 #include "gauri/renderer/buffer.h"
 #include "gauri/renderer/shader.h"
+#include "gauri/renderer/texture.h"
 #include "gauri/renderer/vertex_array.h"
 
 #include "gauri/renderer/orthographic_camera.h"
