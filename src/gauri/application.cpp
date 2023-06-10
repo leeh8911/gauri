@@ -20,6 +20,7 @@
 #include "gauri/event/event.h"
 #include "gauri/input.h"
 #include "gauri/logger.h"
+#include "gauri/renderer/renderer.h"
 
 namespace gauri
 {
@@ -32,7 +33,8 @@ Application::Application()
 
     m_Window = std::unique_ptr<Window>(Window::Create());
     m_Window->SetEventCallback(GR_BIND_EVENT_FN(Application::OnEvent));
-    m_Window->SetVSync(false);
+
+    Renderer::Init();
 
     m_ImGuiLayer = new ImGuiLayer();
     PushOverlay(m_ImGuiLayer);

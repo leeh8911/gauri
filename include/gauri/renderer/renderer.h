@@ -11,6 +11,8 @@ namespace gauri
 class Renderer
 {
   public:
+    static void Init();
+
     static void BeginScene(OrthographicCamera &camera);
     static void EndScene();
     static void Submit(const Ref<Shader> &shader, const Ref<VertexArray> &vertexArray,
