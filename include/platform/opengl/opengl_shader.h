@@ -6,11 +6,15 @@
 
 #include "gauri/renderer/shader.h"
 
+// TODO: Must remove!
+typedef unsigned int GLenum;
+
 namespace gauri
 {
 class OpenGLShader : public Shader
 {
   public:
+    OpenGLShader(const std::string &filepath);
     OpenGLShader(const std::string &vertexSrc, const std::string &fragmentSrc);
     ~OpenGLShader() override;
 
@@ -27,6 +31,9 @@ class OpenGLShader : public Shader
     void UploadUniformMat4(const std::string &name, const glm::mat4 &matrix);
 
   private:
-    uint32_t m_RendererID;
+    std::string ReadFile(const std::string &filepath);
+    std::unordered_map<GLenum, std::string> PreProcess(const std::string &source);
+    void Compile(const std::unordered_map<GLenum, std::string> &shaderSources);
+    uint32_t m_RendererID = 0;
 };
 } // namespace gauri
