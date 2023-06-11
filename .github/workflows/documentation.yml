@@ -10,11 +10,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: mattnotmitt/doxygen-action@v1.9.5
-        with:
-          working-directory: '.'
-          doxyfile-path: 'docs/Doxygen/Doxyfile'
-          enable-latex: true
+      # 1. Checkout current branch of GitHub repository.
+      - name: Checkout current branch
+        uses: actions/checkout@v2
+      # 2. Install doxygen and its auxiliary components.
+      - name: Install doxygen and latex components
+        run: sudo apt-get update; sudo apt-get install -y doxygen graphviz texlive-full
+      # 3. Create the doxygen pages.
+      - name: Create the doxygen
+        run: |
+          git clone https://github.com/leeh8911/gauri.git
+          cd gauri/docs/Doxygen
+          doxygen Doxyfile
+          cd ../../..
+
+      - name: Move documents
+        run: |
+          mkdir -p ./docs/Doxygen
+          mv ./gauri/docs/Doxygen ./docs
+
 
       - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
         with:
