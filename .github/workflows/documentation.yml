@@ -29,11 +29,10 @@ jobs:
           mkdir -p ./docs/Doxygen
           rm -r ./docs/Doxygen
           mv -f ./gauri/docs/Doxygen ./docs
-
-
-      - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
+          ls -al ./docs/Doxygen/html
+          
+      - name: Deploy github pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ACTION_TOKEN }}
-          branch: gh-pages
-          folder: docs/Doxygen/html
-          config_file: docs/Doxygen/Doxyfile
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/Doxygen/html
