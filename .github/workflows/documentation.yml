@@ -27,6 +27,7 @@ jobs:
       - name: Move documents
         run: |
           mkdir -p ./docs/Doxygen
+          rm -r ./docs/Doxygen
           mv -f ./gauri/docs/Doxygen ./docs
 
 
