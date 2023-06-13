@@ -2,8 +2,8 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,483,32"/>
 <area shape="rect" id="node2" href="$layer_8h.html" title=" " alt="" coords="193,80,295,107"/>
 <area shape="rect" id="node3" href="$core_8h.html" title=" " alt="" coords="113,229,212,256"/>
-<area shape="rect" id="node10" href="$time__step_8h.html" title=" " alt="" coords="160,155,328,181"/>
-<area shape="rect" id="node11" href="$event_8h.html" title=" " alt="" coords="352,155,501,181"/>
+<area shape="rect" id="node10" href="$timestep_8h.html" title=" " alt="" coords="163,155,325,181"/>
+<area shape="rect" id="node11" href="$event_8h.html" title=" " alt="" coords="349,155,499,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="408,304,475,331"/>
 <area shape="rect" id="node5" title=" " alt="" coords="59,379,136,405"/>
 <area shape="rect" id="node6" href="$logger_8h.html" title=" " alt="" coords="171,304,282,331"/>
