@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "gauri/core/time_step.h"
+#include "gauri/core/timestep.h"
 #include "gauri/event/event.h"
 #include "gauri/imgui/imgui_layer.h"
 #include "gauri/layer_stack.h"

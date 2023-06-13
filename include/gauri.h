@@ -12,7 +12,7 @@
 #include "gauri/layer.h"
 #include "gauri/logger.h"
 
-#include "gauri/core/time_step.h"
+#include "gauri/core/timestep.h"
 
 #include "gauri/input.h"
 #include "gauri/key_codes.h"
@@ -29,6 +29,7 @@
 #include "gauri/renderer/texture.h"
 #include "gauri/renderer/vertex_array.h"
 
+#include "gauri/orthographic_camera_controller.h"
 #include "gauri/renderer/orthographic_camera.h"
 
 #include "gauri/renderer/renderer_api.h"

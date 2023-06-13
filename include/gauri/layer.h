@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gauri/core.h"
-#include "gauri/core/time_step.h"
+#include "gauri/core/timestep.h"
 #include "gauri/event/event.h"
 
 namespace gauri

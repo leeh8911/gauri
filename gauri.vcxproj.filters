@@ -1335,7 +1335,7 @@
     <ClInclude Include="include\gauri\core.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\core\time_step.h">
+    <ClInclude Include="include\gauri\core\timestep.h">
       <Filter>include\gauri\core</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\entry_point.h">
@@ -1422,6 +1422,7 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\orthographic_camera_controller.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1496,5 +1497,6 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\gauri\orthographic_camera_controller.cpp" />
   </ItemGroup>
 </Project>

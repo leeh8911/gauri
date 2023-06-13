@@ -16,7 +16,7 @@
 #include <glad/glad.h>
 
 #include "gauri/core.h"
-#include "gauri/core/time_step.h"
+#include "gauri/core/timestep.h"
 #include "gauri/event/event.h"
 #include "gauri/input.h"
 #include "gauri/logger.h"

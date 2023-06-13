@@ -570,7 +570,7 @@
     <ClInclude Include="include\gauri.h" />
     <ClInclude Include="include\gauri\application.h" />
     <ClInclude Include="include\gauri\core.h" />
-    <ClInclude Include="include\gauri\core\time_step.h" />
+    <ClInclude Include="include\gauri\core\timestep.h" />
     <ClInclude Include="include\gauri\entry_point.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
@@ -580,6 +580,7 @@
     <ClInclude Include="include\gauri\layer_stack.h" />
     <ClInclude Include="include\gauri\logger.h" />
     <ClInclude Include="include\gauri\mouse_button_codes.h" />
+    <ClInclude Include="include\gauri\orthographic_camera_controller.h" />
     <ClInclude Include="include\gauri\renderer\buffer.h" />
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
     <ClInclude Include="include\gauri\renderer\orthographic_camera.h" />
@@ -608,6 +609,7 @@
     <ClCompile Include="src\gauri\layer.cpp" />
     <ClCompile Include="src\gauri\layer_stack.cpp" />
     <ClCompile Include="src\gauri\logger.cpp" />
+    <ClCompile Include="src\gauri\orthographic_camera_controller.cpp" />
     <ClCompile Include="src\gauri\renderer\buffer.cpp" />
     <ClCompile Include="src\gauri\renderer\orthographic_camera.cpp" />
     <ClCompile Include="src\gauri\renderer\render_command.cpp" />
