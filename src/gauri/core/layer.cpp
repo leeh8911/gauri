@@ -1,6 +1,6 @@
 #include "grpch.h"
 
-#include "gauri/layer.h"
+#include "gauri/core/layer.h"
 
 namespace gauri
 {
@@ -12,4 +12,4 @@ Layer::~Layer()
 {
 }
 
-}
+} // namespace gauri

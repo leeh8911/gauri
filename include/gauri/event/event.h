@@ -6,7 +6,7 @@
 #include <sstream>
 #include <string>
 
-#include "gauri/core.h"
+#include "gauri/core/core.h"
 
 namespace gauri
 {

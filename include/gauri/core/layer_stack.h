@@ -1,7 +1,7 @@
 #pragma once
 
-#include "gauri/core.h"
-#include "gauri/layer.h"
+#include "gauri/core/core.h"
+#include "gauri/core/layer.h"
 
 #include <vector>
 

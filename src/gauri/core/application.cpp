@@ -10,16 +10,16 @@
 
 #include "grpch.h"
 
-#include "gauri/application.h"
+#include "gauri/core/application.h"
 
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
-#include "gauri/core.h"
+#include "gauri/core/core.h"
+#include "gauri/core/input.h"
+#include "gauri/core/logger.h"
 #include "gauri/core/timestep.h"
 #include "gauri/event/event.h"
-#include "gauri/input.h"
-#include "gauri/logger.h"
 #include "gauri/renderer/renderer.h"
 
 namespace gauri

@@ -1,9 +1,9 @@
 #include "grpch.h"
 
-#include "gauri/orthographic_camera_controller.h"
+#include "gauri/renderer/orthographic_camera_controller.h"
 
-#include "gauri/input.h"
-#include "gauri/key_codes.h"
+#include "gauri/core/input.h"
+#include "gauri/core/key_codes.h"
 
 namespace gauri
 {

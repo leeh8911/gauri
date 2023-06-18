@@ -13,7 +13,7 @@
 #include <functional>
 #include <string>
 
-#include "event/event.h"
+#include "gauri/event/event.h"
 
 namespace gauri
 {

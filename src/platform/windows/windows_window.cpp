@@ -17,9 +17,9 @@
 #include <GLFW/glfw3.h>
 // clang-format on
 
-#include "gauri/core.h"
+#include "gauri/core/core.h"
+#include "gauri/core/logger.h"
 #include "gauri/event/event.h"
-#include "gauri/logger.h"
 #include "platform/opengl/opengl_context.h"
 
 namespace gauri

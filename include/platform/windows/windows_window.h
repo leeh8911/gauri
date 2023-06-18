@@ -10,7 +10,7 @@
 
 #pragma once
 
-#include "gauri/window.h"
+#include "gauri/core/window.h"
 
 #include <GLFW/glfw3.h>
 

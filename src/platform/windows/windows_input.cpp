@@ -1,6 +1,6 @@
 #include "grpch.h"
 
-#include "gauri/application.h"
+#include "gauri/core/application.h"
 #include "platform/windows/windows_input.h"
 
 #include <GLFW/glfw3.h>

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gauri/core.h"
+#include "gauri/core/core.h"
 #include "gauri/core/timestep.h"
 #include "gauri/event/event.h"
 

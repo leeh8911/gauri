@@ -8,11 +8,11 @@
 
 #pragma once
 
+#include "gauri/core/layer_stack.h"
 #include "gauri/core/timestep.h"
+#include "gauri/core/window.h"
 #include "gauri/event/event.h"
 #include "gauri/imgui/imgui_layer.h"
-#include "gauri/layer_stack.h"
-#include "gauri/window.h"
 
 namespace gauri
 {

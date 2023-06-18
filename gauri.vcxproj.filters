@@ -58,6 +58,9 @@
     <Filter Include="src\gauri">
       <UniqueIdentifier>{F41B3BB5-6086-EF2B-A9C4-A0D1156ECD80}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\gauri\core">
+      <UniqueIdentifier>{EC64196A-D832-0D70-C1C6-7D96AD33E9D4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\gauri\imgui">
       <UniqueIdentifier>{5E50B1AD-CADB-1E72-D3EC-A1663FF77A72}</UniqueIdentifier>
     </Filter>
@@ -1329,41 +1332,44 @@
     <ClInclude Include="include\gauri.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\application.h">
-      <Filter>include\gauri</Filter>
+    <ClInclude Include="include\gauri\core\application.h">
+      <Filter>include\gauri\core</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\core.h">
-      <Filter>include\gauri</Filter>
+    <ClInclude Include="include\gauri\core\core.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\entry_point.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\input.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\key_codes.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\layer.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\layer_stack.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\logger.h">
+      <Filter>include\gauri\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\core\mouse_button_codes.h">
+      <Filter>include\gauri\core</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\core\timestep.h">
       <Filter>include\gauri\core</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\entry_point.h">
-      <Filter>include\gauri</Filter>
+    <ClInclude Include="include\gauri\core\window.h">
+      <Filter>include\gauri\core</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\event\event.h">
       <Filter>include\gauri\event</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\imgui\imgui_layer.h">
       <Filter>include\gauri\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\input.h">
-      <Filter>include\gauri</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\key_codes.h">
-      <Filter>include\gauri</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\layer.h">
-      <Filter>include\gauri</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\layer_stack.h">
-      <Filter>include\gauri</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\logger.h">
-      <Filter>include\gauri</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\mouse_button_codes.h">
-      <Filter>include\gauri</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\renderer\buffer.h">
       <Filter>include\gauri\renderer</Filter>
@@ -1372,6 +1378,9 @@
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\renderer\orthographic_camera.h">
+      <Filter>include\gauri\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\renderer\orthographic_camera_controller.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\renderer\render_command.h">
@@ -1391,9 +1400,6 @@
     </ClInclude>
     <ClInclude Include="include\gauri\renderer\vertex_array.h">
       <Filter>include\gauri\renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="include\gauri\window.h">
-      <Filter>include\gauri</Filter>
     </ClInclude>
     <ClInclude Include="include\platform\opengl\opengl_buffer.h">
       <Filter>include\platform\opengl</Filter>
@@ -1422,14 +1428,22 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\orthographic_camera_controller.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
       <Filter>3rdparty\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\application.cpp">
-      <Filter>src\gauri</Filter>
+    <ClCompile Include="src\gauri\core\application.cpp">
+      <Filter>src\gauri\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\core\layer.cpp">
+      <Filter>src\gauri\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\core\layer_stack.cpp">
+      <Filter>src\gauri\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\core\logger.cpp">
+      <Filter>src\gauri\core</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\imgui\imgui_build.cpp">
       <Filter>src\gauri\imgui</Filter>
@@ -1437,19 +1451,13 @@
     <ClCompile Include="src\gauri\imgui\imgui_layer.cpp">
       <Filter>src\gauri\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\layer.cpp">
-      <Filter>src\gauri</Filter>
-    </ClCompile>
-    <ClCompile Include="src\gauri\layer_stack.cpp">
-      <Filter>src\gauri</Filter>
-    </ClCompile>
-    <ClCompile Include="src\gauri\logger.cpp">
-      <Filter>src\gauri</Filter>
-    </ClCompile>
     <ClCompile Include="src\gauri\renderer\buffer.cpp">
       <Filter>src\gauri\renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\renderer\orthographic_camera.cpp">
+      <Filter>src\gauri\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\renderer\orthographic_camera_controller.cpp">
       <Filter>src\gauri\renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\renderer\render_command.cpp">
@@ -1497,6 +1505,5 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\orthographic_camera_controller.cpp" />
   </ItemGroup>
 </Project>

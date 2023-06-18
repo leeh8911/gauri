@@ -8,15 +8,15 @@
 
 #pragma once
 
-#include "gauri/application.h"
-#include "gauri/layer.h"
-#include "gauri/logger.h"
+#include "gauri/core/application.h"
+#include "gauri/core/layer.h"
+#include "gauri/core/logger.h"
 
 #include "gauri/core/timestep.h"
 
-#include "gauri/input.h"
-#include "gauri/key_codes.h"
-#include "gauri/mouse_button_codes.h"
+#include "gauri/core/input.h"
+#include "gauri/core/key_codes.h"
+#include "gauri/core/mouse_button_codes.h"
 
 #include "gauri/imgui/imgui_layer.h"
 
@@ -29,15 +29,15 @@
 #include "gauri/renderer/texture.h"
 #include "gauri/renderer/vertex_array.h"
 
-#include "gauri/orthographic_camera_controller.h"
 #include "gauri/renderer/orthographic_camera.h"
+#include "gauri/renderer/orthographic_camera_controller.h"
 
 #include "gauri/renderer/renderer_api.h"
 
 /*!
  * Entry point.
  */
-#include "gauri/entry_point.h"
+#include "gauri/core/entry_point.h"
 
 /**
  *

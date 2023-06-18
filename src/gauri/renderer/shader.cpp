@@ -2,7 +2,7 @@
 
 #include "gauri/renderer/shader.h"
 
-#include "gauri/core.h"
+#include "gauri/core/core.h"
 #include "gauri/renderer/renderer.h"
 #include "platform/opengl/opengl_shader.h"
 

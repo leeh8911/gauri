@@ -5,8 +5,8 @@
 #include <glad/glad.h>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "gauri/core.h"
-#include "gauri/logger.h"
+#include "gauri/core/core.h"
+#include "gauri/core/logger.h"
 #include "gauri/renderer/shader.h"
 
 namespace gauri

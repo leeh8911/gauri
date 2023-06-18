@@ -10,8 +10,8 @@
 
 #pragma once
 
-#include "gauri/core.h"
-#include "gauri/logger.h"
+#include "gauri/core/core.h"
+#include "gauri/core/logger.h"
 
 namespace gauri
 {

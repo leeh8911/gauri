@@ -1,6 +1,6 @@
 #include "grpch.h"
 
-#include "gauri/layer_stack.h"
+#include "gauri/core/layer_stack.h"
 
 namespace gauri
 {

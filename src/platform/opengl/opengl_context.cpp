@@ -5,8 +5,8 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
-#include "gauri/core.h"
-#include "gauri/logger.h"
+#include "gauri/core/core.h"
+#include "gauri/core/logger.h"
 
 namespace gauri
 {

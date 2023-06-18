@@ -3,7 +3,7 @@
 #include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-#include "gauri/logger.h"
+#include "gauri/core/logger.h"
 
 namespace gauri
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gauri/input.h"
+#include "gauri/core/input.h"
 
 namespace gauri
 {

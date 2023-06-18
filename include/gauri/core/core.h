@@ -12,7 +12,7 @@
 #include <cstdint>
 #include <memory>
 
-#include "gauri/logger.h"
+#include "gauri/core/logger.h"
 
 #ifdef GR_ENABLE_ASSERTS
 #define GR_ASSERT(x, ...)                                                                                              \

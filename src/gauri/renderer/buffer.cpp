@@ -12,8 +12,8 @@
 
 #include "gauri/renderer/buffer.h"
 
-#include "gauri/core.h"
-#include "gauri/logger.h"
+#include "gauri/core/core.h"
+#include "gauri/core/logger.h"
 #include "gauri/renderer/renderer.h"
 #include "platform/opengl/opengl_buffer.h"
 
