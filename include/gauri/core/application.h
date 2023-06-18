@@ -42,8 +42,10 @@ class Application
 
   private:
     bool OnWindowClose(WindowCloseEvent &e);
+    bool OnWindowResize(WindowResizeEvent &e);
 
     bool m_IsRunning = true;
+    bool m_Minimized = false;
     std::unique_ptr<Window> m_Window = nullptr;
     ImGuiLayer *m_ImGuiLayer = nullptr;
     LayerStack m_LayerStack{};

@@ -24,6 +24,15 @@ class OrthographicCameraController
         return m_Camera;
     }
 
+    void SetZoomLevel(float level)
+    {
+        m_ZoomLevel = level;
+    }
+    float GetZoomLevel() const
+    {
+        return m_ZoomLevel;
+    }
+
   private:
     bool OnMouseScrolled(MouseScrolledEvent &e);
     bool OnWindowResized(WindowResizeEvent &e);
