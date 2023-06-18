@@ -34,11 +34,6 @@
 
 #include "gauri/renderer/renderer_api.h"
 
-/*!
- * Entry point.
- */
-#include "gauri/core/entry_point.h"
-
 /**
  *
  *
