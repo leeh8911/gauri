@@ -1,7 +1,7 @@
-<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/window.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/window.h">
-<area shape="rect" id="node1" title=" " alt="" coords="277,5,686,32"/>
-<area shape="rect" id="node2" href="$application_8h.html" title=" " alt="" coords="7,80,439,107"/>
-<area shape="rect" id="node5" href="$windows__window_8h.html" title=" " alt="" coords="463,80,1020,107"/>
-<area shape="rect" id="node3" href="$gauri_8h.html" title=" " alt="" coords="45,155,401,181"/>
-<area shape="rect" id="node4" href="$entry__point_8h.html" title=" " alt="" coords="5,229,440,256"/>
+<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/core/window.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/core/window.h">
+<area shape="rect" id="node1" title=" " alt="" coords="285,5,726,32"/>
+<area shape="rect" id="node2" href="$application_8h.html" title=" " alt="" coords="7,80,471,107"/>
+<area shape="rect" id="node5" href="$windows__window_8h.html" title=" " alt="" coords="495,80,1052,107"/>
+<area shape="rect" id="node3" href="$gauri_8h.html" title=" " alt="" coords="61,155,417,181"/>
+<area shape="rect" id="node4" href="$entry__point_8h.html" title=" " alt="" coords="5,229,472,256"/>
 </map>

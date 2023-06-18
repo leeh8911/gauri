@@ -73,8 +73,8 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="entry__point_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="117.5,-0.5 117.5,-19.5 443.5,-19.5 443.5,-0.5 117.5,-0.5"/>
-<text text-anchor="middle" x="280.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/entry_point.h</text>
+<polygon fill="white" stroke="black" points="105.5,-0.5 105.5,-19.5 455.5,-19.5 455.5,-0.5 105.5,-0.5"/>
+<text text-anchor="middle" x="280.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/core/entry_point.h</text>
 </a>
 </g>
 </g>

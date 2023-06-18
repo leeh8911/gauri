@@ -1,20 +1,20 @@
-<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/application.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/application.h">
-<area shape="rect" id="node1" title=" " alt="" coords="39,5,471,32"/>
-<area shape="rect" id="node2" href="$timestep_8h.html" title=" " alt="" coords="313,229,474,256"/>
-<area shape="rect" id="node3" href="$event_8h.html" title=" " alt="" coords="139,229,288,256"/>
-<area shape="rect" id="node14" href="$imgui__layer_8h.html" title=" " alt="" coords="293,80,481,107"/>
-<area shape="rect" id="node16" href="$layer__stack_8h.html" title=" " alt="" coords="505,80,652,107"/>
-<area shape="rect" id="node18" href="$window_8h.html" title=" " alt="" coords="41,155,161,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="303,379,369,405"/>
-<area shape="rect" id="node5" title=" " alt="" coords="113,304,199,331"/>
-<area shape="rect" id="node6" title=" " alt="" coords="224,304,299,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="29,304,88,331"/>
-<area shape="rect" id="node8" href="$core_8h.html" title=" " alt="" coords="435,304,533,331"/>
-<area shape="rect" id="node9" title=" " alt="" coords="408,453,485,480"/>
-<area shape="rect" id="node10" href="$logger_8h.html" title=" " alt="" coords="517,379,627,405"/>
-<area shape="rect" id="node11" title=" " alt="" coords="659,453,725,480"/>
-<area shape="rect" id="node12" title=" " alt="" coords="750,453,882,480"/>
-<area shape="rect" id="node13" title=" " alt="" coords="510,453,634,480"/>
-<area shape="rect" id="node15" href="$layer_8h.html" title=" " alt="" coords="342,155,445,181"/>
-<area shape="rect" id="node17" title=" " alt="" coords="478,155,541,181"/>
+<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/core/application.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/core/application.h">
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,727,32"/>
+<area shape="rect" id="node2" href="$layer__stack_8h.html" title=" " alt="" coords="147,80,326,107"/>
+<area shape="rect" id="node11" href="$timestep_8h.html" title=" " alt="" coords="283,229,444,256"/>
+<area shape="rect" id="node12" href="$event_8h.html" title=" " alt="" coords="537,229,686,256"/>
+<area shape="rect" id="node17" href="$window_8h.html" title=" " alt="" coords="665,155,817,181"/>
+<area shape="rect" id="node18" href="$imgui__layer_8h.html" title=" " alt="" coords="401,80,589,107"/>
+<area shape="rect" id="node3" href="$core_8h.html" title=" " alt="" coords="358,304,489,331"/>
+<area shape="rect" id="node10" href="$layer_8h.html" title=" " alt="" coords="415,155,549,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="263,155,325,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="493,379,559,405"/>
+<area shape="rect" id="node5" title=" " alt="" coords="401,453,478,480"/>
+<area shape="rect" id="node6" href="$logger_8h.html" title=" " alt="" coords="259,379,401,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="310,453,377,480"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,453,137,480"/>
+<area shape="rect" id="node9" title=" " alt="" coords="161,453,285,480"/>
+<area shape="rect" id="node13" title=" " alt="" coords="663,304,749,331"/>
+<area shape="rect" id="node14" title=" " alt="" coords="563,304,638,331"/>
+<area shape="rect" id="node15" title=" " alt="" coords="774,304,833,331"/>
 </map>

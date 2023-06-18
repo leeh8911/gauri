@@ -1,10 +1,10 @@
-<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/input.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/input.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,399,32"/>
-<area shape="rect" id="node2" href="$core_8h.html" title=" " alt="" coords="153,80,251,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="98,155,165,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="162,229,239,256"/>
-<area shape="rect" id="node5" href="$logger_8h.html" title=" " alt="" coords="241,155,352,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="263,229,330,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="355,229,487,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="511,229,635,256"/>
+<map id="/home/runner/work/gauri/gauri/gauri/include/gauri/core/input.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/core/input.h">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,431,32"/>
+<area shape="rect" id="node2" href="$core_8h.html" title=" " alt="" coords="153,80,283,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="114,155,181,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="179,229,257,256"/>
+<area shape="rect" id="node5" href="$logger_8h.html" title=" " alt="" coords="256,155,399,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="281,229,347,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="372,229,504,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="528,229,652,256"/>
 </map>
