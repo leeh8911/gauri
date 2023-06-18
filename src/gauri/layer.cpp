@@ -12,4 +12,4 @@ Layer::~Layer()
 {
 }
 
-}
+} // namespace gauri

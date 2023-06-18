@@ -1365,6 +1365,9 @@
     <ClInclude Include="include\gauri\mouse_button_codes.h">
       <Filter>include\gauri</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\orthographic_camera_controller.h">
+      <Filter>include\gauri</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\renderer\buffer.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
@@ -1422,7 +1425,6 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\orthographic_camera_controller.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1444,6 +1446,9 @@
       <Filter>src\gauri</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\logger.cpp">
+      <Filter>src\gauri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\orthographic_camera_controller.cpp">
       <Filter>src\gauri</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\renderer\buffer.cpp">
@@ -1497,6 +1502,5 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\orthographic_camera_controller.cpp" />
   </ItemGroup>
 </Project>
