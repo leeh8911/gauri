@@ -85,7 +85,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for gauri::RenderCommand:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1RenderCommand__coll__graph.svg" width="499" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1RenderCommand__coll__graph.svg" width="579" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -93,6 +93,8 @@ Collaboration diagram for gauri::RenderCommand:</div>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5defeff0af04fe1647f94d0af1612c20"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1RenderCommand.html#a5defeff0af04fe1647f94d0af1612c20">Init</a> ()</td></tr>
 <tr class="separator:a5defeff0af04fe1647f94d0af1612c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2ad8fa3855257cea8d22513d480945"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1RenderCommand.html#aff2ad8fa3855257cea8d22513d480945">SetViewport</a> (uint32_t x, uint32_t y, uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:aff2ad8fa3855257cea8d22513d480945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c3c9769b875c4c24020d5513480c7c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1RenderCommand.html#aa3c3c9769b875c4c24020d5513480c7c">SetClearColor</a> (const glm::vec4 &amp;color)</td></tr>
 <tr class="separator:aa3c3c9769b875c4c24020d5513480c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9ae58d3c394aa155a7ef1aa18b43ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1RenderCommand.html#a9c9ae58d3c394aa155a7ef1aa18b43ba">Clear</a> ()</td></tr>
@@ -136,12 +138,72 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#aa1f0e33f6fca53b8239255e5de966b76">Init</a>();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1RenderCommand_html_ac59177a1591045086f1454255089d730"><div class="ttname"><a href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">gauri::RenderCommand::s_RendererAPI</a></div><div class="ttdeci">static RendererAPI * s_RendererAPI</div><div class="ttdef"><b>Definition:</b> <a href="render__command_8h_source.html#l00028">render_command.h:28</a></div></div>
+<div class="ttc" id="aclassgauri_1_1RenderCommand_html_ac59177a1591045086f1454255089d730"><div class="ttname"><a href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">gauri::RenderCommand::s_RendererAPI</a></div><div class="ttdeci">static RendererAPI * s_RendererAPI</div><div class="ttdef"><b>Definition:</b> <a href="render__command_8h_source.html#l00033">render_command.h:33</a></div></div>
 <div class="ttc" id="aclassgauri_1_1RendererAPI_html_aa1f0e33f6fca53b8239255e5de966b76"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#aa1f0e33f6fca53b8239255e5de966b76">gauri::RendererAPI::Init</a></div><div class="ttdeci">virtual void Init()=0</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1RenderCommand_a5defeff0af04fe1647f94d0af1612c20_cgraph.svg" width="436" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aff2ad8fa3855257cea8d22513d480945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2ad8fa3855257cea8d22513d480945">&#9670;&nbsp;</a></span>SetViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gauri::RenderCommand::SetViewport </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00014">14</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#a1d286d5bc543162d675b76c36142670f">SetViewport</a>(x, y, width, height);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1RendererAPI_html_a1d286d5bc543162d675b76c36142670f"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#a1d286d5bc543162d675b76c36142670f">gauri::RendererAPI::SetViewport</a></div><div class="ttdeci">virtual void SetViewport(uint32_t x, uint32_t y, uint32_t width, uint32_t height)=0</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1RenderCommand_aff2ad8fa3855257cea8d22513d480945_cgraph.svg" width="552" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -171,10 +233,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00014">14</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#abbc18abcac10dd9d1711fb233ef78831">SetClearColor</a>(color);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00019">19</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#abbc18abcac10dd9d1711fb233ef78831">SetClearColor</a>(color);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1RendererAPI_html_abbc18abcac10dd9d1711fb233ef78831"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#abbc18abcac10dd9d1711fb233ef78831">gauri::RendererAPI::SetClearColor</a></div><div class="ttdeci">virtual void SetClearColor(const glm::vec4 &amp;color)=0</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -208,10 +270,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00018">18</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#ae65b846c70f8a9767ed5e6726bea4fef">Clear</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00023">23</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#ae65b846c70f8a9767ed5e6726bea4fef">Clear</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1RendererAPI_html_ae65b846c70f8a9767ed5e6726bea4fef"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#ae65b846c70f8a9767ed5e6726bea4fef">gauri::RendererAPI::Clear</a></div><div class="ttdeci">virtual void Clear()=0</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -246,10 +308,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00022">22</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#a9ace125f0b9d0e44f0a8a9c9ee34cbb1">DrawIndexed</a>(vertexArray);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00027">27</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730">s_RendererAPI</a>-&gt;<a class="code" href="classgauri_1_1RendererAPI.html#a9ace125f0b9d0e44f0a8a9c9ee34cbb1">DrawIndexed</a>(vertexArray);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1RendererAPI_html_a9ace125f0b9d0e44f0a8a9c9ee34cbb1"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#a9ace125f0b9d0e44f0a8a9c9ee34cbb1">gauri::RendererAPI::DrawIndexed</a></div><div class="ttdeci">virtual void DrawIndexed(const Ref&lt; VertexArray &gt; &amp;vertexArray)=0</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -281,7 +343,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00028">28</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="render__command_8h_source.html#l00033">33</a> of file <a class="el" href="render__command_8h_source.html">render_command.h</a>.</p>
 
 </div>
 </div>

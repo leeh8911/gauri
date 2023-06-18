@@ -102,6 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae8ba8d6741bb5d698df7a8e86dd733db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab201753ed16a3c61ad0e16382d264a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1OrthographicCamera.html">OrthographicCamera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OrthographicCameraController.html#ab201753ed16a3c61ad0e16382d264a7c">GetCamera</a> ()</td></tr>
 <tr class="separator:ab201753ed16a3c61ad0e16382d264a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b1d1523e0fe480f659bfe88bff1078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OrthographicCameraController.html#a71b1d1523e0fe480f659bfe88bff1078">SetZoomLevel</a> (float level)</td></tr>
+<tr class="separator:a71b1d1523e0fe480f659bfe88bff1078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f34e734cea6e7d1028b84f5508fcad"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OrthographicCameraController.html#a43f34e734cea6e7d1028b84f5508fcad">GetZoomLevel</a> () const</td></tr>
+<tr class="separator:a43f34e734cea6e7d1028b84f5508fcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -225,7 +229,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OrthographicCameraController.html#a6156d75eef9c371c6d6a7ed178ab67db">m_Camera</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OrthographicCameraController_html_a6156d75eef9c371c6d6a7ed178ab67db"><div class="ttname"><a href="classgauri_1_1OrthographicCameraController.html#a6156d75eef9c371c6d6a7ed178ab67db">gauri::OrthographicCameraController::m_Camera</a></div><div class="ttdeci">OrthographicCamera m_Camera</div><div class="ttdef"><b>Definition:</b> <a href="orthographic__camera__controller_8h_source.html#l00034">orthographic_camera_controller.h:34</a></div></div>
+<div class="ttc" id="aclassgauri_1_1OrthographicCameraController_html_a6156d75eef9c371c6d6a7ed178ab67db"><div class="ttname"><a href="classgauri_1_1OrthographicCameraController.html#a6156d75eef9c371c6d6a7ed178ab67db">gauri::OrthographicCameraController::m_Camera</a></div><div class="ttdeci">OrthographicCamera m_Camera</div><div class="ttdef"><b>Definition:</b> <a href="orthographic__camera__controller_8h_source.html#l00043">orthographic_camera_controller.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -256,6 +260,68 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OrthographicCameraController.html#a6156d75eef9c371c6d6a7ed178ab67db">m_Camera</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a71b1d1523e0fe480f659bfe88bff1078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b1d1523e0fe480f659bfe88bff1078">&#9670;&nbsp;</a></span>SetZoomLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::OrthographicCameraController::SetZoomLevel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00027">27</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classgauri_1_1OrthographicCameraController.html#afda2e50ea11b707e352a9c772631533d">m_ZoomLevel</a> = level;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1OrthographicCameraController_html_afda2e50ea11b707e352a9c772631533d"><div class="ttname"><a href="classgauri_1_1OrthographicCameraController.html#afda2e50ea11b707e352a9c772631533d">gauri::OrthographicCameraController::m_ZoomLevel</a></div><div class="ttdeci">float m_ZoomLevel</div><div class="ttdef"><b>Definition:</b> <a href="orthographic__camera__controller_8h_source.html#l00041">orthographic_camera_controller.h:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a43f34e734cea6e7d1028b84f5508fcad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f34e734cea6e7d1028b84f5508fcad">&#9670;&nbsp;</a></span>GetZoomLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::OrthographicCameraController::GetZoomLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00031">31</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OrthographicCameraController.html#afda2e50ea11b707e352a9c772631533d">m_ZoomLevel</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,7 +398,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00031">31</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00040">40</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +422,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00032">32</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00041">41</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +446,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00034">34</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00043">43</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +470,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00036">36</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00045">45</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +494,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00037">37</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00046">46</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +518,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00038">38</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00047">47</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +542,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00039">39</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00048">48</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +566,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00040">40</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="orthographic__camera__controller_8h_source.html#l00049">49</a> of file <a class="el" href="orthographic__camera__controller_8h_source.html">orthographic_camera_controller.h</a>.</p>
 
 </div>
 </div>

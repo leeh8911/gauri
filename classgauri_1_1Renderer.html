@@ -99,6 +99,8 @@ Classes</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b1cf949fe3fd74fe7dabc6f22582ea6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Renderer.html#a2b1cf949fe3fd74fe7dabc6f22582ea6">Init</a> ()</td></tr>
 <tr class="separator:a2b1cf949fe3fd74fe7dabc6f22582ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7751c126d9615504844a00bcdd22227a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Renderer.html#a7751c126d9615504844a00bcdd22227a">OnWindowResize</a> (uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:a7751c126d9615504844a00bcdd22227a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c88680bc5e5dc0caef7e5edbfc95f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Renderer.html#a55c88680bc5e5dc0caef7e5edbfc95f7">BeginScene</a> (<a class="el" href="classgauri_1_1OrthographicCamera.html">OrthographicCamera</a> &amp;camera)</td></tr>
 <tr class="separator:a55c88680bc5e5dc0caef7e5edbfc95f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bccab384eb92c6e2f266d7f0ac6d254"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Renderer.html#a9bccab384eb92c6e2f266d7f0ac6d254">EndScene</a> ()</td></tr>
@@ -129,7 +131,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00027">27</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00028">28</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for gauri::Renderer::SceneData:</div>
 <div class="dyncontent">
@@ -163,6 +165,42 @@ ViewProjectionMatrix</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7751c126d9615504844a00bcdd22227a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7751c126d9615504844a00bcdd22227a">&#9670;&nbsp;</a></span>OnWindowResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gauri::Renderer::OnWindowResize </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -290,11 +328,11 @@ ViewProjectionMatrix</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00021">21</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1RendererAPI.html#ab4a68ca3a891d00d391e2adabf5d32ac">RendererAPI::GetAPI</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
-<div class="ttc" id="aclassgauri_1_1RendererAPI_html_ab4a68ca3a891d00d391e2adabf5d32ac"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#ab4a68ca3a891d00d391e2adabf5d32ac">gauri::RendererAPI::GetAPI</a></div><div class="ttdeci">static API GetAPI()</div><div class="ttdef"><b>Definition:</b> <a href="renderer__api_8h_source.html#l00023">renderer_api.h:23</a></div></div>
+<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00022">22</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1RendererAPI.html#ab4a68ca3a891d00d391e2adabf5d32ac">RendererAPI::GetAPI</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="ttc" id="aclassgauri_1_1RendererAPI_html_ab4a68ca3a891d00d391e2adabf5d32ac"><div class="ttname"><a href="classgauri_1_1RendererAPI.html#ab4a68ca3a891d00d391e2adabf5d32ac">gauri::RendererAPI::GetAPI</a></div><div class="ttdeci">static API GetAPI()</div><div class="ttdef"><b>Definition:</b> <a href="renderer__api_8h_source.html#l00024">renderer_api.h:24</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -325,7 +363,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00031">31</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="renderer_8h_source.html#l00032">32</a> of file <a class="el" href="renderer_8h_source.html">renderer.h</a>.</p>
 
 </div>
 </div>

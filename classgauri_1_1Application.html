@@ -118,11 +118,15 @@ Static Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a82405a4d213a4396b20f1522403ac881"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#a82405a4d213a4396b20f1522403ac881">OnWindowClose</a> (<a class="el" href="classgauri_1_1WindowCloseEvent.html">WindowCloseEvent</a> &amp;e)</td></tr>
 <tr class="separator:a82405a4d213a4396b20f1522403ac881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d062dd2b7ca28376d04eea88c3c717b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#a0d062dd2b7ca28376d04eea88c3c717b">OnWindowResize</a> (<a class="el" href="classgauri_1_1WindowResizeEvent.html">WindowResizeEvent</a> &amp;e)</td></tr>
+<tr class="separator:a0d062dd2b7ca28376d04eea88c3c717b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7b1a7e142747c30729a199cdf6712f53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#a7b1a7e142747c30729a199cdf6712f53">m_IsRunning</a> = true</td></tr>
 <tr class="separator:a7b1a7e142747c30729a199cdf6712f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d53e9a8e0a339ee84f539eeede5cfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#ab1d53e9a8e0a339ee84f539eeede5cfb">m_Minimized</a> = false</td></tr>
+<tr class="separator:ab1d53e9a8e0a339ee84f539eeede5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95f55db77c435933bb3c967a898e5df"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgauri_1_1Window.html">Window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#ab95f55db77c435933bb3c967a898e5df">m_Window</a> = nullptr</td></tr>
 <tr class="separator:ab95f55db77c435933bb3c967a898e5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa296c36fa4944372e6dbac0871d07f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1ImGuiLayer.html">ImGuiLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#aa296c36fa4944372e6dbac0871d07f49">m_ImGuiLayer</a> = nullptr</td></tr>
@@ -284,7 +288,7 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classgauri_1_1Application.html#ab95f55db77c435933bb3c967a898e5df">m_Window</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1Application_html_ab95f55db77c435933bb3c967a898e5df"><div class="ttname"><a href="classgauri_1_1Application.html#ab95f55db77c435933bb3c967a898e5df">gauri::Application::m_Window</a></div><div class="ttdeci">std::unique_ptr&lt; Window &gt; m_Window</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00047">application.h:47</a></div></div>
+<div class="ttc" id="aclassgauri_1_1Application_html_ab95f55db77c435933bb3c967a898e5df"><div class="ttname"><a href="classgauri_1_1Application.html#ab95f55db77c435933bb3c967a898e5df">gauri::Application::m_Window</a></div><div class="ttdeci">std::unique_ptr&lt; Window &gt; m_Window</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00049">application.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,7 +319,7 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">s_Instance</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1Application_html_a21f776b09d288d3ce43b191902dae8f2"><div class="ttname"><a href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">gauri::Application::s_Instance</a></div><div class="ttdeci">static Application * s_Instance</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00054">application.h:54</a></div></div>
+<div class="ttc" id="aclassgauri_1_1Application_html_a21f776b09d288d3ce43b191902dae8f2"><div class="ttname"><a href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">gauri::Application::s_Instance</a></div><div class="ttdeci">static Application * s_Instance</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00056">application.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,6 +336,32 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">bool gauri::Application::OnWindowClose </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgauri_1_1WindowCloseEvent.html">WindowCloseEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d062dd2b7ca28376d04eea88c3c717b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d062dd2b7ca28376d04eea88c3c717b">&#9670;&nbsp;</a></span>OnWindowResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gauri::Application::OnWindowResize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgauri_1_1WindowResizeEvent.html">WindowResizeEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
           <td></td>
         </tr>
@@ -366,7 +396,31 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00046">46</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00047">47</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+
+</div>
+</div>
+<a id="ab1d53e9a8e0a339ee84f539eeede5cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d53e9a8e0a339ee84f539eeede5cfb">&#9670;&nbsp;</a></span>m_Minimized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gauri::Application::m_Minimized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00048">48</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +444,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00047">47</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00049">49</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +468,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00048">48</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00050">50</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +492,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00049">49</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00051">51</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +516,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00051">51</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00053">53</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +540,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00052">52</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00054">54</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +564,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00054">54</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00056">56</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>

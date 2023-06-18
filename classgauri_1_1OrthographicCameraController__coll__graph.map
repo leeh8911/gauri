@@ -1,8 +1,8 @@
 <map id="gauri::OrthographicCameraController" name="gauri::OrthographicCameraController">
-<area shape="rect" id="node1" title=" " alt="" coords="427,447,918,612"/>
-<area shape="rect" id="node2" title=" " alt="" coords="75,5,126,83"/>
-<area shape="rect" id="node4" href="$classgauri_1_1OrthographicCamera.html" title=" " alt="" coords="237,175,694,384"/>
-<area shape="rect" id="node3" title=" " alt="" coords="899,241,950,318"/>
+<area shape="rect" id="node1" title=" " alt="" coords="426,447,917,641"/>
+<area shape="rect" id="node2" title=" " alt="" coords="74,5,125,83"/>
+<area shape="rect" id="node4" href="$classgauri_1_1OrthographicCamera.html" title=" " alt="" coords="236,175,694,384"/>
+<area shape="rect" id="node3" title=" " alt="" coords="898,241,949,318"/>
 <area shape="rect" id="node5" title=" " alt="" coords="416,5,472,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="664,5,718,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="664,5,717,83"/>
 </map>
