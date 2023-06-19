@@ -23,6 +23,7 @@
 // ---- Renderer --------------------
 #include "gauri/renderer/render_command.h"
 #include "gauri/renderer/renderer.h"
+#include "gauri/renderer/renderer_2d.h"
 
 #include "gauri/renderer/buffer.h"
 #include "gauri/renderer/shader.h"
