@@ -7,7 +7,7 @@
 
 namespace gauri
 {
-VertexArray *VertexArray::Create()
+Ref<VertexArray> VertexArray::Create()
 {
     switch (Renderer::GetAPI())
     {
@@ -16,7 +16,7 @@ VertexArray *VertexArray::Create()
         return nullptr;
     }
     case RendererAPI::API::OpenGL:
-        return new OpenGLVertexArray();
+        return std::make_shared<OpenGLVertexArray>();
     }
 
     GR_CORE_ASSERT(false, "Unknown RendererAPI!");

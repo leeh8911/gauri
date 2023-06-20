@@ -2,7 +2,9 @@
 
 #include "gauri/renderer/renderer.h"
 
+#include "gauri/renderer/renderer_2d.h"
 #include "platform/opengl/opengl_shader.h"
+
 namespace gauri
 {
 Renderer::SceneData *Renderer::m_SceneData = new Renderer::SceneData;
@@ -10,6 +12,7 @@ Renderer::SceneData *Renderer::m_SceneData = new Renderer::SceneData;
 void Renderer::Init()
 {
     RenderCommand::Init();
+    Renderer2D::Init();
 }
 
 void Renderer::OnWindowResize(uint32_t width, uint32_t height)
