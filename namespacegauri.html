@@ -250,6 +250,12 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a472cc75ae0bea73819c4982bc658c053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1Application.html">Application</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a472cc75ae0bea73819c4982bc658c053">CreateApplication</a> ()</td></tr>
 <tr class="separator:a472cc75ae0bea73819c4982bc658c053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a17fc3c7a242db6d9814722f508a9e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a07a17fc3c7a242db6d9814722f508a9e"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacegauri.html#a3c2b959869f9286d46307eb6574a649a">Scope</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a07a17fc3c7a242db6d9814722f508a9e">CreateScope</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a07a17fc3c7a242db6d9814722f508a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94017f5265ba471882df62e333c13fc0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a94017f5265ba471882df62e333c13fc0"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacegauri.html#a6c22cabfde57836f74d377f7ba7519a7">Ref</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a94017f5265ba471882df62e333c13fc0">CreateRef</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a94017f5265ba471882df62e333c13fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1044f5cd43c46dae84158c09a4cc7809"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a1044f5cd43c46dae84158c09a4cc7809">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classgauri_1_1Event.html">Event</a> &amp;e)</td></tr>
 <tr class="separator:a1044f5cd43c46dae84158c09a4cc7809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af035aec0bc02ba1930ceb3b6d3ef6993"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#af035aec0bc02ba1930ceb3b6d3ef6993">ShaderDataTypeSize</a> (<a class="el" href="namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20">ShaderDataType</a> type)</td></tr>
@@ -288,7 +294,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00046">46</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00052">52</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
 
 </div>
 </div>
@@ -492,6 +498,72 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 
+</div>
+</div>
+<a id="a07a17fc3c7a242db6d9814722f508a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a17fc3c7a242db6d9814722f508a9e">&#9670;&nbsp;</a></span>CreateScope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacegauri.html#a3c2b959869f9286d46307eb6574a649a">Scope</a>&lt;T&gt; gauri::CreateScope </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00047">47</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a94017f5265ba471882df62e333c13fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94017f5265ba471882df62e333c13fc0">&#9670;&nbsp;</a></span>CreateRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacegauri.html#a6c22cabfde57836f74d377f7ba7519a7">Ref</a>&lt;T&gt; gauri::CreateRef </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00054">54</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1044f5cd43c46dae84158c09a4cc7809"></a>
