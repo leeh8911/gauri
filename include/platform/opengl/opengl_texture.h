@@ -2,11 +2,14 @@
 
 #include "gauri/renderer/texture.h"
 
+#include <glad/glad.h>
+
 namespace gauri
 {
 class OpenGLTexture2D : public Texture2D
 {
   public:
+    OpenGLTexture2D(uint32_t width, uint32_t height);
     OpenGLTexture2D(const std::string &path);
     ~OpenGLTexture2D() override;
 
@@ -19,6 +22,8 @@ class OpenGLTexture2D : public Texture2D
         return m_Height;
     }
 
+    void SetData(void *data, uint32_t size) override;
+
     void Bind(uint32_t slot = 0) const override;
 
   private:
@@ -26,5 +31,6 @@ class OpenGLTexture2D : public Texture2D
     uint32_t m_RendererID;
     uint32_t m_Width;
     uint32_t m_Height;
+    GLenum m_InternalFormat, m_DataFormat;
 };
 } // namespace gauri
