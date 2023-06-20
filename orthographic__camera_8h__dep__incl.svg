@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 889;
+var viewWidth = 1280;
 var viewHeight = 196;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/orthographic_camera.h</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-192 885,-192 885,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-192 1276,-192 1276,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="288.5,-168.5 288.5,-187.5 706.5,-187.5 706.5,-168.5 288.5,-168.5"/>
-<text text-anchor="middle" x="497.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/orthographic_camera.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="391.5,-168.5 391.5,-187.5 809.5,-187.5 809.5,-168.5 391.5,-168.5"/>
+<text text-anchor="middle" x="600.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/orthographic_camera.h</text>
 </a>
 </g>
 </g>
@@ -76,23 +76,23 @@ var sectionId = 'dynsection-1';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M445.92,-166.41C396.22,-156.2 321.97,-140.96 275.98,-131.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="445.33,-169.86 455.83,-168.44 446.74,-163 445.33,-169.86"/>
+<path fill="none" stroke="midnightblue" d="M532.58,-166.98C463.45,-156.78 357.43,-141.14 292.22,-131.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="532.1,-170.45 542.51,-168.44 533.12,-163.52 532.1,-170.45"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="gauri_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="364,-56.5 364,-75.5 631,-75.5 631,-56.5 364,-56.5"/>
-<text text-anchor="middle" x="497.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri.h</text>
+<polygon fill="white" stroke="black" points="467,-56.5 467,-75.5 734,-75.5 734,-56.5 467,-56.5"/>
+<text text-anchor="middle" x="600.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge7" class="edge">
+<g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M497.5,-158.35C497.5,-134.25 497.5,-93.31 497.5,-75.59"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="494,-158.37 497.5,-168.37 501,-158.37 494,-158.37"/>
+<path fill="none" stroke="midnightblue" d="M557.79,-164.57C541.96,-157.67 525.65,-147.28 516.5,-132 500.68,-105.58 541.25,-85.97 571.37,-75.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="556.93,-168 567.51,-168.44 559.51,-161.49 556.93,-168"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -104,43 +104,58 @@ var sectionId = 'dynsection-1';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M540.12,-165.83C579.01,-155.63 635.66,-140.78 671.01,-131.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="538.93,-162.52 530.14,-168.44 540.7,-169.29 538.93,-162.52"/>
+<path fill="none" stroke="midnightblue" d="M626.08,-163.59C645.12,-153.61 670.56,-140.27 686.99,-131.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="624.28,-160.58 617.05,-168.32 627.53,-166.78 624.28,-160.58"/>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="renderer__2d_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="899,-112.5 899,-131.5 1272,-131.5 1272,-112.5 899,-112.5"/>
+<text text-anchor="middle" x="1085.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/renderer_2d.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge6" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M687.15,-167.35C778.63,-157.17 921.44,-141.27 1008.92,-131.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="686.63,-163.89 677.08,-168.47 687.41,-170.85 686.63,-163.89"/>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M286.08,-110.41C335.78,-100.2 410.03,-84.96 456.02,-75.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="285.26,-107 276.17,-112.44 286.67,-113.86 285.26,-107"/>
+<path fill="none" stroke="midnightblue" d="M302.42,-110.98C371.55,-100.78 477.57,-85.14 542.78,-75.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="301.88,-107.52 292.49,-112.44 302.9,-114.45 301.88,-107.52"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="entry__point_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="322.5,-0.5 322.5,-19.5 672.5,-19.5 672.5,-0.5 322.5,-0.5"/>
-<text text-anchor="middle" x="497.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/core/entry_point.h</text>
+<polygon fill="white" stroke="black" points="425.5,-0.5 425.5,-19.5 775.5,-19.5 775.5,-0.5 425.5,-0.5"/>
+<text text-anchor="middle" x="600.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/gauri/gauri/gauri/include/gauri/core/entry_point.h</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M491.03,-46.1C490.4,-37.14 490.84,-26.86 492.37,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="487.57,-46.62 492.33,-56.08 494.51,-45.71 487.57,-46.62"/>
-</g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M503.96,-29.69C504.61,-38.64 504.18,-48.93 502.67,-56.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="507.42,-29.2 502.63,-19.75 500.48,-30.13 507.42,-29.2"/>
+<path fill="none" stroke="midnightblue" d="M600.5,-45.8C600.5,-36.91 600.5,-26.78 600.5,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="597,-46.08 600.5,-56.08 604,-46.08 597,-46.08"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M660.88,-109.83C621.99,-99.63 565.34,-84.78 529.99,-75.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="660.3,-113.29 670.86,-112.44 662.07,-106.52 660.3,-113.29"/>
+<path fill="none" stroke="midnightblue" d="M677.92,-107.59C658.88,-97.61 633.44,-84.27 617.01,-75.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="676.47,-110.78 686.95,-112.32 679.72,-104.58 676.47,-110.78"/>
+</g>
+<!-- Node6&#45;&gt;Node3 -->
+<g id="edge7" class="edge">
+<title>Node6&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M998.85,-111.35C907.37,-101.17 764.56,-85.27 677.08,-75.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="998.59,-114.85 1008.92,-112.47 999.37,-107.89 998.59,-114.85"/>
 </g>
 </g>
 </svg>

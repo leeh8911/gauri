@@ -92,7 +92,7 @@ Inheritance diagram for gauri::Shader:</div>
 <div class="dynheader">
 Collaboration diagram for gauri::Shader:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Shader__coll__graph.svg" width="100%" height="526"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Shader__coll__graph.svg" width="100%" height="559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="memberdecls">
@@ -104,6 +104,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea98223057d58a31ece793373027eb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d9c0bef00afbd18a5c672c5bdac67c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Shader.html#a97d9c0bef00afbd18a5c672c5bdac67c">Unbind</a> () const =0</td></tr>
 <tr class="separator:a97d9c0bef00afbd18a5c672c5bdac67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038e92e2f0330c4dc38dfdba39f19257"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Shader.html#a038e92e2f0330c4dc38dfdba39f19257">SetFloat3</a> (const std::string &amp;name, const glm::vec3 &amp;value)=0</td></tr>
+<tr class="separator:a038e92e2f0330c4dc38dfdba39f19257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d60d5a1dcc814ef0a298e37bf49030"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Shader.html#a22d60d5a1dcc814ef0a298e37bf49030">SetFloat4</a> (const std::string &amp;name, const glm::vec4 &amp;value)=0</td></tr>
+<tr class="separator:a22d60d5a1dcc814ef0a298e37bf49030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e12005c2123143c2cb887a139dbad5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Shader.html#ae9e12005c2123143c2cb887a139dbad5">SetMat4</a> (const std::string &amp;name, const glm::mat4 &amp;value)=0</td></tr>
+<tr class="separator:ae9e12005c2123143c2cb887a139dbad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf11d07956230f85b26eaced3ad7bb3"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Shader.html#a1cf11d07956230f85b26eaced3ad7bb3">GetName</a> () const =0</td></tr>
 <tr class="separator:a1cf11d07956230f85b26eaced3ad7bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -121,7 +127,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="shader_8h_source.html#l00009">9</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8h_source.html#l00010">10</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac0efa2d9baff4505b919f473d1ba719f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0efa2d9baff4505b919f473d1ba719f">&#9670;&nbsp;</a></span>~Shader()</h2>
@@ -200,6 +206,120 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classgauri_1_1OpenGLShader.html#a09b8c2fde63b323257043cf3f7163f97">gauri::OpenGLShader</a>.</p>
+
+</div>
+</div>
+<a id="a038e92e2f0330c4dc38dfdba39f19257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038e92e2f0330c4dc38dfdba39f19257">&#9670;&nbsp;</a></span>SetFloat3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void gauri::Shader::SetFloat3 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgauri_1_1OpenGLShader.html#a1ea374edebdf29de949f1b7b2dfb1645">gauri::OpenGLShader</a>.</p>
+
+</div>
+</div>
+<a id="a22d60d5a1dcc814ef0a298e37bf49030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d60d5a1dcc814ef0a298e37bf49030">&#9670;&nbsp;</a></span>SetFloat4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void gauri::Shader::SetFloat4 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgauri_1_1OpenGLShader.html#acf7a599acd367fb8e3c3eebd00a0b02d">gauri::OpenGLShader</a>.</p>
+
+</div>
+</div>
+<a id="ae9e12005c2123143c2cb887a139dbad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e12005c2123143c2cb887a139dbad5">&#9670;&nbsp;</a></span>SetMat4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void gauri::Shader::SetMat4 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgauri_1_1OpenGLShader.html#aa407d94cd5aaffb7ea734be698c09355">gauri::OpenGLShader</a>.</p>
 
 </div>
 </div>
@@ -319,7 +439,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shader_8h_source.html#l00023">23</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8h_source.html#l00028">28</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
 
 </div>
 </div>

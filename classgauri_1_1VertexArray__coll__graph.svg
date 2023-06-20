@@ -25,7 +25,7 @@
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void SetIndexBuffer(const Ref&lt; IndexBuffer &gt; &amp;indexBuffer)=0</text>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const std::vector&lt; Ref&lt; VertexBuffer &gt; &gt; &amp; GetVertexBuffers() const =0</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const Ref&lt; IndexBuffer &gt; &amp; GetIndexBuffer() const =0</text>
-<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static VertexArray * Create()</text>
+<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static Ref&lt; VertexArray &gt; Create()</text>
 </a>
 </g>
 </g>
