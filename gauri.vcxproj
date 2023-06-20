@@ -579,6 +579,7 @@
     <ClInclude Include="include\gauri\core\mouse_button_codes.h" />
     <ClInclude Include="include\gauri\core\timestep.h" />
     <ClInclude Include="include\gauri\core\window.h" />
+    <ClInclude Include="include\gauri\debug\instrumentor.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
     <ClInclude Include="include\gauri\renderer\buffer.h" />

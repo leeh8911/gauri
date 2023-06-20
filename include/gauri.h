@@ -11,6 +11,7 @@
 #include "gauri/core/application.h"
 #include "gauri/core/layer.h"
 #include "gauri/core/logger.h"
+#include "gauri/debug/instrumentor.h"
 
 #include "gauri/core/timestep.h"
 

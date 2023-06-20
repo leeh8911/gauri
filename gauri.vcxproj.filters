@@ -1429,6 +1429,7 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\renderer\renderer_2d.h" />
+    <ClInclude Include="include\gauri\debug\instrumentor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
