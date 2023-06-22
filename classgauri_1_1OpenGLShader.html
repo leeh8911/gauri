@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a09b8c2fde63b323257043cf3f7163f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66b1381a848120f20959963588edcf1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a66b1381a848120f20959963588edcf1d">SetInt</a> (const std::string &amp;name, int value) override</td></tr>
 <tr class="separator:a66b1381a848120f20959963588edcf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab802aeb3109c397ebbecab9b1cad708b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#ab802aeb3109c397ebbecab9b1cad708b">SetFloat</a> (const std::string &amp;name, float value) override</td></tr>
+<tr class="separator:ab802aeb3109c397ebbecab9b1cad708b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea374edebdf29de949f1b7b2dfb1645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a1ea374edebdf29de949f1b7b2dfb1645">SetFloat3</a> (const std::string &amp;name, const glm::vec3 &amp;value) override</td></tr>
 <tr class="separator:a1ea374edebdf29de949f1b7b2dfb1645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7a599acd367fb8e3c3eebd00a0b02d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#acf7a599acd367fb8e3c3eebd00a0b02d">SetFloat4</a> (const std::string &amp;name, const glm::vec4 &amp;value) override</td></tr>
@@ -331,6 +333,44 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab802aeb3109c397ebbecab9b1cad708b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab802aeb3109c397ebbecab9b1cad708b">&#9670;&nbsp;</a></span>SetFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::OpenGLShader::SetFloat </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classgauri_1_1Shader.html#a3b1c1e08d686a0e076d5828e95d78fd1">gauri::Shader</a>.</p>
+
+</div>
+</div>
 <a id="a1ea374edebdf29de949f1b7b2dfb1645"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ea374edebdf29de949f1b7b2dfb1645">&#9670;&nbsp;</a></span>SetFloat3()</h2>
 
@@ -470,11 +510,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgauri_1_1Shader.html#a1cf11d07956230f85b26eaced3ad7bb3">gauri::Shader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00029">29</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">m_Name</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OpenGLShader_html_a96bbf1891a09f00192e3995606e18025"><div class="ttname"><a href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">gauri::OpenGLShader::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="opengl__shader_8h_source.html#l00048">opengl_shader.h:48</a></div></div>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00030">30</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">m_Name</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1OpenGLShader_html_a96bbf1891a09f00192e3995606e18025"><div class="ttname"><a href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">gauri::OpenGLShader::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="opengl__shader_8h_source.html#l00049">opengl_shader.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -841,7 +881,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00047">47</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00048">48</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +905,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00048">48</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00049">49</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
 
 </div>
 </div>

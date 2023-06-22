@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 720;
+var viewWidth = 710;
 var viewHeight = 28;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,45 +54,45 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>gauri::Instrumentor::WriteProfile</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-24 716,-24 716,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-24 706,-24 706,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="539,-0.5 539,-19.5 712,-19.5 712,-0.5 539,-0.5"/>
-<text text-anchor="middle" x="625.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::Instrumentor::WriteProfile</text>
+<polygon fill="#bfbfbf" stroke="black" points="529,-0.5 529,-19.5 702,-19.5 702,-0.5 529,-0.5"/>
+<text text-anchor="middle" x="615.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::Instrumentor::WriteProfile</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classgauri_1_1ImstrumentationTimer.html#a0ef7605350641c2a32042d5107e9d914" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="318,-0.5 318,-19.5 503,-19.5 503,-0.5 318,-0.5"/>
-<text text-anchor="middle" x="410.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::ImstrumentationTimer::Stop</text>
+<g id="a_node2"><a xlink:href="classgauri_1_1InstrumentationTimer.html#a47cada30d224c5dcf449537e025bc24c" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="311,-0.5 311,-19.5 493,-19.5 493,-0.5 311,-0.5"/>
+<text text-anchor="middle" x="402" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::InstrumentationTimer::Stop</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M528.59,-10C520.18,-10 511.68,-10 503.31,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="528.79,-13.5 538.79,-10 528.79,-6.5 528.79,-13.5"/>
+<path fill="none" stroke="midnightblue" d="M518.58,-10C510.17,-10 501.68,-10 493.32,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="518.78,-13.5 528.78,-10 518.78,-6.5 518.78,-13.5"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classgauri_1_1ImstrumentationTimer.html#ae6dc391b7c39b5fddf40d75d93afec0e" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 282,-19.5 282,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="141" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::ImstrumentationTimer::~ImstrumentationTimer</text>
+<g id="a_node3"><a xlink:href="classgauri_1_1InstrumentationTimer.html#af32bd9f3a32499d5a35e078e776edd83" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 275,-19.5 275,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="137.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::InstrumentationTimer::~InstrumentationTimer</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M307.74,-10C299.4,-10 290.89,-10 282.34,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="307.82,-13.5 317.82,-10 307.82,-6.5 307.82,-13.5"/>
+<path fill="none" stroke="midnightblue" d="M300.65,-10C292.37,-10 283.91,-10 275.42,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="300.66,-13.5 310.66,-10 300.66,-6.5 300.66,-13.5"/>
 </g>
 </g>
 </svg>
