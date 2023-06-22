@@ -91,14 +91,14 @@ class Instrumentor
     int m_ProfileCount;
 };
 
-class ImstrumentationTimer
+class InstrumentationTimer
 {
   public:
-    ImstrumentationTimer(const char *name) : m_Name(name), m_Stopped(false)
+    InstrumentationTimer(const char *name) : m_Name(name), m_Stopped(false)
     {
         m_StartTimepoint = std::chrono::high_resolution_clock::now();
     }
-    ~ImstrumentationTimer()
+    ~InstrumentationTimer()
     {
         if (!m_Stopped)
         {
@@ -119,7 +119,7 @@ class ImstrumentationTimer
 
         float duration = (end - start) * 0.001f;
 
-        uint32_t threadID = std::hash<std::thread::id>{}(std::this_thread::get_id());
+        uint32_t threadID = static_cast<uint32_t>(std::hash<std::thread::id>{}(std::this_thread::get_id()));
         Instrumentor::Get().WriteProfile({m_Name, start, end, threadID});
 
         m_Stopped = true;
@@ -136,7 +136,7 @@ class ImstrumentationTimer
 #if GR_PROFILE
 #define GR_PROFILE_BEGIN_SESSION(name, filepath) ::gauri::Instrumentor::Get().BeginSession(name, filepath)
 #define GR_PROFILE_END_SESSION() ::gauri::Instrumentor::Get().EndSession()
-#define GR_PROFILE_SCOPE(name) ::gauri::ImstrumentationTimer timer##__LINE__(name);
+#define GR_PROFILE_SCOPE(name) ::gauri::InstrumentationTimer timer##__LINE__(name);
 #define GR_PROFILE_FUNCTION() GR_PROFILE_SCOPE(__FUNCSIG__)
 #else
 #define GR_PROFILE_BEGIN_SESSION(name, filepath)
