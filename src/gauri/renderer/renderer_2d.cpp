@@ -95,17 +95,17 @@ void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, cons
 }
 
 void Renderer2D::DrawQuad(const glm::vec2 &position, const glm::vec2 &size, const Ref<Texture2D> &texture,
-                          float tilingFactor)
+                          float tilingFactor, const glm::vec4 &tintColor)
 {
-    DrawQuad({position.x, position.y, 0.0f}, size, texture, tilingFactor);
+    DrawQuad({position.x, position.y, 0.0f}, size, texture, tilingFactor, tintColor);
 }
 
 void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const Ref<Texture2D> &texture,
-                          float tilingFactor)
+                          float tilingFactor, const glm::vec4 &tintColor)
 {
     GR_PROFILE_FUNCTION();
 
-    s_Data->TextureShader->SetFloat4("u_Color", glm::vec4(1.0f));
+    s_Data->TextureShader->SetFloat4("u_Color", tintColor);
     s_Data->TextureShader->SetFloat("u_TilingFactor", tilingFactor);
     texture->Bind();
 
@@ -142,17 +142,17 @@ void Renderer2D::DrawRotatedQuad(const glm::vec3 &position, const glm::vec2 &siz
 }
 
 void Renderer2D::DrawRotatedQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation,
-                                 const Ref<Texture2D> &texture, float tilingFactor)
+                                 const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
 {
-    DrawRotatedQuad({position.x, position.y, 0.0f}, size, rotation, texture, tilingFactor);
+    DrawRotatedQuad({position.x, position.y, 0.0f}, size, rotation, texture, tilingFactor, tintColor);
 }
 
 void Renderer2D::DrawRotatedQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
-                                 const Ref<Texture2D> &texture, float tilingFactor)
+                                 const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
 {
     GR_PROFILE_FUNCTION();
 
-    s_Data->TextureShader->SetFloat4("u_Color", glm::vec4(1.0f));
+    s_Data->TextureShader->SetFloat4("u_Color", tintColor);
     s_Data->TextureShader->SetFloat("u_TilingFactor", tilingFactor);
     texture->Bind();
 
