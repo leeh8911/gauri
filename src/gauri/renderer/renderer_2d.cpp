@@ -117,14 +117,12 @@ void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, cons
     RenderCommand::DrawIndexed(s_Data->QuadVertexArray);
 }
 
-void Renderer2D::DrawRotatedQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation,
-                                 const glm::vec4 &color)
+void Renderer2D::DrawQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation, const glm::vec4 &color)
 {
-    DrawRotatedQuad({position.x, position.y, 0.0f}, size, rotation, color);
+    DrawQuad({position.x, position.y, 0.0f}, size, rotation, color);
 }
 
-void Renderer2D::DrawRotatedQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
-                                 const glm::vec4 &color)
+void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation, const glm::vec4 &color)
 {
     GR_PROFILE_FUNCTION();
 
@@ -141,14 +139,14 @@ void Renderer2D::DrawRotatedQuad(const glm::vec3 &position, const glm::vec2 &siz
     RenderCommand::DrawIndexed(s_Data->QuadVertexArray);
 }
 
-void Renderer2D::DrawRotatedQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation,
-                                 const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
+void Renderer2D::DrawQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation,
+                          const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
 {
-    DrawRotatedQuad({position.x, position.y, 0.0f}, size, rotation, texture, tilingFactor, tintColor);
+    DrawQuad({position.x, position.y, 0.0f}, size, rotation, texture, tilingFactor, tintColor);
 }
 
-void Renderer2D::DrawRotatedQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
-                                 const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
+void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
+                          const Ref<Texture2D> &texture, float tilingFactor, const glm::vec4 &tintColor)
 {
     GR_PROFILE_FUNCTION();
 
