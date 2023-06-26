@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 613;
+var viewWidth = 575;
 var viewHeight = 231;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,16 +54,16 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>gauri::Renderer2D</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-227 609,-227 609,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-227 571,-227 571,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-222.5 605,-222.5 605,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="302.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::Renderer2D</text>
-<polyline fill="none" stroke="black" points="0,-203.5 605,-203.5 "/>
-<text text-anchor="middle" x="302.5" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="0,-184.5 605,-184.5 "/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-222.5 567,-222.5 567,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="283.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::Renderer2D</text>
+<polyline fill="none" stroke="black" points="0,-203.5 567,-203.5 "/>
+<text text-anchor="middle" x="283.5" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="0,-184.5 567,-184.5 "/>
 <text text-anchor="start" x="8" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void Init()</text>
 <text text-anchor="start" x="8" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void Shutdown()</text>
 <text text-anchor="start" x="8" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void BeginScene(const OrthographicCamera &amp;camera)</text>
@@ -74,12 +74,12 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="8" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00"> float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
 <text text-anchor="start" x="8" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawQuad(const glm::vec3 &amp;position, const glm::vec2 &amp;size, const Ref&lt; Texture2D &gt; &amp;texture,</text>
 <text text-anchor="start" x="8" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00"> float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
-<text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawRotatedQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, float rotation, const glm::vec4 &amp;color)</text>
-<text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawRotatedQuad(const glm::vec3 &amp;position, const glm::vec2 &amp;size, float rotation, const glm::vec4 &amp;color)</text>
-<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawRotatedQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, float rotation, const Ref</text>
-<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Texture2D &gt; &amp;texture, float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawRotatedQuad(const glm::vec3 &amp;position, const glm::vec2 &amp;size, float rotation, const Ref</text>
-<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Texture2D &gt; &amp;texture, float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
+<text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, float rotation, const glm::vec4 &amp;color)</text>
+<text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawQuad(const glm::vec3 &amp;position, const glm::vec2 &amp;size, float rotation, const glm::vec4 &amp;color)</text>
+<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, float rotation, const Ref&lt; Texture2D</text>
+<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; &amp;texture, float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static void DrawQuad(const glm::vec3 &amp;position, const glm::vec2 &amp;size, float rotation, const Ref&lt; Texture2D</text>
+<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; &amp;texture, float tilingFactor=1.0f, const glm::vec4 &amp;tintColor=glm::vec4(1.0f))</text>
 </a>
 </g>
 </g>
