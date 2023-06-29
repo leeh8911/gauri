@@ -13,6 +13,6 @@ class OpenGLRendererAPI : public RendererAPI
     void SetClearColor(const glm::vec4 &color) override;
     void Clear() override;
 
-    void DrawIndexed(const Ref<VertexArray> &vertexArray) override;
+    void DrawIndexed(const Ref<VertexArray> &vertexArray, uint32_t indexCount) override;
 };
 } // namespace gauri
