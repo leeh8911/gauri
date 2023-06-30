@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a09b8c2fde63b323257043cf3f7163f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66b1381a848120f20959963588edcf1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a66b1381a848120f20959963588edcf1d">SetInt</a> (const std::string &amp;name, int value) override</td></tr>
 <tr class="separator:a66b1381a848120f20959963588edcf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015a5f3721e8dcc37f3c4d29f48d67a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a015a5f3721e8dcc37f3c4d29f48d67a8">SetIntArray</a> (const std::string &amp;name, int *values, uint32_t count) override</td></tr>
+<tr class="separator:a015a5f3721e8dcc37f3c4d29f48d67a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab802aeb3109c397ebbecab9b1cad708b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#ab802aeb3109c397ebbecab9b1cad708b">SetFloat</a> (const std::string &amp;name, float value) override</td></tr>
 <tr class="separator:ab802aeb3109c397ebbecab9b1cad708b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea374edebdf29de949f1b7b2dfb1645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a1ea374edebdf29de949f1b7b2dfb1645">SetFloat3</a> (const std::string &amp;name, const glm::vec3 &amp;value) override</td></tr>
@@ -123,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad14451054a077d7023d79f1e900b907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02c452eee8d0d5c112d0eddccfd3dd6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a02c452eee8d0d5c112d0eddccfd3dd6d">UploadUniformInt</a> (const std::string &amp;name, int value)</td></tr>
 <tr class="separator:a02c452eee8d0d5c112d0eddccfd3dd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87979b144ecce154e21a119493a1af2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a87979b144ecce154e21a119493a1af2d">UploadUniformIntArray</a> (const std::string &amp;name, int *values, uint32_t count)</td></tr>
+<tr class="separator:a87979b144ecce154e21a119493a1af2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9631748f79175bf20702b203455757a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a9631748f79175bf20702b203455757a9">UploadUniformFloat</a> (const std::string &amp;name, float value)</td></tr>
 <tr class="separator:a9631748f79175bf20702b203455757a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684fc0f531736e0782b31f9073830bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLShader.html#a684fc0f531736e0782b31f9073830bef">UploadUniformFloat2</a> (const std::string &amp;name, const glm::vec2 &amp;values)</td></tr>
@@ -333,6 +337,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a015a5f3721e8dcc37f3c4d29f48d67a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015a5f3721e8dcc37f3c4d29f48d67a8">&#9670;&nbsp;</a></span>SetIntArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::OpenGLShader::SetIntArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classgauri_1_1Shader.html#a6d7ddca3ba0b878501b886988880bd9b">gauri::Shader</a>.</p>
+
+</div>
+</div>
 <a id="ab802aeb3109c397ebbecab9b1cad708b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab802aeb3109c397ebbecab9b1cad708b">&#9670;&nbsp;</a></span>SetFloat()</h2>
 
@@ -510,11 +558,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgauri_1_1Shader.html#a1cf11d07956230f85b26eaced3ad7bb3">gauri::Shader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00030">30</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">m_Name</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OpenGLShader_html_a96bbf1891a09f00192e3995606e18025"><div class="ttname"><a href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">gauri::OpenGLShader::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="opengl__shader_8h_source.html#l00049">opengl_shader.h:49</a></div></div>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00031">31</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">m_Name</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1OpenGLShader_html_a96bbf1891a09f00192e3995606e18025"><div class="ttname"><a href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">gauri::OpenGLShader::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="opengl__shader_8h_source.html#l00051">opengl_shader.h:51</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -535,6 +583,40 @@ Private Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87979b144ecce154e21a119493a1af2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87979b144ecce154e21a119493a1af2d">&#9670;&nbsp;</a></span>UploadUniformIntArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::OpenGLShader::UploadUniformIntArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -881,7 +963,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00048">48</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00050">50</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +987,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00049">49</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__shader_8h_source.html#l00051">51</a> of file <a class="el" href="opengl__shader_8h_source.html">opengl_shader.h</a>.</p>
 
 </div>
 </div>

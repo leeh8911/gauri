@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['end_32',['end',['../classgauri_1_1LayerStack.html#a3214704ad934a1c1c0360c8a3bc869ad',1,'gauri::LayerStack::end()'],['../classgauri_1_1BufferLayout.html#a4abf3ddb346e9ef3afabda52fad095d8',1,'gauri::BufferLayout::end()'],['../classgauri_1_1BufferLayout.html#accb63fd00ab42a120232e512c3e3085e',1,'gauri::BufferLayout::end() const']]],
-  ['end_33',['End',['../namespacegauri.html#a17ad115115abae606890f899c6244a43',1,'gauri::ProfileResult::End()'],['../classgauri_1_1ImGuiLayer.html#a5a8cd78c5f7d92a6101d57871aaf2f88',1,'gauri::ImGuiLayer::End()']]],
+  ['end_32',['End',['../namespacegauri.html#a17ad115115abae606890f899c6244a43',1,'gauri::ProfileResult::End()'],['../classgauri_1_1ImGuiLayer.html#a5a8cd78c5f7d92a6101d57871aaf2f88',1,'gauri::ImGuiLayer::End()']]],
+  ['end_33',['end',['../classgauri_1_1LayerStack.html#a3214704ad934a1c1c0360c8a3bc869ad',1,'gauri::LayerStack::end()'],['../classgauri_1_1BufferLayout.html#a4abf3ddb346e9ef3afabda52fad095d8',1,'gauri::BufferLayout::end()'],['../classgauri_1_1BufferLayout.html#accb63fd00ab42a120232e512c3e3085e',1,'gauri::BufferLayout::end() const']]],
   ['endscene_34',['EndScene',['../classgauri_1_1Renderer.html#a9bccab384eb92c6e2f266d7f0ac6d254',1,'gauri::Renderer::EndScene()'],['../classgauri_1_1Renderer2D.html#ac60145270afa94d768df9618f765a0d0',1,'gauri::Renderer2D::EndScene()']]],
   ['endsession_35',['EndSession',['../classgauri_1_1Instrumentor.html#a6068c95a0b5c82a66a2e1e63fc769bfb',1,'gauri::Instrumentor']]],
   ['entry_5fpoint_2eh_36',['entry_point.h',['../entry__point_8h.html',1,'']]],
