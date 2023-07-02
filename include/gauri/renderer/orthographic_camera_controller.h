@@ -6,6 +6,21 @@
 
 namespace gauri
 {
+struct OrthographicCameraBounds
+{
+    float Left, Right;
+    float Bottom, Top;
+
+    float GetWidth()
+    {
+        return Right - Left;
+    }
+    float GetHeight()
+    {
+        return Top - Bottom;
+    }
+};
+
 class OrthographicCameraController
 {
   public:
@@ -33,12 +48,18 @@ class OrthographicCameraController
         return m_ZoomLevel;
     }
 
+    const OrthographicCameraBounds &GetBounds() const
+    {
+        return m_Bounds;
+    }
+
   private:
     bool OnMouseScrolled(MouseScrolledEvent &e);
     bool OnWindowResized(WindowResizeEvent &e);
 
     float m_AspectRatio = 1.f;
     float m_ZoomLevel = 1.f;
+    OrthographicCameraBounds m_Bounds;
 
     OrthographicCamera m_Camera;
 
