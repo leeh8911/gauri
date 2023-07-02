@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['unbind_452',['Unbind',['../classgauri_1_1VertexBuffer.html#a8322c75b04c13fdf623208052e0bee92',1,'gauri::VertexBuffer::Unbind()'],['../classgauri_1_1IndexBuffer.html#aa4b4144ba80c4c4b344b4388ce159954',1,'gauri::IndexBuffer::Unbind()'],['../classgauri_1_1Shader.html#a97d9c0bef00afbd18a5c672c5bdac67c',1,'gauri::Shader::Unbind()'],['../classgauri_1_1VertexArray.html#a0f5f317ff05998d08e0f471ffc246156',1,'gauri::VertexArray::Unbind()'],['../classgauri_1_1OpenGLVertexBuffer.html#a8b0885308d18c254cfe972a9c7f1eeae',1,'gauri::OpenGLVertexBuffer::Unbind()'],['../classgauri_1_1OpenGLIndexBuffer.html#a4ff2c25814daeba489447f205a4c8563',1,'gauri::OpenGLIndexBuffer::Unbind()'],['../classgauri_1_1OpenGLShader.html#a09b8c2fde63b323257043cf3f7163f97',1,'gauri::OpenGLShader::Unbind()'],['../classgauri_1_1OpenGLVertexArray.html#a9884ea2b6f1cbeb54c3735563b92d98f',1,'gauri::OpenGLVertexArray::Unbind()']]],
-  ['uploaduniformfloat_453',['UploadUniformFloat',['../classgauri_1_1OpenGLShader.html#a9631748f79175bf20702b203455757a9',1,'gauri::OpenGLShader']]],
-  ['uploaduniformfloat2_454',['UploadUniformFloat2',['../classgauri_1_1OpenGLShader.html#a684fc0f531736e0782b31f9073830bef',1,'gauri::OpenGLShader']]],
-  ['uploaduniformfloat3_455',['UploadUniformFloat3',['../classgauri_1_1OpenGLShader.html#aea603aa958b43f54dbeb50ba30d9796d',1,'gauri::OpenGLShader']]],
-  ['uploaduniformfloat4_456',['UploadUniformFloat4',['../classgauri_1_1OpenGLShader.html#a2e508e02a1afdb0f29393a2f0ded31e5',1,'gauri::OpenGLShader']]],
-  ['uploaduniformint_457',['UploadUniformInt',['../classgauri_1_1OpenGLShader.html#a02c452eee8d0d5c112d0eddccfd3dd6d',1,'gauri::OpenGLShader']]],
-  ['uploaduniformintarray_458',['UploadUniformIntArray',['../classgauri_1_1OpenGLShader.html#a87979b144ecce154e21a119493a1af2d',1,'gauri::OpenGLShader']]],
-  ['uploaduniformmat3_459',['UploadUniformMat3',['../classgauri_1_1OpenGLShader.html#ac4cddcf4a38bfc587b1d2dbffaff0b16',1,'gauri::OpenGLShader']]],
-  ['uploaduniformmat4_460',['UploadUniformMat4',['../classgauri_1_1OpenGLShader.html#adc4a722b23295780897b8bafb7c04944',1,'gauri::OpenGLShader']]]
+  ['texture_457',['Texture',['../classgauri_1_1Texture.html',1,'gauri']]],
+  ['texture_2eh_458',['texture.h',['../texture_8h.html',1,'']]],
+  ['texture2d_459',['Texture2D',['../classgauri_1_1Texture2D.html',1,'gauri']]],
+  ['threadid_460',['ThreadID',['../namespacegauri.html#a055c6b4f0b9252ba59383d7c97da39e5',1,'gauri::ProfileResult']]],
+  ['timestep_461',['Timestep',['../classgauri_1_1Timestep.html',1,'gauri::Timestep'],['../classgauri_1_1Timestep.html#a220895cd7b4024d9cefed931b722e744',1,'gauri::Timestep::Timestep()']]],
+  ['timestep_2eh_462',['timestep.h',['../timestep_8h.html',1,'']]],
+  ['title_463',['Title',['../structgauri_1_1WindowProperty.html#ae3a51778dd3110065ace9d073d9096e1',1,'gauri::WindowProperty::Title()'],['../classgauri_1_1WindowsWindow.html#a20e0f6f88d245e92e4b43f9e52336c87',1,'gauri::WindowsWindow::WindowData::Title()']]],
+  ['top_464',['Top',['../structgauri_1_1OrthographicCameraBounds.html#a0d5637b6458412b21b56c53aacd6295c',1,'gauri::OrthographicCameraBounds']]],
+  ['tostring_465',['ToString',['../classgauri_1_1Event.html#a03e0d7fbfe853799e0a6c44d72b369e3',1,'gauri::Event::ToString()'],['../classgauri_1_1WindowResizeEvent.html#aee5cd9414e65179058cc03926336f869',1,'gauri::WindowResizeEvent::ToString()'],['../classgauri_1_1MouseButtonReleasedEvent.html#afc7a76dd9e427608166dc389faeaede8',1,'gauri::MouseButtonReleasedEvent::ToString()'],['../classgauri_1_1MouseButtonPressedEvent.html#a20a16112855e4c4202ed26eef9ea5c4c',1,'gauri::MouseButtonPressedEvent::ToString()'],['../classgauri_1_1MouseScrolledEvent.html#a9f0021bee5b998bce45cfd5f358a6826',1,'gauri::MouseScrolledEvent::ToString()'],['../classgauri_1_1MouseMovedEvent.html#abe3396674bf20ed513d63aa28ae14d99',1,'gauri::MouseMovedEvent::ToString()'],['../classgauri_1_1KeyReleasedEvent.html#a0266ab589aebd761a4ca003fd51021cf',1,'gauri::KeyReleasedEvent::ToString()'],['../classgauri_1_1KeyTypedEvent.html#adfb8951c5b7a765afbdb0cb3eebdb733',1,'gauri::KeyTypedEvent::ToString()'],['../classgauri_1_1KeyPressedEvent.html#ad41068f0647ec5a94129354600392f91',1,'gauri::KeyPressedEvent::ToString()']]],
+  ['type_466',['Type',['../structgauri_1_1BufferElement.html#a6fbec295258ca85aab4aaa4d4b94cc76',1,'gauri::BufferElement']]]
 ];

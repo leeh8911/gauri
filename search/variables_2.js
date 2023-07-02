@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['height_778',['Height',['../structgauri_1_1WindowProperty.html#a58f54afa2fd36016e347c028b0251ffb',1,'gauri::WindowProperty::Height()'],['../classgauri_1_1WindowsWindow.html#aee171128c26621222b19a8826810ad35',1,'gauri::WindowsWindow::WindowData::Height()']]]
+  ['end_801',['End',['../namespacegauri.html#a17ad115115abae606890f899c6244a43',1,'gauri::ProfileResult']]],
+  ['eventcallback_802',['EventCallback',['../classgauri_1_1WindowsWindow.html#acc13c174fb9fd682600fbdc9fff8f63a',1,'gauri::WindowsWindow::WindowData']]]
 ];

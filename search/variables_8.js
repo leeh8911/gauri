@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['viewprojectionmatrix_847',['ViewProjectionMatrix',['../classgauri_1_1Renderer.html#a9c9228ac2438ab4d29c966ab4064dd8d',1,'gauri::Renderer::SceneData']]],
-  ['vsync_848',['VSync',['../classgauri_1_1WindowsWindow.html#a290a705c0ecd372803a19e7db96f2d38',1,'gauri::WindowsWindow::WindowData']]]
+  ['quadcount_864',['QuadCount',['../structgauri_1_1Renderer2D_1_1Statistics.html#a7f818bfdb1ba0b8d985ead7713b5bc37',1,'gauri::Renderer2D::Statistics']]]
 ];
