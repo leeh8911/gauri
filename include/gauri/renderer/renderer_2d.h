@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gauri/renderer/orthographic_camera.h"
+#include "gauri/renderer/subtexture_2d.h"
 #include "gauri/renderer/texture.h"
 
 namespace gauri
@@ -23,6 +24,10 @@ class Renderer2D
                          float tilingFactor = 1.0f, const glm::vec4 &tintColor = glm::vec4(1.0f));
     static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const Ref<Texture2D> &texture,
                          float tilingFactor = 1.0f, const glm::vec4 &tintColor = glm::vec4(1.0f));
+    static void DrawQuad(const glm::vec2 &position, const glm::vec2 &size, const Ref<SubTexture2D> &subtexture,
+                         float tilingFactor = 1.0f, const glm::vec4 &tintColor = glm::vec4(1.0f));
+    static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const Ref<SubTexture2D> &subtexture,
+                         float tilingFactor = 1.0f, const glm::vec4 &tintColor = glm::vec4(1.0f));
 
     // Rotation is in radians
     static void DrawQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation, const glm::vec4 &color);
@@ -33,7 +38,12 @@ class Renderer2D
     static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
                          const Ref<Texture2D> &texture, float tilingFactor = 1.0f,
                          const glm::vec4 &tintColor = glm::vec4(1.0f));
-
+    static void DrawQuad(const glm::vec2 &position, const glm::vec2 &size, float rotation,
+                         const Ref<SubTexture2D> &subtexture, float tilingFactor = 1.0f,
+                         const glm::vec4 &tintColor = glm::vec4(1.0f));
+    static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, float rotation,
+                         const Ref<SubTexture2D> &subtexture, float tilingFactor = 1.0f,
+                         const glm::vec4 &tintColor = glm::vec4(1.0f));
     struct Statistics
     {
         uint32_t DrawCalls = 0;
