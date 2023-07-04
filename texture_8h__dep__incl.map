@@ -1,7 +1,8 @@
 <map id="/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/texture.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/renderer/texture.h">
-<area shape="rect" id="node1" title=" " alt="" coords="307,5,774,32"/>
-<area shape="rect" id="node2" href="$renderer__2d_8h.html" title=" " alt="" coords="5,80,503,107"/>
-<area shape="rect" id="node3" href="$gauri_8h.html" title=" " alt="" coords="219,155,575,181"/>
-<area shape="rect" id="node5" href="$opengl__texture_8h.html" title=" " alt="" coords="577,80,1107,107"/>
-<area shape="rect" id="node4" href="$entry__point_8h.html" title=" " alt="" coords="163,229,630,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="199,5,666,32"/>
+<area shape="rect" id="node2" href="$renderer__2d_8h.html" title=" " alt="" coords="37,155,535,181"/>
+<area shape="rect" id="node3" href="$gauri_8h.html" title=" " alt="" coords="255,229,611,256"/>
+<area shape="rect" id="node5" href="$subtexture__2d_8h.html" title=" " alt="" coords="30,80,542,107"/>
+<area shape="rect" id="node6" href="$opengl__texture_8h.html" title=" " alt="" coords="616,80,1145,107"/>
+<area shape="rect" id="node4" href="$entry__point_8h.html" title=" " alt="" coords="199,304,666,331"/>
 </map>

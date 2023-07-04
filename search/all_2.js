@@ -6,6 +6,7 @@ var searchData=
   ['core_2eh_25',['core.h',['../core_8h.html',1,'']]],
   ['create_26',['Create',['../classgauri_1_1IndexBuffer.html#a6208d2519edb7da13efa12d4d4cab5bd',1,'gauri::IndexBuffer::Create()'],['../classgauri_1_1VertexArray.html#a652e5fbaf83adb1a76badee2366a264c',1,'gauri::VertexArray::Create()'],['../classgauri_1_1Texture2D.html#abc67464503f708b28ca91344ea3806fe',1,'gauri::Texture2D::Create(const std::string &amp;path)'],['../classgauri_1_1Texture2D.html#af2e488a5c35192de646265049bbba8df',1,'gauri::Texture2D::Create(uint32_t width, uint32_t height)'],['../classgauri_1_1Shader.html#a38fd0e68c8baefc5b029201896019b3a',1,'gauri::Shader::Create(const std::string &amp;name, const std::string &amp;vertexSrc, const std::string &amp;fragmentSrc)'],['../classgauri_1_1Shader.html#a676dcb69ed1d3e7551a40f7192fe1448',1,'gauri::Shader::Create(const std::string &amp;filepath)'],['../classgauri_1_1VertexBuffer.html#a11b0027b2d862e891132be36a10ebbd8',1,'gauri::VertexBuffer::Create(float *vertices, uint32_t size)'],['../classgauri_1_1VertexBuffer.html#a26caba666f367e18505c569dbc7bc5c7',1,'gauri::VertexBuffer::Create(uint32_t size)'],['../classgauri_1_1Window.html#a8494e62ef796afb82ab62b7e60049fe2',1,'gauri::Window::Create()']]],
   ['createapplication_27',['CreateApplication',['../namespacegauri.html#a472cc75ae0bea73819c4982bc658c053',1,'gauri']]],
-  ['createref_28',['CreateRef',['../namespacegauri.html#a94017f5265ba471882df62e333c13fc0',1,'gauri']]],
-  ['createscope_29',['CreateScope',['../namespacegauri.html#a07a17fc3c7a242db6d9814722f508a9e',1,'gauri']]]
+  ['createfromcoords_28',['CreateFromCoords',['../classgauri_1_1SubTexture2D.html#a58159067c66063c8088f99c7bbee7a86',1,'gauri::SubTexture2D']]],
+  ['createref_29',['CreateRef',['../namespacegauri.html#a94017f5265ba471882df62e333c13fc0',1,'gauri']]],
+  ['createscope_30',['CreateScope',['../namespacegauri.html#a07a17fc3c7a242db6d9814722f508a9e',1,'gauri']]]
 ];
