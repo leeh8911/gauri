@@ -80,6 +80,11 @@ void Application::PushOverlay(Layer *overlay)
     overlay->OnAttach();
 }
 
+void Application::Close()
+{
+    m_IsRunning = false;
+}
+
 bool Application::OnWindowClose(WindowCloseEvent & /*e*/)
 {
     m_IsRunning = false;

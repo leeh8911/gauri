@@ -35,6 +35,8 @@ class Application
         return *m_Window;
     }
 
+    void Close();
+
     static inline Application &Get()
     {
         return *s_Instance;
