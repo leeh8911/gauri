@@ -5,7 +5,7 @@
 #include <glad/glad.h>
 #include <stb_image.h>
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 
 namespace gauri
 {

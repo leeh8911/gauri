@@ -15,7 +15,7 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 #include "gauri/core/input.h"
 #include "gauri/core/logger.h"
 #include "gauri/core/timestep.h"

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 #include "gauri/core/layer.h"
 
 #include <vector>

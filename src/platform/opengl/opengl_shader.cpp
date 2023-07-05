@@ -5,7 +5,7 @@
 #include <glad/glad.h>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 #include "gauri/core/logger.h"
 #include "gauri/renderer/shader.h"
 
