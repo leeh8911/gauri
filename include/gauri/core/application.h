@@ -20,7 +20,7 @@ namespace gauri
 class Application
 {
   public:
-    Application();
+    Application(const std::string &name = "Gauri App");
     virtual ~Application();
 
     void Run();
@@ -48,7 +48,7 @@ class Application
 
     bool m_IsRunning = true;
     bool m_Minimized = false;
-    std::unique_ptr<Window> m_Window = nullptr;
+    Scope<Window> m_Window = nullptr;
     ImGuiLayer *m_ImGuiLayer = nullptr;
     LayerStack m_LayerStack{};
 

@@ -26,13 +26,13 @@ namespace gauri
 {
 Application *Application::s_Instance = nullptr;
 
-Application::Application()
+Application::Application(const std::string &name)
 {
     GR_PROFILE_FUNCTION();
     GR_CORE_ASSERT(!s_Instance, "Application already exists!")
     s_Instance = this;
 
-    m_Window = std::unique_ptr<Window>(Window::Create());
+    m_Window = Window::Create(WindowProperty(name));
     m_Window->SetEventCallback(GR_BIND_EVENT_FN(Application::OnEvent));
 
     Renderer::Init();

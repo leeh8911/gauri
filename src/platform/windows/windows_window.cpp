@@ -31,11 +31,6 @@ static void GLFWErrorCallback(int error, const char *description)
     GR_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
 }
 
-Window *Window::Create(const WindowProperty &props)
-{
-    return new WindowsWindow(props);
-}
-
 WindowsWindow::WindowsWindow(const WindowProperty &props)
 {
     GR_PROFILE_FUNCTION();

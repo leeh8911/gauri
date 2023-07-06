@@ -61,6 +61,7 @@
         defines
         {
         "GLFW_INCLUDE_NONE",
+        "GR_PLATFORM_WINDOWS",
         }
 
         links

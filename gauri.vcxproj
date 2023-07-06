@@ -79,7 +79,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_PLATFORM_WINDOWS;GR_DEBUG;GR_ENABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -102,7 +102,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_PLATFORM_WINDOWS;GR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -128,7 +128,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>grpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FMT_HEADER_ONLY;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;GR_PLATFORM_WINDOWS;GR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -587,9 +587,9 @@
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
     <ClInclude Include="include\gauri\renderer\orthographic_camera.h" />
     <ClInclude Include="include\gauri\renderer\orthographic_camera_controller.h" />
-    <ClInclude Include="include\gauri\renderer\renderer_2d.h" />
     <ClInclude Include="include\gauri\renderer\render_command.h" />
     <ClInclude Include="include\gauri\renderer\renderer.h" />
+    <ClInclude Include="include\gauri\renderer\renderer_2d.h" />
     <ClInclude Include="include\gauri\renderer\renderer_api.h" />
     <ClInclude Include="include\gauri\renderer\shader.h" />
     <ClInclude Include="include\gauri\renderer\subtexture_2d.h" />
@@ -608,19 +608,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\gauri\renderer\frame_buffer.cpp" />
-    <ClCompile Include="src\gauri\renderer\renderer_2d.cpp" />
     <ClCompile Include="src\gauri\core\application.cpp" />
     <ClCompile Include="src\gauri\core\layer.cpp" />
     <ClCompile Include="src\gauri\core\layer_stack.cpp" />
     <ClCompile Include="src\gauri\core\logger.cpp" />
+    <ClCompile Include="src\gauri\core\window.cpp" />
     <ClCompile Include="src\gauri\imgui\imgui_build.cpp" />
     <ClCompile Include="src\gauri\imgui\imgui_layer.cpp" />
     <ClCompile Include="src\gauri\renderer\buffer.cpp" />
+    <ClCompile Include="src\gauri\renderer\frame_buffer.cpp" />
     <ClCompile Include="src\gauri\renderer\orthographic_camera.cpp" />
     <ClCompile Include="src\gauri\renderer\orthographic_camera_controller.cpp" />
     <ClCompile Include="src\gauri\renderer\render_command.cpp" />
     <ClCompile Include="src\gauri\renderer\renderer.cpp" />
+    <ClCompile Include="src\gauri\renderer\renderer_2d.cpp" />
     <ClCompile Include="src\gauri\renderer\renderer_api.cpp" />
     <ClCompile Include="src\gauri\renderer\shader.cpp" />
     <ClCompile Include="src\gauri\renderer\subtexture_2d.cpp" />
