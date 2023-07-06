@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 
 namespace gauri
 {

@@ -12,7 +12,7 @@
 
 #include "gauri/renderer/buffer.h"
 
-#include "gauri/core/core.h"
+#include "gauri/core/base.h"
 #include "gauri/core/logger.h"
 #include "gauri/renderer/renderer.h"
 #include "platform/opengl/opengl_buffer.h"
