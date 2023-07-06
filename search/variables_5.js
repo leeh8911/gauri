@@ -56,7 +56,7 @@ var searchData=
   ['m_5fviewmatrix_901',['m_ViewMatrix',['../classgauri_1_1OrthographicCamera.html#ad23e0c66eaa9bb11b7c615f0678b997a',1,'gauri::OrthographicCamera']]],
   ['m_5fviewprojectionmatrix_902',['m_ViewProjectionMatrix',['../classgauri_1_1OrthographicCamera.html#ae2c417bb267237e4cf029e2286799542',1,'gauri::OrthographicCamera']]],
   ['m_5fwidth_903',['m_Width',['../classgauri_1_1WindowResizeEvent.html#a988fc40036d8e45a409a5af59c14eb64',1,'gauri::WindowResizeEvent::m_Width()'],['../classgauri_1_1OpenGLTexture2D.html#aa2330454b6f7342cda36afb1523d0f05',1,'gauri::OpenGLTexture2D::m_Width()']]],
-  ['m_5fwindow_904',['m_Window',['../classgauri_1_1Application.html#ab95f55db77c435933bb3c967a898e5df',1,'gauri::Application::m_Window()'],['../classgauri_1_1WindowsWindow.html#a3b1aec7176d3e4668b11726495a02c76',1,'gauri::WindowsWindow::m_Window()']]],
+  ['m_5fwindow_904',['m_Window',['../classgauri_1_1Application.html#a07e785bffc48fa4185a58277b081ec77',1,'gauri::Application::m_Window()'],['../classgauri_1_1WindowsWindow.html#a3b1aec7176d3e4668b11726495a02c76',1,'gauri::WindowsWindow::m_Window()']]],
   ['m_5fwindowhandle_905',['m_WindowHandle',['../classgauri_1_1OpenGLContext.html#aeff8be3b1356b2d98647ff100808e2c5',1,'gauri::OpenGLContext']]],
   ['m_5fxoffset_906',['m_XOffset',['../classgauri_1_1MouseScrolledEvent.html#a5568b1a9f5d0606cfa53cbe0b212657e',1,'gauri::MouseScrolledEvent']]],
   ['m_5fyoffset_907',['m_YOffset',['../classgauri_1_1MouseScrolledEvent.html#a92f1cbdb70dc5c731d0895959fa54edf',1,'gauri::MouseScrolledEvent']]],

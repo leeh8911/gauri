@@ -1,17 +1,16 @@
 <map id="gauri::Application" name="gauri::Application">
-<area shape="rect" id="node1" title=" " alt="" coords="492,975,832,1199"/>
-<area shape="rect" id="node2" href="$classgauri_1_1LayerStack.html" title=" " alt="" coords="657,717,947,897"/>
-<area shape="rect" id="node3" title=" " alt="" coords="591,515,666,592"/>
-<area shape="rect" id="node4" title=" " alt="" coords="693,515,903,592"/>
-<area shape="rect" id="node5" href="$classgauri_1_1Layer.html" title=" " alt="" coords="211,272,508,452"/>
-<area shape="rect" id="node15" href="$classgauri_1_1ImGuiLayer.html" title=" " alt="" coords="5,732,207,883"/>
-<area shape="rect" id="node6" title=" " alt="" coords="316,132,403,209"/>
-<area shape="rect" id="node7" title=" " alt="" coords="265,5,453,83"/>
-<area shape="rect" id="node8" title=" " alt="" coords="745,323,875,401"/>
-<area shape="rect" id="node9" title=" " alt="" coords="881,132,920,209"/>
-<area shape="rect" id="node13" title=" " alt="" coords="915,323,1073,401"/>
-<area shape="rect" id="node10" href="$classgauri_1_1Timestep.html" title=" " alt="" coords="411,747,633,868"/>
-<area shape="rect" id="node11" title=" " alt="" coords="230,515,281,592"/>
-<area shape="rect" id="node12" title=" " alt="" coords="878,616,1121,693"/>
-<area shape="rect" id="node14" title=" " alt="" coords="1101,769,1151,846"/>
+<area shape="rect" id="node1" title=" " alt="" coords="530,912,893,1136"/>
+<area shape="rect" id="node2" href="$classgauri_1_1LayerStack.html" title=" " alt="" coords="5,655,295,835"/>
+<area shape="rect" id="node3" title=" " alt="" coords="113,515,187,592"/>
+<area shape="rect" id="node4" title=" " alt="" coords="340,515,549,592"/>
+<area shape="rect" id="node5" href="$classgauri_1_1Layer.html" title=" " alt="" coords="352,272,649,452"/>
+<area shape="rect" id="node14" href="$classgauri_1_1ImGuiLayer.html" title=" " alt="" coords="1027,669,1228,820"/>
+<area shape="rect" id="node6" title=" " alt="" coords="457,132,544,209"/>
+<area shape="rect" id="node7" title=" " alt="" coords="407,5,595,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="695,323,824,401"/>
+<area shape="rect" id="node9" title=" " alt="" coords="740,132,779,209"/>
+<area shape="rect" id="node10" href="$classgauri_1_1Timestep.html" title=" " alt="" coords="319,684,541,805"/>
+<area shape="rect" id="node11" title=" " alt="" coords="574,515,625,592"/>
+<area shape="rect" id="node12" title=" " alt="" coords="743,706,927,783"/>
+<area shape="rect" id="node13" title=" " alt="" coords="951,706,1002,783"/>
 </map>
