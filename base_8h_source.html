@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>gauri: /home/runner/work/gauri/gauri/gauri/include/gauri/core/core.h Source File</title>
+<title>gauri: /home/runner/work/gauri/gauri/gauri/include/gauri/core/base.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,10 +73,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">core.h</div>  </div>
+<div class="title">base.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="core_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="base_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
@@ -102,13 +102,13 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }                                                                                                              \</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="core_8h.html#a53e36b1b9baba7ef143d61faf67d1751">   35</a></span>&#160;<span class="preprocessor">#define GR_ASSERT(x, ...)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="core_8h.html#aada7d47fe675d944b0516553e43d2c58">   36</a></span>&#160;<span class="preprocessor">#define GR_CORE_ASSERT(x, ...)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="base_8h.html#a53e36b1b9baba7ef143d61faf67d1751">   35</a></span>&#160;<span class="preprocessor">#define GR_ASSERT(x, ...)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">   36</a></span>&#160;<span class="preprocessor">#define GR_CORE_ASSERT(x, ...)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="core_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">   39</a></span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>32_t N&gt; constexpr uint32_t <a class="code" href="core_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a> = (1 &lt;&lt; N);</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="base_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">   39</a></span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>32_t N&gt; constexpr uint32_t <a class="code" href="base_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a> = (1 &lt;&lt; N);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="core_8h.html#a1b294077fd8afbc1740916700e5390d4">   41</a></span>&#160;<span class="preprocessor">#define GR_BIND_EVENT_FN(fn) std::bind(&amp;fn, this, std::placeholders::_1)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="base_8h.html#a1b294077fd8afbc1740916700e5390d4">   41</a></span>&#160;<span class="preprocessor">#define GR_BIND_EVENT_FN(fn) std::bind(&amp;fn, this, std::placeholders::_1)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegauri.html">gauri</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
@@ -126,13 +126,13 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace gauri</span></div>
-<div class="ttc" id="acore_8h_html_a727ecaa81defe4bc91dde4a6a946fd56"><div class="ttname"><a href="core_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a></div><div class="ttdeci">constexpr uint32_t bit</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00039">core.h:39</a></div></div>
+<div class="ttc" id="abase_8h_html_a727ecaa81defe4bc91dde4a6a946fd56"><div class="ttname"><a href="base_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a></div><div class="ttdeci">constexpr uint32_t bit</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00039">base.h:39</a></div></div>
 <div class="ttc" id="alogger_8h_html"><div class="ttname"><a href="logger_8h.html">logger.h</a></div></div>
 <div class="ttc" id="anamespacegauri_html"><div class="ttname"><a href="namespacegauri.html">gauri</a></div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00017">application.h:18</a></div></div>
-<div class="ttc" id="anamespacegauri_html_a07a17fc3c7a242db6d9814722f508a9e"><div class="ttname"><a href="namespacegauri.html#a07a17fc3c7a242db6d9814722f508a9e">gauri::CreateScope</a></div><div class="ttdeci">constexpr Scope&lt; T &gt; CreateScope(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00047">core.h:47</a></div></div>
-<div class="ttc" id="anamespacegauri_html_a3c2b959869f9286d46307eb6574a649a"><div class="ttname"><a href="namespacegauri.html#a3c2b959869f9286d46307eb6574a649a">gauri::Scope</a></div><div class="ttdeci">std::unique_ptr&lt; T &gt; Scope</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00045">core.h:45</a></div></div>
-<div class="ttc" id="anamespacegauri_html_a6c22cabfde57836f74d377f7ba7519a7"><div class="ttname"><a href="namespacegauri.html#a6c22cabfde57836f74d377f7ba7519a7">gauri::Ref</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; Ref</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00052">core.h:52</a></div></div>
-<div class="ttc" id="anamespacegauri_html_a94017f5265ba471882df62e333c13fc0"><div class="ttname"><a href="namespacegauri.html#a94017f5265ba471882df62e333c13fc0">gauri::CreateRef</a></div><div class="ttdeci">constexpr Ref&lt; T &gt; CreateRef(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00054">core.h:54</a></div></div>
+<div class="ttc" id="anamespacegauri_html_a07a17fc3c7a242db6d9814722f508a9e"><div class="ttname"><a href="namespacegauri.html#a07a17fc3c7a242db6d9814722f508a9e">gauri::CreateScope</a></div><div class="ttdeci">constexpr Scope&lt; T &gt; CreateScope(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00047">base.h:47</a></div></div>
+<div class="ttc" id="anamespacegauri_html_a3c2b959869f9286d46307eb6574a649a"><div class="ttname"><a href="namespacegauri.html#a3c2b959869f9286d46307eb6574a649a">gauri::Scope</a></div><div class="ttdeci">std::unique_ptr&lt; T &gt; Scope</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00045">base.h:45</a></div></div>
+<div class="ttc" id="anamespacegauri_html_a6c22cabfde57836f74d377f7ba7519a7"><div class="ttname"><a href="namespacegauri.html#a6c22cabfde57836f74d377f7ba7519a7">gauri::Ref</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; Ref</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00052">base.h:52</a></div></div>
+<div class="ttc" id="anamespacegauri_html_a94017f5265ba471882df62e333c13fc0"><div class="ttname"><a href="namespacegauri.html#a94017f5265ba471882df62e333c13fc0">gauri::CreateRef</a></div><div class="ttdeci">constexpr Ref&lt; T &gt; CreateRef(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00054">base.h:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

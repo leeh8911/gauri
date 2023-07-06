@@ -1,9 +1,9 @@
 <map id="gauri::OpenGLTexture2D" name="gauri::OpenGLTexture2D">
-<area shape="rect" id="node1" title=" " alt="" coords="387,389,775,569"/>
-<area shape="rect" id="node2" href="$classgauri_1_1Texture2D.html" title=" " alt="" coords="5,205,456,297"/>
-<area shape="rect" id="node3" href="$classgauri_1_1Texture.html" title=" " alt="" coords="31,5,430,156"/>
-<area shape="rect" id="node4" title=" " alt="" coords="480,213,555,290"/>
-<area shape="rect" id="node5" title=" " alt="" coords="627,213,666,290"/>
-<area shape="rect" id="node6" title=" " alt="" coords="755,213,842,290"/>
-<area shape="rect" id="node7" title=" " alt="" coords="705,42,893,119"/>
+<area shape="rect" id="node1" title=" " alt="" coords="387,404,775,599"/>
+<area shape="rect" id="node2" href="$classgauri_1_1Texture2D.html" title=" " alt="" coords="5,220,456,312"/>
+<area shape="rect" id="node3" href="$classgauri_1_1Texture.html" title=" " alt="" coords="31,5,430,171"/>
+<area shape="rect" id="node4" title=" " alt="" coords="480,227,555,305"/>
+<area shape="rect" id="node5" title=" " alt="" coords="627,227,666,305"/>
+<area shape="rect" id="node6" title=" " alt="" coords="755,227,842,305"/>
+<area shape="rect" id="node7" title=" " alt="" coords="705,49,893,127"/>
 </map>

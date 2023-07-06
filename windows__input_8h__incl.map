@@ -1,7 +1,7 @@
 <map id="/home/runner/work/gauri/gauri/gauri/include/platform/windows/windows_input.h" name="/home/runner/work/gauri/gauri/gauri/include/platform/windows/windows_input.h">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,547,32"/>
 <area shape="rect" id="node2" href="$input_8h.html" title=" " alt="" coords="208,80,344,107"/>
-<area shape="rect" id="node3" href="$core_8h.html" title=" " alt="" coords="211,155,341,181"/>
+<area shape="rect" id="node3" href="$base_8h.html" title=" " alt="" coords="209,155,343,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="172,229,239,256"/>
 <area shape="rect" id="node5" title=" " alt="" coords="237,304,315,331"/>
 <area shape="rect" id="node6" href="$logger_8h.html" title=" " alt="" coords="314,229,457,256"/>

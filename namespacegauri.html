@@ -146,6 +146,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1IndexBuffer.html">IndexBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structgauri_1_1FrameBufferSpecification"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a></td></tr>
+<tr class="separator:structgauri_1_1FrameBufferSpecification"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html">FrameBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1GraphicsContext.html">GraphicsContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OrthographicCamera.html">OrthographicCamera</a></td></tr>
@@ -179,6 +183,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLIndexBuffer.html">OpenGLIndexBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLContext.html">OpenGLContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html">OpenGLFrameBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLRendererAPI.html">OpenGLRendererAPI</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +360,55 @@ Name</td>
 
 </div>
 </div>
+<a name="structgauri_1_1FrameBufferSpecification" id="structgauri_1_1FrameBufferSpecification"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structgauri_1_1FrameBufferSpecification">&#9670;&nbsp;</a></span>gauri::FrameBufferSpecification</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct gauri::FrameBufferSpecification</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00009">9</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
+</div><div class="dynheader">
+Collaboration diagram for gauri::FrameBufferSpecification:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structgauri_1_1FrameBufferSpecification__coll__graph.svg" width="284" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a2e7b9eb750c49e923bb42c0bf38f93c9"></a>uint32_t</td>
+<td class="fieldname">
+Width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7388d8c39ca25355b7f2640c9a4dd4e7"></a>uint32_t</td>
+<td class="fieldname">
+Height</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a900efc1a3789bb198102879a2a0d7972"></a>uint32_t</td>
+<td class="fieldname">
+Samples</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1dfff087b5ead16c8799ad0e69afb8cc"></a>bool</td>
+<td class="fieldname">
+SwapChainTarget</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a3c2b959869f9286d46307eb6574a649a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c2b959869f9286d46307eb6574a649a">&#9670;&nbsp;</a></span>Scope</h2>
@@ -369,7 +424,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00045">45</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00045">45</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +442,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00052">52</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00052">52</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +674,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00047">47</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00047">47</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
@@ -652,7 +707,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00054">54</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00054">54</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
@@ -757,10 +812,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Bool:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="core_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Unknown ShaderDataType!&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Unknown ShaderDataType!&quot;</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="ttc" id="acore_8h_html_aada7d47fe675d944b0516553e43d2c58"><div class="ttname"><a href="core_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a></div><div class="ttdeci">#define GR_CORE_ASSERT(x,...)</div><div class="ttdef"><b>Definition:</b> <a href="core_8h_source.html#l00036">core.h:36</a></div></div>
+<div class="ttc" id="abase_8h_html_aada7d47fe675d944b0516553e43d2c58"><div class="ttname"><a href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a></div><div class="ttdeci">#define GR_CORE_ASSERT(x,...)</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00036">base.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

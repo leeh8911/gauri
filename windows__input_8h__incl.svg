@@ -82,9 +82,9 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="core_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="154,-112.5 154,-131.5 252,-131.5 252,-112.5 154,-112.5"/>
-<text text-anchor="middle" x="203" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri/core/core.h</text>
+<g id="a_node3"><a xlink:href="base_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="152.5,-112.5 152.5,-131.5 253.5,-131.5 253.5,-112.5 152.5,-112.5"/>
+<text text-anchor="middle" x="203" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri/core/base.h</text>
 </a>
 </g>
 </g>

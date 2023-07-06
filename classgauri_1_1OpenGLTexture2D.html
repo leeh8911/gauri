@@ -108,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac009cdbad10a777161d9444a9996f7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a77434b2a84e1d302b36a3a2a4213f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLTexture2D.html#ac2a77434b2a84e1d302b36a3a2a4213f">GetHeight</a> () const override</td></tr>
 <tr class="separator:ac2a77434b2a84e1d302b36a3a2a4213f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40eb074c5e1f11bc1036cf3edb9b4511"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLTexture2D.html#a40eb074c5e1f11bc1036cf3edb9b4511">GetRendererID</a> () const override</td></tr>
+<tr class="separator:a40eb074c5e1f11bc1036cf3edb9b4511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bbeedbdb75c3edf8423a8432525d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLTexture2D.html#ab1bbeedbdb75c3edf8423a8432525d63">SetData</a> (void *data, uint32_t size) override</td></tr>
 <tr class="separator:ab1bbeedbdb75c3edf8423a8432525d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909b0103fb895d09640a1816f5acf475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLTexture2D.html#a909b0103fb895d09640a1816f5acf475">Bind</a> (uint32_t slot=0) const override</td></tr>
@@ -242,7 +244,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLTexture2D.html#aa2330454b6f7342cda36afb1523d0f05">m_Width</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_aa2330454b6f7342cda36afb1523d0f05"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#aa2330454b6f7342cda36afb1523d0f05">gauri::OpenGLTexture2D::m_Width</a></div><div class="ttdeci">uint32_t m_Width</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00037">opengl_texture.h:37</a></div></div>
+<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_aa2330454b6f7342cda36afb1523d0f05"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#aa2330454b6f7342cda36afb1523d0f05">gauri::OpenGLTexture2D::m_Width</a></div><div class="ttdeci">uint32_t m_Width</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00040">opengl_texture.h:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,7 +277,40 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLTexture2D.html#a8afaf52ad2de72d32b20d41aa5b96b04">m_Height</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_a8afaf52ad2de72d32b20d41aa5b96b04"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#a8afaf52ad2de72d32b20d41aa5b96b04">gauri::OpenGLTexture2D::m_Height</a></div><div class="ttdeci">uint32_t m_Height</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00038">opengl_texture.h:38</a></div></div>
+<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_a8afaf52ad2de72d32b20d41aa5b96b04"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#a8afaf52ad2de72d32b20d41aa5b96b04">gauri::OpenGLTexture2D::m_Height</a></div><div class="ttdeci">uint32_t m_Height</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00041">opengl_texture.h:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a40eb074c5e1f11bc1036cf3edb9b4511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40eb074c5e1f11bc1036cf3edb9b4511">&#9670;&nbsp;</a></span>GetRendererID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gauri::OpenGLTexture2D::GetRendererID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classgauri_1_1Texture.html#a823935cc1780a8d937cc60c34343cae5">gauri::Texture</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00024">24</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLTexture2D.html#a599adf570528895cc00f08f0b5ca0d9c">m_RendererID</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_a599adf570528895cc00f08f0b5ca0d9c"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#a599adf570528895cc00f08f0b5ca0d9c">gauri::OpenGLTexture2D::m_RendererID</a></div><div class="ttdeci">uint32_t m_RendererID</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00039">opengl_texture.h:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -371,12 +406,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgauri_1_1Texture.html#a400afe0ed4e5e89ce8ede94276e7d789">gauri::Texture</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00029">29</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLTexture2D.html#a599adf570528895cc00f08f0b5ca0d9c">m_RendererID</a> == ((<a class="code" href="classgauri_1_1OpenGLTexture2D.html#a28b63b12870f6f5c5931257f2cf5e08b">OpenGLTexture2D</a> &amp;)other).m_RendererID;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00032">32</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLTexture2D.html#a599adf570528895cc00f08f0b5ca0d9c">m_RendererID</a> == ((<a class="code" href="classgauri_1_1OpenGLTexture2D.html#a28b63b12870f6f5c5931257f2cf5e08b">OpenGLTexture2D</a> &amp;)other).m_RendererID;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_a28b63b12870f6f5c5931257f2cf5e08b"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#a28b63b12870f6f5c5931257f2cf5e08b">gauri::OpenGLTexture2D::OpenGLTexture2D</a></div><div class="ttdeci">OpenGLTexture2D(uint32_t width, uint32_t height)</div></div>
-<div class="ttc" id="aclassgauri_1_1OpenGLTexture2D_html_a599adf570528895cc00f08f0b5ca0d9c"><div class="ttname"><a href="classgauri_1_1OpenGLTexture2D.html#a599adf570528895cc00f08f0b5ca0d9c">gauri::OpenGLTexture2D::m_RendererID</a></div><div class="ttdeci">uint32_t m_RendererID</div><div class="ttdef"><b>Definition:</b> <a href="opengl__texture_8h_source.html#l00036">opengl_texture.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,7 +497,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00035">35</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00038">38</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +521,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00036">36</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00039">39</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +545,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00037">37</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00040">40</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +569,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00038">38</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00041">41</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +593,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00039">39</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00042">42</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +617,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00039">39</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opengl__texture_8h_source.html#l00042">42</a> of file <a class="el" href="opengl__texture_8h_source.html">opengl_texture.h</a>.</p>
 
 </div>
 </div>

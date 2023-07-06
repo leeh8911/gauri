@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>gauri: /home/runner/work/gauri/gauri/gauri/include/gauri/core/core.h File Reference</title>
+<title>gauri: /home/runner/work/gauri/gauri/gauri/include/gauri/core/base.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,26 +79,26 @@ $(function() {
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">core.h File Reference</div>  </div>
+<div class="title">base.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="logger_8h_source.html">gauri/core/logger.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for core.h:</div>
+Include dependency graph for base.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core_8h__incl.svg" width="655" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__incl.svg" width="656" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="core_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="base_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
-<p><a href="core_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="base_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -107,11 +107,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a53e36b1b9baba7ef143d61faf67d1751"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a53e36b1b9baba7ef143d61faf67d1751">GR_ASSERT</a>(x, ...)</td></tr>
+<tr class="memitem:a53e36b1b9baba7ef143d61faf67d1751"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a53e36b1b9baba7ef143d61faf67d1751">GR_ASSERT</a>(x, ...)</td></tr>
 <tr class="separator:a53e36b1b9baba7ef143d61faf67d1751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada7d47fe675d944b0516553e43d2c58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a>(x, ...)</td></tr>
+<tr class="memitem:aada7d47fe675d944b0516553e43d2c58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a>(x, ...)</td></tr>
 <tr class="separator:aada7d47fe675d944b0516553e43d2c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b294077fd8afbc1740916700e5390d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a1b294077fd8afbc1740916700e5390d4">GR_BIND_EVENT_FN</a>(fn)&#160;&#160;&#160;std::bind(&amp;fn, this, std::placeholders::_1)</td></tr>
+<tr class="memitem:a1b294077fd8afbc1740916700e5390d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a1b294077fd8afbc1740916700e5390d4">GR_BIND_EVENT_FN</a>(fn)&#160;&#160;&#160;std::bind(&amp;fn, this, std::placeholders::_1)</td></tr>
 <tr class="separator:a1b294077fd8afbc1740916700e5390d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -135,17 +135,10 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a727ecaa81defe4bc91dde4a6a946fd56"><td class="memTemplParams" colspan="2">template&lt;uint32_t N&gt; </td></tr>
-<tr class="memitem:a727ecaa81defe4bc91dde4a6a946fd56"><td class="memTemplItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a> = (1 &lt;&lt; N)</td></tr>
+<tr class="memitem:a727ecaa81defe4bc91dde4a6a946fd56"><td class="memTemplItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="base_8h.html#a727ecaa81defe4bc91dde4a6a946fd56">bit</a> = (1 &lt;&lt; N)</td></tr>
 <tr class="separator:a727ecaa81defe4bc91dde4a6a946fd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>leeh8 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2023-05-15</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="core_8h_source.html">core.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a53e36b1b9baba7ef143d61faf67d1751"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53e36b1b9baba7ef143d61faf67d1751">&#9670;&nbsp;</a></span>GR_ASSERT</h2>
 
@@ -172,7 +165,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00035">35</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00035">35</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00036">36</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00036">36</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +215,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00041">41</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00041">41</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +242,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_8h_source.html#l00039">39</a> of file <a class="el" href="core_8h_source.html">core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_8h_source.html#l00039">39</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 </div>
 </div>
