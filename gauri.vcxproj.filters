@@ -1437,9 +1437,6 @@
     <ClInclude Include="include\platform\opengl\opengl_vertex_array.h">
       <Filter>include\platform\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\windows\windows_input.h">
-      <Filter>include\platform\windows</Filter>
-    </ClInclude>
     <ClInclude Include="include\platform\windows\windows_window.h">
       <Filter>include\platform\windows</Filter>
     </ClInclude>
@@ -1532,11 +1529,9 @@
     <ClCompile Include="src\platform\opengl\opengl_vertex_array.cpp">
       <Filter>src\platform\opengl</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\windows_input.cpp">
-      <Filter>src\platform\windows</Filter>
-    </ClCompile>
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\windows\windows_input.cpp" />
   </ItemGroup>
 </Project>
