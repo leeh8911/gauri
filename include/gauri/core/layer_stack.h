@@ -18,14 +18,22 @@ class LayerStack
     void PopLayer(Layer *layer);
     void PopOverlay(Layer *overlay);
 
-    std::vector<Layer *>::iterator begin() // NOLINT
+    inline std::vector<Layer *>::iterator begin() // NOLINT
     {
         return m_Layers.begin();
     }
-
-    std::vector<Layer *>::iterator end()
+    inline std::vector<Layer *>::iterator end()
     {
         return m_Layers.end();
+    }
+    inline std::vector<Layer *>::reverse_iterator rbegin() // NOLINT
+    {
+        return m_Layers.rbegin();
+    }
+
+    inline std::vector<Layer *>::reverse_iterator rend()
+    {
+        return m_Layers.rend();
     }
 
   private:
