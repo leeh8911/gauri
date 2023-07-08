@@ -602,7 +602,6 @@
     <ClInclude Include="include\platform\opengl\opengl_shader.h" />
     <ClInclude Include="include\platform\opengl\opengl_texture.h" />
     <ClInclude Include="include\platform\opengl\opengl_vertex_array.h" />
-    <ClInclude Include="include\platform\windows\windows_input.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>

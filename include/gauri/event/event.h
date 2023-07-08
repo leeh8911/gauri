@@ -66,6 +66,7 @@ class Event
     friend class EventDispatcher;
 
   public:
+    virtual ~Event() = default;
     virtual EventType GetEventType() const = 0;
     virtual const char *GetName() const = 0;
     virtual int32_t GetCategoryFlags() const = 0;
@@ -79,13 +80,9 @@ class Event
         return GetCategoryFlags() & category;
     }
 
-    inline bool IsHandled() const
-    {
-        return m_Handled;
-    }
+    bool Handled = false;
 
   protected:
-    bool m_Handled = false;
 };
 
 class EventDispatcher
@@ -101,7 +98,7 @@ class EventDispatcher
     {
         if (m_Event.GetEventType() == T::GetStaticType())
         {
-            m_Event.m_Handled = func(*(T *)&m_Event);
+            m_Event.Handled = func(*(T *)&m_Event);
             return true;
         }
         return false;

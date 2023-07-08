@@ -37,6 +37,11 @@ class Application
 
     void Close();
 
+    ImGuiLayer *GetImGuiLayer()
+    {
+        return m_ImGuiLayer;
+    }
+
     static inline Application &Get()
     {
         return *s_Instance;
