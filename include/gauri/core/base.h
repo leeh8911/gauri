@@ -14,6 +14,7 @@
 
 #include "gauri/core/logger.h"
 
+// TODO: Make this macro able to take in no arguments except condition
 #ifdef GR_ENABLE_ASSERTS
 #define GR_ASSERT(x, ...)                                                                                              \
     {                                                                                                                  \
