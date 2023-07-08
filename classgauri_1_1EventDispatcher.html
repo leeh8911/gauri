@@ -111,7 +111,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00091">91</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00088">88</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="afb067d7312bf8005bd3f8b8d82e6a82b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb067d7312bf8005bd3f8b8d82e6a82b">&#9670;&nbsp;</a></span>EventFn</h2>
@@ -135,7 +135,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00093">93</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00090">90</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
 
 </div>
 </div>
@@ -164,11 +164,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00096">96</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                  : <a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>(event)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1EventDispatcher_html_a73d1ed145ce6492529b4747b39553fcf"><div class="ttname"><a href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">gauri::EventDispatcher::m_Event</a></div><div class="ttdeci">Event &amp; m_Event</div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00111">event.h:111</a></div></div>
+<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00093">93</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                  : <a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>(event)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1EventDispatcher_html_a73d1ed145ce6492529b4747b39553fcf"><div class="ttname"><a href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">gauri::EventDispatcher::m_Event</a></div><div class="ttdeci">Event &amp; m_Event</div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00108">event.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,17 +199,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00100">100</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>.<a class="code" href="classgauri_1_1Event.html#a052e41daa7da0fb6fa95a69c0bb35f85">GetEventType</a>() == T::GetStaticType())</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>.<a class="code" href="classgauri_1_1Event.html#a8b374e89d5a9958fcf8da384ac78fb82">m_Handled</a> = func(*(T *)&amp;<a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00097">97</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>.<a class="code" href="classgauri_1_1Event.html#a052e41daa7da0fb6fa95a69c0bb35f85">GetEventType</a>() == T::GetStaticType())</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>.<a class="code" href="classgauri_1_1Event.html#aed903b46e13712d22fba803d983951dd">Handled</a> = func(*(T *)&amp;<a class="code" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">m_Event</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1Event_html_a052e41daa7da0fb6fa95a69c0bb35f85"><div class="ttname"><a href="classgauri_1_1Event.html#a052e41daa7da0fb6fa95a69c0bb35f85">gauri::Event::GetEventType</a></div><div class="ttdeci">virtual EventType GetEventType() const =0</div></div>
-<div class="ttc" id="aclassgauri_1_1Event_html_a8b374e89d5a9958fcf8da384ac78fb82"><div class="ttname"><a href="classgauri_1_1Event.html#a8b374e89d5a9958fcf8da384ac78fb82">gauri::Event::m_Handled</a></div><div class="ttdeci">bool m_Handled</div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00088">event.h:88</a></div></div>
+<div class="ttc" id="aclassgauri_1_1Event_html_aed903b46e13712d22fba803d983951dd"><div class="ttname"><a href="classgauri_1_1Event.html#aed903b46e13712d22fba803d983951dd">gauri::Event::Handled</a></div><div class="ttdeci">bool Handled</div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00083">event.h:83</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -240,7 +240,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00111">111</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event_8h_source.html#l00108">108</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
 
 </div>
 </div>

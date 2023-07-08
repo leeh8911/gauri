@@ -62,14 +62,14 @@ var sectionId = 'dynsection-0';
 <polygon fill="#bfbfbf" stroke="black" points="682.5,-276.5 682.5,-388.5 923.5,-388.5 923.5,-276.5 682.5,-276.5"/>
 <text text-anchor="middle" x="803" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::Event</text>
 <polyline fill="none" stroke="black" points="682.5,-369.5 923.5,-369.5 "/>
-<text text-anchor="start" x="690.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bool m_Handled</text>
+<text text-anchor="start" x="690.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Handled</text>
 <polyline fill="none" stroke="black" points="682.5,-350.5 923.5,-350.5 "/>
-<text text-anchor="start" x="690.5" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
-<text text-anchor="start" x="690.5" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
-<text text-anchor="start" x="690.5" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
-<text text-anchor="start" x="690.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
-<text text-anchor="start" x="690.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
-<text text-anchor="start" x="690.5" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsHandled() const</text>
+<text text-anchor="start" x="690.5" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~Event()=default</text>
+<text text-anchor="start" x="690.5" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
+<text text-anchor="start" x="690.5" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
+<text text-anchor="start" x="690.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
+<text text-anchor="start" x="690.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
+<text text-anchor="start" x="690.5" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
 </a>
 </g>
 </g>

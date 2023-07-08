@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa65789fc90d8317da4a5090b52c04126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5acad00c3450613a3e20d8233ab0d80b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#a5acad00c3450613a3e20d8233ab0d80b">Close</a> ()</td></tr>
 <tr class="separator:a5acad00c3450613a3e20d8233ab0d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971079d0e9376c7223424c405f5668e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1ImGuiLayer.html">ImGuiLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Application.html#a971079d0e9376c7223424c405f5668e6">GetImGuiLayer</a> ()</td></tr>
+<tr class="separator:a971079d0e9376c7223424c405f5668e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -291,7 +293,7 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classgauri_1_1Application.html#a07e785bffc48fa4185a58277b081ec77">m_Window</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1Application_html_a07e785bffc48fa4185a58277b081ec77"><div class="ttname"><a href="classgauri_1_1Application.html#a07e785bffc48fa4185a58277b081ec77">gauri::Application::m_Window</a></div><div class="ttdeci">Scope&lt; Window &gt; m_Window</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00051">application.h:51</a></div></div>
+<div class="ttc" id="aclassgauri_1_1Application_html_a07e785bffc48fa4185a58277b081ec77"><div class="ttname"><a href="classgauri_1_1Application.html#a07e785bffc48fa4185a58277b081ec77">gauri::Application::m_Window</a></div><div class="ttdeci">Scope&lt; Window &gt; m_Window</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00056">application.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -310,6 +312,37 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a971079d0e9376c7223424c405f5668e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971079d0e9376c7223424c405f5668e6">&#9670;&nbsp;</a></span>GetImGuiLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgauri_1_1ImGuiLayer.html">ImGuiLayer</a>* gauri::Application::GetImGuiLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00040">40</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1Application.html#aa296c36fa4944372e6dbac0871d07f49">m_ImGuiLayer</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1Application_html_aa296c36fa4944372e6dbac0871d07f49"><div class="ttname"><a href="classgauri_1_1Application.html#aa296c36fa4944372e6dbac0871d07f49">gauri::Application::m_ImGuiLayer</a></div><div class="ttdeci">ImGuiLayer * m_ImGuiLayer</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00057">application.h:57</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5a5969c9335e45ea313a25fa128988ea"></a>
@@ -335,11 +368,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00040">40</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">s_Instance</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1Application_html_a21f776b09d288d3ce43b191902dae8f2"><div class="ttname"><a href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">gauri::Application::s_Instance</a></div><div class="ttdeci">static Application * s_Instance</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00058">application.h:58</a></div></div>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00045">45</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">s_Instance</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1Application_html_a21f776b09d288d3ce43b191902dae8f2"><div class="ttname"><a href="classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2">gauri::Application::s_Instance</a></div><div class="ttdeci">static Application * s_Instance</div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00063">application.h:63</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,7 +449,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00049">49</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00054">54</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +473,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00050">50</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00055">55</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +497,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00051">51</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00056">56</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +521,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00052">52</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00057">57</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +545,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00053">53</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00058">58</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +569,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00055">55</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00060">60</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +593,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00056">56</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00061">61</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +617,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00058">58</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8h_source.html#l00063">63</a> of file <a class="el" href="application_8h_source.html">application.h</a>.</p>
 
 </div>
 </div>

@@ -100,12 +100,12 @@ var sectionId = 'dynsection-1';
 <polyline fill="none" stroke="black" points="0,-337.5 241,-337.5 "/>
 <text text-anchor="middle" x="120.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-318.5 241,-318.5 "/>
-<text text-anchor="start" x="8" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
-<text text-anchor="start" x="8" y="-295.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
-<text text-anchor="start" x="8" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
-<text text-anchor="start" x="8" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
-<text text-anchor="start" x="8" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
-<text text-anchor="start" x="8" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsHandled() const</text>
+<text text-anchor="start" x="8" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~Event()=default</text>
+<text text-anchor="start" x="8" y="-295.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
+<text text-anchor="start" x="8" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
+<text text-anchor="start" x="8" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
+<text text-anchor="start" x="8" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
+<text text-anchor="start" x="8" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
 </a>
 </g>
 </g>
@@ -133,7 +133,7 @@ var sectionId = 'dynsection-1';
 <title>Node4&#45;&gt;Node3</title>
 <path fill="none" stroke="#404040" d="M120.5,-404.32C120.5,-393.78 120.5,-381.25 120.5,-368.62"/>
 <polygon fill="none" stroke="#404040" points="120.5,-368.55 116.5,-362.55 120.5,-356.55 124.5,-362.55 120.5,-368.55"/>
-<text text-anchor="middle" x="154" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_Handled</text>
+<text text-anchor="middle" x="146.5" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00"> +Handled</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">

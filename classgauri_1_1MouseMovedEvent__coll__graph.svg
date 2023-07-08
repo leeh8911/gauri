@@ -35,12 +35,12 @@
 <polyline fill="none" stroke="black" points="0,-253.5 241,-253.5 "/>
 <text text-anchor="middle" x="120.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-234.5 241,-234.5 "/>
-<text text-anchor="start" x="8" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
-<text text-anchor="start" x="8" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
-<text text-anchor="start" x="8" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
-<text text-anchor="start" x="8" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
-<text text-anchor="start" x="8" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
-<text text-anchor="start" x="8" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsHandled() const</text>
+<text text-anchor="start" x="8" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~Event()=default</text>
+<text text-anchor="start" x="8" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual EventType GetEventType() const =0</text>
+<text text-anchor="start" x="8" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const char * GetName() const =0</text>
+<text text-anchor="start" x="8" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual int32_t GetCategoryFlags() const =0</text>
+<text text-anchor="start" x="8" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::string ToString() const</text>
+<text text-anchor="start" x="8" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool IsInCategory(EventCategory category)</text>
 </a>
 </g>
 </g>
@@ -68,7 +68,7 @@
 <title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="#404040" d="M120.5,-320.32C120.5,-309.78 120.5,-297.25 120.5,-284.62"/>
 <polygon fill="none" stroke="#404040" points="120.5,-284.55 116.5,-278.55 120.5,-272.55 124.5,-278.55 120.5,-284.55"/>
-<text text-anchor="middle" x="154" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_Handled</text>
+<text text-anchor="middle" x="146.5" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00"> +Handled</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
