@@ -1443,6 +1443,8 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\scene\scene.h" />
+    <ClInclude Include="include\gauri\scene\component.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1529,9 +1531,12 @@
     <ClCompile Include="src\platform\opengl\opengl_vertex_array.cpp">
       <Filter>src\platform\opengl</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\windows\windows_input.cpp">
+      <Filter>src\platform\windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\windows_input.cpp" />
+    <ClCompile Include="src\gauri\scene\scene.cpp" />
   </ItemGroup>
 </Project>
