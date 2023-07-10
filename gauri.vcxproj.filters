@@ -1445,6 +1445,7 @@
     </ClInclude>
     <ClInclude Include="include\gauri\scene\scene.h" />
     <ClInclude Include="include\gauri\scene\component.h" />
+    <ClInclude Include="include\gauri\scene\entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1538,5 +1539,6 @@
       <Filter>src\platform\windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\scene\scene.cpp" />
+    <ClCompile Include="src\gauri\scene\entity.cpp" />
   </ItemGroup>
 </Project>

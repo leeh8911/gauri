@@ -4,6 +4,7 @@
 
 #include "gauri/core/timestep.h"
 #include "gauri/scene/component.h"
+#include "gauri/scene/entity.h"
 
 namespace gauri
 {
@@ -13,7 +14,7 @@ class Scene
     Scene();
     ~Scene();
 
-    entt::entity CreateEntity();
+    Entity CreateEntity(const std::string &name = std::string());
 
     // TEMP
     entt::registry &Reg()
@@ -25,5 +26,7 @@ class Scene
 
   private:
     entt::registry m_Registry{};
+
+    friend class Entity;
 };
 } // namespace gauri
