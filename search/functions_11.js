@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['windowcloseevent_812',['WindowCloseEvent',['../classgauri_1_1WindowCloseEvent.html#a6c83d4716d67f38fa659939213294e56',1,'gauri::WindowCloseEvent']]],
-  ['windowproperty_813',['WindowProperty',['../structgauri_1_1WindowProperty.html#ad5a4dba23efcd0502735b49649b284fd',1,'gauri::WindowProperty']]],
-  ['windowresizeevent_814',['WindowResizeEvent',['../classgauri_1_1WindowResizeEvent.html#adb8e74fe86d8d50de5d1fd877cbdd834',1,'gauri::WindowResizeEvent']]],
-  ['windowswindow_815',['WindowsWindow',['../classgauri_1_1WindowsWindow.html#ab2a815f1523285153bc19b76849de640',1,'gauri::WindowsWindow']]],
-  ['writefooter_816',['WriteFooter',['../classgauri_1_1Instrumentor.html#a2cb68bca18891e0e1ff3e60cc1ca01eb',1,'gauri::Instrumentor']]],
-  ['writeheader_817',['WriteHeader',['../classgauri_1_1Instrumentor.html#ac575f99f948c40fdd48666615698a380',1,'gauri::Instrumentor']]],
-  ['writeprofile_818',['WriteProfile',['../classgauri_1_1Instrumentor.html#a6e91045992f15d20782810c91db8c870',1,'gauri::Instrumentor']]]
+  ['unbind_854',['Unbind',['../classgauri_1_1IndexBuffer.html#aa4b4144ba80c4c4b344b4388ce159954',1,'gauri::IndexBuffer::Unbind()'],['../classgauri_1_1OpenGLVertexArray.html#a9884ea2b6f1cbeb54c3735563b92d98f',1,'gauri::OpenGLVertexArray::Unbind()'],['../classgauri_1_1OpenGLShader.html#a09b8c2fde63b323257043cf3f7163f97',1,'gauri::OpenGLShader::Unbind()'],['../classgauri_1_1OpenGLFrameBuffer.html#ab9344db07dd76d870ed28f4c42dc58de',1,'gauri::OpenGLFrameBuffer::Unbind()'],['../classgauri_1_1OpenGLIndexBuffer.html#a4ff2c25814daeba489447f205a4c8563',1,'gauri::OpenGLIndexBuffer::Unbind()'],['../classgauri_1_1OpenGLVertexBuffer.html#a8b0885308d18c254cfe972a9c7f1eeae',1,'gauri::OpenGLVertexBuffer::Unbind()'],['../classgauri_1_1VertexArray.html#a0f5f317ff05998d08e0f471ffc246156',1,'gauri::VertexArray::Unbind()'],['../classgauri_1_1Shader.html#a97d9c0bef00afbd18a5c672c5bdac67c',1,'gauri::Shader::Unbind()'],['../classgauri_1_1FrameBuffer.html#af6ba895f332ab739c62a2830a60ca4dc',1,'gauri::FrameBuffer::Unbind()'],['../classgauri_1_1VertexBuffer.html#a8322c75b04c13fdf623208052e0bee92',1,'gauri::VertexBuffer::Unbind()']]],
+  ['uploaduniformfloat_855',['UploadUniformFloat',['../classgauri_1_1OpenGLShader.html#a9631748f79175bf20702b203455757a9',1,'gauri::OpenGLShader']]],
+  ['uploaduniformfloat2_856',['UploadUniformFloat2',['../classgauri_1_1OpenGLShader.html#a684fc0f531736e0782b31f9073830bef',1,'gauri::OpenGLShader']]],
+  ['uploaduniformfloat3_857',['UploadUniformFloat3',['../classgauri_1_1OpenGLShader.html#aea603aa958b43f54dbeb50ba30d9796d',1,'gauri::OpenGLShader']]],
+  ['uploaduniformfloat4_858',['UploadUniformFloat4',['../classgauri_1_1OpenGLShader.html#a2e508e02a1afdb0f29393a2f0ded31e5',1,'gauri::OpenGLShader']]],
+  ['uploaduniformint_859',['UploadUniformInt',['../classgauri_1_1OpenGLShader.html#a02c452eee8d0d5c112d0eddccfd3dd6d',1,'gauri::OpenGLShader']]],
+  ['uploaduniformintarray_860',['UploadUniformIntArray',['../classgauri_1_1OpenGLShader.html#a87979b144ecce154e21a119493a1af2d',1,'gauri::OpenGLShader']]],
+  ['uploaduniformmat3_861',['UploadUniformMat3',['../classgauri_1_1OpenGLShader.html#ac4cddcf4a38bfc587b1d2dbffaff0b16',1,'gauri::OpenGLShader']]],
+  ['uploaduniformmat4_862',['UploadUniformMat4',['../classgauri_1_1OpenGLShader.html#adc4a722b23295780897b8bafb7c04944',1,'gauri::OpenGLShader']]]
 ];

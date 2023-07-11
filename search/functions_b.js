@@ -1,25 +1,10 @@
 var searchData=
 [
-  ['onattach_744',['OnAttach',['../classgauri_1_1ImGuiLayer.html#ad3488285fb6b721e63edd40d0f338045',1,'gauri::ImGuiLayer::OnAttach()'],['../classgauri_1_1Layer.html#a78fbf744db95e0553c7e37c104ffe017',1,'gauri::Layer::OnAttach()']]],
-  ['ondetach_745',['OnDetach',['../classgauri_1_1Layer.html#ad7de8519a3390037ded9cbd03b2b4f88',1,'gauri::Layer::OnDetach()'],['../classgauri_1_1ImGuiLayer.html#a98472e2a0fa2e7e976fbe3f9ba1acd51',1,'gauri::ImGuiLayer::OnDetach()']]],
-  ['onevent_746',['OnEvent',['../classgauri_1_1Application.html#ab24f90afabae2cd96d5345690626c433',1,'gauri::Application::OnEvent()'],['../classgauri_1_1Layer.html#aa8c0c337035d4cedc29f92ad2030ad3c',1,'gauri::Layer::OnEvent()'],['../classgauri_1_1ImGuiLayer.html#ad775ce6ea9a49609722d95f6a0c692fb',1,'gauri::ImGuiLayer::OnEvent()'],['../classgauri_1_1OrthographicCameraController.html#ad4623b9249f388c81ea82576b9cee8f1',1,'gauri::OrthographicCameraController::OnEvent()']]],
-  ['onimguirender_747',['OnImGuiRender',['../classgauri_1_1Layer.html#af18e355bb8199bc1b6db2388eb89b586',1,'gauri::Layer']]],
-  ['onmousescrolled_748',['OnMouseScrolled',['../classgauri_1_1OrthographicCameraController.html#a6797137f7f1799c93e86d5fd0db20c75',1,'gauri::OrthographicCameraController']]],
-  ['onresize_749',['OnResize',['../classgauri_1_1OrthographicCameraController.html#a1917e6fcc2ae9a3227d50e4f8a42f903',1,'gauri::OrthographicCameraController']]],
-  ['onupdate_750',['OnUpdate',['../classgauri_1_1Layer.html#aa0d8794f11e7fbde91d9e0593ef29717',1,'gauri::Layer::OnUpdate()'],['../classgauri_1_1Window.html#a1b9e57da90ea8ec2eecbc4225fad6de7',1,'gauri::Window::OnUpdate()'],['../classgauri_1_1OrthographicCameraController.html#a06d790e2e247af0a56a17de8bac39414',1,'gauri::OrthographicCameraController::OnUpdate()'],['../classgauri_1_1WindowsWindow.html#a60245f71a89ae6c62a1f92155d931170',1,'gauri::WindowsWindow::OnUpdate()']]],
-  ['onwindowclose_751',['OnWindowClose',['../classgauri_1_1Application.html#a82405a4d213a4396b20f1522403ac881',1,'gauri::Application']]],
-  ['onwindowresize_752',['OnWindowResize',['../classgauri_1_1Renderer.html#a7751c126d9615504844a00bcdd22227a',1,'gauri::Renderer::OnWindowResize()'],['../classgauri_1_1Application.html#a0d062dd2b7ca28376d04eea88c3c717b',1,'gauri::Application::OnWindowResize()']]],
-  ['onwindowresized_753',['OnWindowResized',['../classgauri_1_1OrthographicCameraController.html#a21b1aaa80ff6365a086ea60ede39d03a',1,'gauri::OrthographicCameraController']]],
-  ['openglcontext_754',['OpenGLContext',['../classgauri_1_1OpenGLContext.html#aeeaffaa2b0124b4a8747e137316d4807',1,'gauri::OpenGLContext']]],
-  ['openglframebuffer_755',['OpenGLFrameBuffer',['../classgauri_1_1OpenGLFrameBuffer.html#a3d0616405f994605f81688c6dcd9e662',1,'gauri::OpenGLFrameBuffer']]],
-  ['openglindexbuffer_756',['OpenGLIndexBuffer',['../classgauri_1_1OpenGLIndexBuffer.html#add3aab30fad4e5d3257ff371228bbb96',1,'gauri::OpenGLIndexBuffer']]],
-  ['openglshader_757',['OpenGLShader',['../classgauri_1_1OpenGLShader.html#a0f704611a88b2064ead8d95ed0f10b1e',1,'gauri::OpenGLShader::OpenGLShader(const std::string &amp;filepath)'],['../classgauri_1_1OpenGLShader.html#abb0943daf380827f579d9139e2ff992e',1,'gauri::OpenGLShader::OpenGLShader(const std::string &amp;name, const std::string &amp;vertexSrc, const std::string &amp;fragmentSrc)']]],
-  ['opengltexture2d_758',['OpenGLTexture2D',['../classgauri_1_1OpenGLTexture2D.html#a28b63b12870f6f5c5931257f2cf5e08b',1,'gauri::OpenGLTexture2D::OpenGLTexture2D(uint32_t width, uint32_t height)'],['../classgauri_1_1OpenGLTexture2D.html#a0a40335e620f92537bc74c4b7a435ef0',1,'gauri::OpenGLTexture2D::OpenGLTexture2D(const std::string &amp;path)']]],
-  ['openglvertexarray_759',['OpenGLVertexArray',['../classgauri_1_1OpenGLVertexArray.html#a6a7315dc1a56332f24ed5760acec03ac',1,'gauri::OpenGLVertexArray']]],
-  ['openglvertexbuffer_760',['OpenGLVertexBuffer',['../classgauri_1_1OpenGLVertexBuffer.html#a31f47b9a377aa21718da44f05c3feb5d',1,'gauri::OpenGLVertexBuffer::OpenGLVertexBuffer(uint32_t size)'],['../classgauri_1_1OpenGLVertexBuffer.html#abf7e0d5d53bbee174e2dbac0f8563014',1,'gauri::OpenGLVertexBuffer::OpenGLVertexBuffer(float *vertices, uint32_t size)']]],
-  ['operator_20float_761',['operator float',['../classgauri_1_1Timestep.html#ac1c754a2b63388fec145d22392e08cbf',1,'gauri::Timestep']]],
-  ['operator_3c_3c_762',['operator&lt;&lt;',['../namespacegauri.html#a1044f5cd43c46dae84158c09a4cc7809',1,'gauri']]],
-  ['operator_3d_3d_763',['operator==',['../classgauri_1_1Texture.html#a400afe0ed4e5e89ce8ede94276e7d789',1,'gauri::Texture::operator==()'],['../classgauri_1_1OpenGLTexture2D.html#a9413352391cadfdd9d0caac8ec91255e',1,'gauri::OpenGLTexture2D::operator==()']]],
-  ['orthographiccamera_764',['OrthographicCamera',['../classgauri_1_1OrthographicCamera.html#a43d1f15531467e295b81287609744db2',1,'gauri::OrthographicCamera']]],
-  ['orthographiccameracontroller_765',['OrthographicCameraController',['../classgauri_1_1OrthographicCameraController.html#a38bd91071a6726cfecc325c0af10c5f1',1,'gauri::OrthographicCameraController']]]
+  ['main_779',['main',['../entry__point_8h.html#ad5c6b41eba5f719bb7801c662b4809cf',1,'entry_point.h']]],
+  ['meshcomponent_780',['MeshComponent',['../structgauri_1_1MeshComponent.html#a7aa7793e2a646cfee54bc030a13da67a',1,'gauri::MeshComponent']]],
+  ['mousebuttonevent_781',['MouseButtonEvent',['../classgauri_1_1MouseButtonEvent.html#a8630e4814cc7271ec290c0081d8586eb',1,'gauri::MouseButtonEvent']]],
+  ['mousebuttonpressedevent_782',['MouseButtonPressedEvent',['../classgauri_1_1MouseButtonPressedEvent.html#a11f7b765ab0890a91af71dc24d92b34c',1,'gauri::MouseButtonPressedEvent']]],
+  ['mousebuttonreleasedevent_783',['MouseButtonReleasedEvent',['../classgauri_1_1MouseButtonReleasedEvent.html#a81d56a15d02b852ccb76b8841cbaf1d5',1,'gauri::MouseButtonReleasedEvent']]],
+  ['mousemovedevent_784',['MouseMovedEvent',['../classgauri_1_1MouseMovedEvent.html#a2c5a3f70a9c8bc1d603cbfeadb000f89',1,'gauri::MouseMovedEvent']]],
+  ['mousescrolledevent_785',['MouseScrolledEvent',['../classgauri_1_1MouseScrolledEvent.html#af96816b0de091772de1b6b00b0961d1a',1,'gauri::MouseScrolledEvent']]]
 ];

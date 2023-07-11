@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['drawcalls_842',['DrawCalls',['../structgauri_1_1Renderer2D_1_1Statistics.html#a09a7714f6bb865ff9f9691b4838af28f',1,'gauri::Renderer2D::Statistics']]]
+  ['color_894',['Color',['../structgauri_1_1SpriteRendererComponent.html#a26873e49467952b2d6265fa4df3e1b3e',1,'gauri::SpriteRendererComponent']]]
 ];
