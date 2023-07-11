@@ -4,10 +4,12 @@
 
 #include "gauri/core/timestep.h"
 #include "gauri/scene/component.h"
-#include "gauri/scene/entity.h"
 
 namespace gauri
 {
+// forward declaration
+class Entity;
+
 class Scene
 {
   public:

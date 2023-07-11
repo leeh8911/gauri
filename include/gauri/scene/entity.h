@@ -39,7 +39,7 @@ class Entity
 
     operator bool() const
     {
-        return m_EntityHandle != static_cast<entt::entity>(0);
+        return m_EntityHandle != entt::null;
     }
 
   private:
