@@ -21,6 +21,10 @@
 
 #include "gauri/imgui/imgui_layer.h"
 
+#include "gauri/scene/component.h"
+#include "gauri/scene/entity.h"
+#include "gauri/scene/scene.h"
+
 // ---- Renderer --------------------
 #include "gauri/renderer/render_command.h"
 #include "gauri/renderer/renderer.h"

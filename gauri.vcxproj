@@ -58,21 +58,21 @@
     <IntDir>..\bin-int\Debug-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\bin\Release-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Release-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <OutDir>..\bin\Dist-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Dist-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -595,6 +595,9 @@
     <ClInclude Include="include\gauri\renderer\subtexture_2d.h" />
     <ClInclude Include="include\gauri\renderer\texture.h" />
     <ClInclude Include="include\gauri\renderer\vertex_array.h" />
+    <ClInclude Include="include\gauri\scene\component.h" />
+    <ClInclude Include="include\gauri\scene\entity.h" />
+    <ClInclude Include="include\gauri\scene\scene.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_frame_buffer.h" />
@@ -626,6 +629,8 @@
     <ClCompile Include="src\gauri\renderer\subtexture_2d.cpp" />
     <ClCompile Include="src\gauri\renderer\texture.cpp" />
     <ClCompile Include="src\gauri\renderer\vertex_array.cpp" />
+    <ClCompile Include="src\gauri\scene\entity.cpp" />
+    <ClCompile Include="src\gauri\scene\scene.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
