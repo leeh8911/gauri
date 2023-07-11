@@ -568,6 +568,7 @@
     <ClInclude Include="3rdparty\glm\glm\vector_relational.hpp" />
     <ClInclude Include="3rdparty\stb_image\stb_image.h" />
     <ClInclude Include="include\gauri.h" />
+    <ClInclude Include="include\gauri\renderer\camera.h" />
     <ClInclude Include="include\gauri\core\application.h" />
     <ClInclude Include="include\gauri\core\base.h" />
     <ClInclude Include="include\gauri\core\entry_point.h" />
