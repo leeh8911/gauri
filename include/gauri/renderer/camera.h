@@ -7,9 +7,12 @@ namespace gauri
 class Camera
 {
   public:
+    Camera() = default;
     Camera(const glm::mat4 &projection) : m_Projection(projection)
     {
     }
+
+    virtual ~Camera() = default;
 
     const glm::mat4 &GetProjection() const
     {
@@ -17,7 +20,7 @@ class Camera
     }
 
     // TODO:
-  private:
-    glm::mat4 m_Projection;
+  protected:
+    glm::mat4 m_Projection = glm::mat4(1.0f);
 };
 } // namespace gauri

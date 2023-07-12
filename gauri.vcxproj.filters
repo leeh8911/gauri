@@ -1447,6 +1447,7 @@
     <ClInclude Include="include\gauri\scene\component.h" />
     <ClInclude Include="include\gauri\scene\entity.h" />
     <ClInclude Include="include\gauri\renderer\camera.h" />
+    <ClInclude Include="include\gauri\scene\scene_camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1541,5 +1542,6 @@
     </ClCompile>
     <ClCompile Include="src\gauri\scene\scene.cpp" />
     <ClCompile Include="src\gauri\scene\entity.cpp" />
+    <ClCompile Include="src\gauri\scene\scene_camera.cpp" />
   </ItemGroup>
 </Project>
