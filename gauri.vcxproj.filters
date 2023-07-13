@@ -46,6 +46,9 @@
     <Filter Include="include\gauri\renderer">
       <UniqueIdentifier>{16CF6006-02C9-8958-EB35-2069D7CEEFC4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\gauri\scene">
+      <UniqueIdentifier>{8D2E5CB8-F98F-39C6-82FD-7F78EE5D7085}</UniqueIdentifier>
+    </Filter>
     <Filter Include="include\platform">
       <UniqueIdentifier>{1D12BC81-090B-DBD3-323D-C0581E95BADF}</UniqueIdentifier>
     </Filter>
@@ -69,6 +72,9 @@
     </Filter>
     <Filter Include="src\gauri\renderer">
       <UniqueIdentifier>{3AAEC1BD-2692-8213-8FF2-7C667BF56C95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gauri\scene">
+      <UniqueIdentifier>{31C060AE-9D4B-CE72-A65C-516712672A73}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\platform">
       <UniqueIdentifier>{41663D6D-2DC9-CC11-D64E-05C8C2909894}</UniqueIdentifier>
@@ -1380,6 +1386,9 @@
     <ClInclude Include="include\gauri\renderer\buffer.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\renderer\camera.h">
+      <Filter>include\gauri\renderer</Filter>
+    </ClInclude>
     <ClInclude Include="include\gauri\renderer\frame_buffer.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
@@ -1416,6 +1425,18 @@
     <ClInclude Include="include\gauri\renderer\vertex_array.h">
       <Filter>include\gauri\renderer</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\scene\component.h">
+      <Filter>include\gauri\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\scene\entity.h">
+      <Filter>include\gauri\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\scene\scene.h">
+      <Filter>include\gauri\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gauri\scene\scene_camera.h">
+      <Filter>include\gauri\scene</Filter>
+    </ClInclude>
     <ClInclude Include="include\platform\opengl\opengl_buffer.h">
       <Filter>include\platform\opengl</Filter>
     </ClInclude>
@@ -1443,11 +1464,6 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\scene\scene.h" />
-    <ClInclude Include="include\gauri\scene\component.h" />
-    <ClInclude Include="include\gauri\scene\entity.h" />
-    <ClInclude Include="include\gauri\renderer\camera.h" />
-    <ClInclude Include="include\gauri\scene\scene_camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1510,6 +1526,15 @@
     <ClCompile Include="src\gauri\renderer\vertex_array.cpp">
       <Filter>src\gauri\renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\gauri\scene\entity.cpp">
+      <Filter>src\gauri\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\scene\scene.cpp">
+      <Filter>src\gauri\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gauri\scene\scene_camera.cpp">
+      <Filter>src\gauri\scene</Filter>
+    </ClCompile>
     <ClCompile Include="src\grpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -1540,8 +1565,5 @@
     <ClCompile Include="src\platform\windows\windows_window.cpp">
       <Filter>src\platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\gauri\scene\scene.cpp" />
-    <ClCompile Include="src\gauri\scene\entity.cpp" />
-    <ClCompile Include="src\gauri\scene\scene_camera.cpp" />
   </ItemGroup>
 </Project>

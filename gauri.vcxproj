@@ -568,7 +568,6 @@
     <ClInclude Include="3rdparty\glm\glm\vector_relational.hpp" />
     <ClInclude Include="3rdparty\stb_image\stb_image.h" />
     <ClInclude Include="include\gauri.h" />
-    <ClInclude Include="include\gauri\renderer\camera.h" />
     <ClInclude Include="include\gauri\core\application.h" />
     <ClInclude Include="include\gauri\core\base.h" />
     <ClInclude Include="include\gauri\core\entry_point.h" />
@@ -584,6 +583,7 @@
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
     <ClInclude Include="include\gauri\renderer\buffer.h" />
+    <ClInclude Include="include\gauri\renderer\camera.h" />
     <ClInclude Include="include\gauri\renderer\frame_buffer.h" />
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
     <ClInclude Include="include\gauri\renderer\orthographic_camera.h" />

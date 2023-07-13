@@ -2,7 +2,6 @@
 
 #include <glm/glm.hpp>
 
-#include "gauri/renderer/camera.h"
 #include "gauri/scene/scene_camera.h"
 
 namespace gauri
@@ -57,7 +56,7 @@ struct SpriteRendererComponent
 
 struct CameraComponent
 {
-    SceneCamera Cam;
+    SceneCamera Camera;
     bool Primary = true; // TODO: move to scene
     bool FixedAspectRatio = false;
 

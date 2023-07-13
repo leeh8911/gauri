@@ -71,7 +71,7 @@ void Scene::OnUpdate(Timestep ts)
             const auto &[transform, camera] = view.get<TransformComponent, CameraComponent>(entity);
             if (camera.Primary)
             {
-                mainCamera = &camera.Cam;
+                mainCamera = &camera.Camera;
                 cameraTransform = &transform.Transform;
                 break;
             }
@@ -105,7 +105,7 @@ void Scene::OnViewportResize(uint32_t width, uint32_t height)
         auto &cameraComponent = view.get<CameraComponent>(entity);
         if (!cameraComponent.FixedAspectRatio)
         {
-            cameraComponent.Cam.SetViewportSize(width, height);
+            cameraComponent.Camera.SetViewportSize(width, height);
         }
     }
 }
