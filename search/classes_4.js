@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['graphicscontext_579',['GraphicsContext',['../classgauri_1_1GraphicsContext.html',1,'gauri']]]
+  ['framebuffer_601',['FrameBuffer',['../classgauri_1_1FrameBuffer.html',1,'gauri']]],
+  ['framebufferspecification_602',['FrameBufferSpecification',['../namespacegauri.html#structgauri_1_1FrameBufferSpecification',1,'gauri']]]
 ];

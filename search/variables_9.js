@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quadcount_968',['QuadCount',['../structgauri_1_1Renderer2D_1_1Statistics.html#a7f818bfdb1ba0b8d985ead7713b5bc37',1,'gauri::Renderer2D::Statistics']]]
+  ['offset_1013',['Offset',['../structgauri_1_1BufferElement.html#a41aa43756521f76f184ab2c4ad71d6ca',1,'gauri::BufferElement']]]
 ];

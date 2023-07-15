@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right_969',['Right',['../structgauri_1_1OrthographicCameraBounds.html#a526c69c3afd1557135605f998918b930',1,'gauri::OrthographicCameraBounds']]]
+  ['primary_1014',['Primary',['../structgauri_1_1CameraComponent.html#aa87ff8fc497c7d5bfe9c8bd3daf9d097',1,'gauri::CameraComponent']]]
 ];

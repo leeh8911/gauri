@@ -86,7 +86,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for gauri::Scene:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Scene__coll__graph.svg" width="422" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Scene__coll__graph.svg" width="422" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -102,11 +102,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8f2a54b404d03541e07734d238a64a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf5e4db4d244cf3a63ddd395e26b911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a6bf5e4db4d244cf3a63ddd395e26b911">OnUpdate</a> (<a class="el" href="classgauri_1_1Timestep.html">Timestep</a> ts)</td></tr>
 <tr class="separator:a6bf5e4db4d244cf3a63ddd395e26b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2c865d701ef826c65c480b8278f28a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a2f2c865d701ef826c65c480b8278f28a">OnViewportResize</a> (uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:a2f2c865d701ef826c65c480b8278f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a9dfb12e5eb66aee116f5b308a8b3b4e0"><td class="memItemLeft" align="right" valign="top">entt::registry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a9dfb12e5eb66aee116f5b308a8b3b4e0">m_Registry</a> {}</td></tr>
 <tr class="separator:a9dfb12e5eb66aee116f5b308a8b3b4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45fa7d953ff2db9337f80f7712c3c462"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a45fa7d953ff2db9337f80f7712c3c462">m_ViewportWidth</a> = 0</td></tr>
+<tr class="separator:a45fa7d953ff2db9337f80f7712c3c462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297504177715f4e5cb859ce9c50e2ecf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a297504177715f4e5cb859ce9c50e2ecf">m_ViewportHeight</a> = 0</td></tr>
+<tr class="separator:a297504177715f4e5cb859ce9c50e2ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -197,7 +203,7 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1Scene.html#a9dfb12e5eb66aee116f5b308a8b3b4e0">m_Registry</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1Scene_html_a9dfb12e5eb66aee116f5b308a8b3b4e0"><div class="ttname"><a href="classgauri_1_1Scene.html#a9dfb12e5eb66aee116f5b308a8b3b4e0">gauri::Scene::m_Registry</a></div><div class="ttdeci">entt::registry m_Registry</div><div class="ttdef"><b>Definition:</b> <a href="scene_8h_source.html#l00030">scene.h:30</a></div></div>
+<div class="ttc" id="aclassgauri_1_1Scene_html_a9dfb12e5eb66aee116f5b308a8b3b4e0"><div class="ttname"><a href="classgauri_1_1Scene.html#a9dfb12e5eb66aee116f5b308a8b3b4e0">gauri::Scene::m_Registry</a></div><div class="ttdeci">entt::registry m_Registry</div><div class="ttdef"><b>Definition:</b> <a href="scene_8h_source.html#l00031">scene.h:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -213,6 +219,34 @@ Friends</h2></td></tr>
           <td class="paramtype"><a class="el" href="classgauri_1_1Timestep.html">Timestep</a>&#160;</td>
           <td class="paramname"><em>ts</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f2c865d701ef826c65c480b8278f28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2c865d701ef826c65c480b8278f28a">&#9670;&nbsp;</a></span>OnViewportResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::Scene::OnViewportResize </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,7 +274,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00034">34</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -265,7 +299,55 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00030">30</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00031">31</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+
+</div>
+</div>
+<a id="a45fa7d953ff2db9337f80f7712c3c462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45fa7d953ff2db9337f80f7712c3c462">&#9670;&nbsp;</a></span>m_ViewportWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gauri::Scene::m_ViewportWidth = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+
+</div>
+</div>
+<a id="a297504177715f4e5cb859ce9c50e2ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297504177715f4e5cb859ce9c50e2ecf">&#9670;&nbsp;</a></span>m_ViewportHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gauri::Scene::m_ViewportHeight = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
