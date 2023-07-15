@@ -583,6 +583,7 @@
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
     <ClInclude Include="include\gauri\renderer\buffer.h" />
+    <ClInclude Include="include\gauri\renderer\camera.h" />
     <ClInclude Include="include\gauri\renderer\frame_buffer.h" />
     <ClInclude Include="include\gauri\renderer\graphics_context.h" />
     <ClInclude Include="include\gauri\renderer\orthographic_camera.h" />
@@ -598,6 +599,7 @@
     <ClInclude Include="include\gauri\scene\component.h" />
     <ClInclude Include="include\gauri\scene\entity.h" />
     <ClInclude Include="include\gauri\scene\scene.h" />
+    <ClInclude Include="include\gauri\scene\scene_camera.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_frame_buffer.h" />
@@ -631,6 +633,7 @@
     <ClCompile Include="src\gauri\renderer\vertex_array.cpp" />
     <ClCompile Include="src\gauri\scene\entity.cpp" />
     <ClCompile Include="src\gauri\scene\scene.cpp" />
+    <ClCompile Include="src\gauri\scene\scene_camera.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

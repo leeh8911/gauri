@@ -2,6 +2,8 @@
 
 #include <glm/glm.hpp>
 
+#include "gauri/scene/scene_camera.h"
+
 namespace gauri
 {
 struct TagComponent
@@ -51,6 +53,17 @@ struct SpriteRendererComponent
         return Color;
     }
 };
+
+struct CameraComponent
+{
+    SceneCamera Camera;
+    bool Primary = true; // TODO: move to scene
+    bool FixedAspectRatio = false;
+
+    CameraComponent() = default;
+    CameraComponent(const CameraComponent &) = default;
+};
+
 struct MeshComponent
 {
     float Value;

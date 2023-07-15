@@ -27,10 +27,10 @@ struct Renderer2DData
     static const uint32_t MaxIndices = MaxQuads * 6;
     static const uint32_t MaxTextureSlots = 32; // TODO: RenderCaps
 
-    Ref<VertexArray> QuadVertexArray;
-    Ref<VertexBuffer> QuadVertexBuffer;
-    Ref<Shader> TextureShader;
-    Ref<Texture2D> WhiteTexture;
+    Ref<VertexArray> QuadVertexArray{nullptr};
+    Ref<VertexBuffer> QuadVertexBuffer{nullptr};
+    Ref<Shader> TextureShader{nullptr};
+    Ref<Texture2D> WhiteTexture{nullptr};
 
     uint32_t QuadIndexCount = 0;
     QuadVertex *QuadVertexBufferBase = nullptr;
@@ -39,7 +39,7 @@ struct Renderer2DData
     std::array<Ref<Texture2D>, MaxTextureSlots> TextureSlots;
     uint32_t TextureSlotIndex = 1; // 0 = white texture
 
-    glm::vec4 QuadVertexPositions[4];
+    glm::vec4 QuadVertexPositions[4]{};
 
     Renderer2D::Statistics Stats;
 };
@@ -121,11 +121,26 @@ void Renderer2D::BeginScene(const OrthographicCamera &camera)
     s_Data.TextureSlotIndex = 1;
 }
 
+void Renderer2D::BeginScene(const Camera &camera, const glm::mat4 &transform)
+{
+    GR_PROFILE_FUNCTION();
+
+    glm::mat4 viewProj = camera.GetProjection() * glm::inverse(transform);
+
+    s_Data.TextureShader->Bind();
+    s_Data.TextureShader->SetMat4("u_ViewProjection", viewProj);
+
+    s_Data.QuadIndexCount = 0;
+    s_Data.QuadVertexBufferPtr = s_Data.QuadVertexBufferBase;
+
+    s_Data.TextureSlotIndex = 1;
+}
+
 void Renderer2D::EndScene()
 {
     GR_PROFILE_FUNCTION();
 
-    uint32_t dataSize = (uint8_t *)s_Data.QuadVertexBufferPtr - (uint8_t *)s_Data.QuadVertexBufferBase;
+    uint32_t dataSize = (uint32_t)((uint8_t *)s_Data.QuadVertexBufferPtr - (uint8_t *)s_Data.QuadVertexBufferBase);
     s_Data.QuadVertexBuffer->SetData(s_Data.QuadVertexBufferBase, dataSize);
 
     Flush();
