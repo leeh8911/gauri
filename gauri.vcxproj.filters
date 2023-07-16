@@ -1437,6 +1437,9 @@
     <ClInclude Include="include\gauri\scene\scene_camera.h">
       <Filter>include\gauri\scene</Filter>
     </ClInclude>
+    <ClInclude Include="include\gauri\scene\scriptable_entity.h">
+      <Filter>include\gauri\scene</Filter>
+    </ClInclude>
     <ClInclude Include="include\platform\opengl\opengl_buffer.h">
       <Filter>include\platform\opengl</Filter>
     </ClInclude>
@@ -1464,7 +1467,6 @@
     <ClInclude Include="src\grpch.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\gauri\scene\scriptable_entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
