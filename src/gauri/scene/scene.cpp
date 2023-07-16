@@ -61,6 +61,18 @@ Entity Scene::CreateEntity(const std::string &name)
 }
 void Scene::OnUpdate(Timestep ts)
 {
+    // Update scripts
+    {
+        m_Registry.view<NativeScriptComponent>().each([=](auto entity, auto &nsc) {
+            if (nsc.Instance)
+            {
+                nsc.InstantiateFunction();
+                nsc.OnCreateFunction(nsc.Instance);
+            }
+
+            nsc.OnUpdateFunction(nsc.Instance, ts);
+        });
+    }
     // Render 2D
     Camera *mainCamera = nullptr;
     glm::mat4 *cameraTransform = nullptr;

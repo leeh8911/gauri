@@ -3,6 +3,7 @@
 #include <glm/glm.hpp>
 
 #include "gauri/scene/scene_camera.h"
+#include "gauri/scene/scriptable_entity.h"
 
 namespace gauri
 {
@@ -64,9 +65,29 @@ struct CameraComponent
     CameraComponent(const CameraComponent &) = default;
 };
 
-struct MeshComponent
+struct NativeScriptComponent
 {
-    float Value;
-    MeshComponent() = default;
+    ScriptableEntity *Instance = nullptr;
+
+    std::function<void()> InstantiateFunction;
+    std::function<void()> DestroyInstanceFunction;
+
+    std::function<void(ScriptableEntity *)> OnCreateFunction;
+    std::function<void(ScriptableEntity *)> OnDestroyFunction;
+    std::function<void(ScriptableEntity *, Timestep)> OnUpdateFunction;
+
+    template <typename T> void Bind()
+    {
+        InstantiateFunction = [&]() { Instance = new T(); };
+        DestroyInstanceFunction = [&]() {
+            delete (T *)Instance;
+            Instance = nullptr;
+        };
+
+        OnCreateFunction = [](ScriptableEntity *instance) { ((T *)instance)->OnCreate(); };
+        OnDestroyFunction = [](ScriptableEntity *instance) { ((T *)instance)->OnDestroy(); };
+        OnUpdateFunction = [](ScriptableEntity *instance, Timestep ts) { ((T *)instance)->OnUpdate(ts); };
+    }
 };
+
 } // namespace gauri
