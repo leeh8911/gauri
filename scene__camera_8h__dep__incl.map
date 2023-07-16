@@ -1,8 +1,6 @@
 <map id="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene_camera.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene_camera.h">
-<area shape="rect" id="node1" title=" " alt="" coords="154,5,650,32"/>
-<area shape="rect" id="node2" href="$component_8h.html" title=" " alt="" coords="165,80,639,107"/>
-<area shape="rect" id="node3" href="$scene_8h.html" title=" " alt="" coords="54,155,494,181"/>
-<area shape="rect" id="node5" href="$gauri_8h.html" title=" " alt="" coords="303,304,659,331"/>
-<area shape="rect" id="node4" href="$entity_8h.html" title=" " alt="" coords="5,229,444,256"/>
-<area shape="rect" id="node6" href="$entry__point_8h.html" title=" " alt="" coords="247,379,714,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,501,32"/>
+<area shape="rect" id="node2" href="$component_8h.html" title=" " alt="" coords="16,80,491,107"/>
+<area shape="rect" id="node3" href="$gauri_8h.html" title=" " alt="" coords="75,155,431,181"/>
+<area shape="rect" id="node4" href="$entry__point_8h.html" title=" " alt="" coords="20,229,487,256"/>
 </map>

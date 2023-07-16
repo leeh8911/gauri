@@ -1,9 +1,5 @@
 <map id="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene.h">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,445,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="45,80,121,107"/>
-<area shape="rect" id="node3" href="$timestep_8h.html" title=" " alt="" coords="145,80,306,107"/>
-<area shape="rect" id="node4" href="$component_8h.html" title=" " alt="" coords="331,80,517,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="364,304,468,331"/>
-<area shape="rect" id="node6" href="$scene__camera_8h.html" title=" " alt="" coords="391,155,598,181"/>
-<area shape="rect" id="node7" href="$camera_8h.html" title=" " alt="" coords="397,229,576,256"/>
+<area shape="rect" id="node2" title=" " alt="" coords="117,80,193,107"/>
+<area shape="rect" id="node3" href="$timestep_8h.html" title=" " alt="" coords="217,80,378,107"/>
 </map>

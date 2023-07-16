@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['tag_1026',['Tag',['../structgauri_1_1TagComponent.html#aef5629bc07c339505d0695c177754345',1,'gauri::TagComponent']]],
-  ['threadid_1027',['ThreadID',['../namespacegauri.html#a055c6b4f0b9252ba59383d7c97da39e5',1,'gauri::ProfileResult']]],
-  ['title_1028',['Title',['../structgauri_1_1WindowProperty.html#ae3a51778dd3110065ace9d073d9096e1',1,'gauri::WindowProperty::Title()'],['../classgauri_1_1WindowsWindow.html#a20e0f6f88d245e92e4b43f9e52336c87',1,'gauri::WindowsWindow::WindowData::Title()']]],
-  ['top_1029',['Top',['../structgauri_1_1OrthographicCameraBounds.html#a0d5637b6458412b21b56c53aacd6295c',1,'gauri::OrthographicCameraBounds']]],
-  ['transform_1030',['Transform',['../structgauri_1_1TransformComponent.html#a38d28def32e74d620d91cb0315073d89',1,'gauri::TransformComponent']]],
-  ['type_1031',['Type',['../structgauri_1_1BufferElement.html#a6fbec295258ca85aab4aaa4d4b94cc76',1,'gauri::BufferElement']]]
+  ['s_5fapi_1032',['s_API',['../classgauri_1_1RendererAPI.html#a8bf230961374fa75239567e63a6847b4',1,'gauri::RendererAPI']]],
+  ['s_5fclientlogger_1033',['s_ClientLogger',['../classgauri_1_1Log.html#aeee519990e8bd979ec93e624fdb9e928',1,'gauri::Log']]],
+  ['s_5fcorelogger_1034',['s_CoreLogger',['../classgauri_1_1Log.html#abe0017d56617f1e882fe0c777f95438d',1,'gauri::Log']]],
+  ['s_5finstance_1035',['s_Instance',['../classgauri_1_1Application.html#a21f776b09d288d3ce43b191902dae8f2',1,'gauri::Application']]],
+  ['s_5frendererapi_1036',['s_RendererAPI',['../classgauri_1_1RenderCommand.html#ac59177a1591045086f1454255089d730',1,'gauri::RenderCommand']]],
+  ['samples_1037',['Samples',['../namespacegauri.html#a900efc1a3789bb198102879a2a0d7972',1,'gauri::FrameBufferSpecification']]],
+  ['size_1038',['Size',['../structgauri_1_1BufferElement.html#aac4c0af8a9ee711bc55c06dd318e4c16',1,'gauri::BufferElement']]],
+  ['start_1039',['Start',['../namespacegauri.html#a512fea0571e906dc443b48eade544fd2',1,'gauri::ProfileResult']]],
+  ['swapchaintarget_1040',['SwapChainTarget',['../namespacegauri.html#a1dfff087b5ead16c8799ad0e69afb8cc',1,'gauri::FrameBufferSpecification']]]
 ];
