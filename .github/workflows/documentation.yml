@@ -19,7 +19,7 @@ jobs:
       # 3. Create the doxygen pages.
       - name: Create the doxygen
         run: |
-          git clone https://github.com/leeh8911/gauri.git
+          git clone https://github.com/leeh8911/gauri.git --recursive --depth=1
           cd gauri/docs/Doxygen
           doxygen Doxyfile
           cd ../../..
