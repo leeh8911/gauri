@@ -600,6 +600,7 @@
     <ClInclude Include="include\gauri\scene\entity.h" />
     <ClInclude Include="include\gauri\scene\scene.h" />
     <ClInclude Include="include\gauri\scene\scene_camera.h" />
+    <ClInclude Include="include\gauri\scene\scriptable_entity.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_frame_buffer.h" />
@@ -608,7 +609,6 @@
     <ClInclude Include="include\platform\opengl\opengl_texture.h" />
     <ClInclude Include="include\platform\opengl\opengl_vertex_array.h" />
     <ClInclude Include="include\platform\windows\windows_window.h" />
-    <ClInclude Include="include\gauri\scene\scriptable_entity.h" />
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
