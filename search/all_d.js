@@ -33,12 +33,14 @@ var searchData=
   ['openglvertexbuffer_439',['OpenGLVertexBuffer',['../classgauri_1_1OpenGLVertexBuffer.html',1,'gauri::OpenGLVertexBuffer'],['../classgauri_1_1OpenGLVertexBuffer.html#a31f47b9a377aa21718da44f05c3feb5d',1,'gauri::OpenGLVertexBuffer::OpenGLVertexBuffer(uint32_t size)'],['../classgauri_1_1OpenGLVertexBuffer.html#abf7e0d5d53bbee174e2dbac0f8563014',1,'gauri::OpenGLVertexBuffer::OpenGLVertexBuffer(float *vertices, uint32_t size)']]],
   ['operator_20bool_440',['operator bool',['../classgauri_1_1Entity.html#a94171e1e28b87034d5be4bc0d9003372',1,'gauri::Entity']]],
   ['operator_20float_441',['operator float',['../classgauri_1_1Timestep.html#ac1c754a2b63388fec145d22392e08cbf',1,'gauri::Timestep']]],
-  ['operator_3c_3c_442',['operator&lt;&lt;',['../namespacegauri.html#a1044f5cd43c46dae84158c09a4cc7809',1,'gauri']]],
-  ['operator_3d_3d_443',['operator==',['../classgauri_1_1Texture.html#a400afe0ed4e5e89ce8ede94276e7d789',1,'gauri::Texture::operator==()'],['../classgauri_1_1OpenGLTexture2D.html#a9413352391cadfdd9d0caac8ec91255e',1,'gauri::OpenGLTexture2D::operator==()']]],
-  ['orthographic_5fcamera_2eh_444',['orthographic_camera.h',['../orthographic__camera_8h.html',1,'']]],
-  ['orthographic_5fcamera_5fcontroller_2eh_445',['orthographic_camera_controller.h',['../orthographic__camera__controller_8h.html',1,'']]],
-  ['orthographiccamera_446',['OrthographicCamera',['../classgauri_1_1OrthographicCamera.html',1,'gauri::OrthographicCamera'],['../classgauri_1_1OrthographicCamera.html#a43d1f15531467e295b81287609744db2',1,'gauri::OrthographicCamera::OrthographicCamera()']]],
-  ['orthographiccamerabounds_447',['OrthographicCameraBounds',['../structgauri_1_1OrthographicCameraBounds.html',1,'gauri']]],
-  ['orthographiccameracontroller_448',['OrthographicCameraController',['../classgauri_1_1OrthographicCameraController.html',1,'gauri::OrthographicCameraController'],['../classgauri_1_1OrthographicCameraController.html#a38bd91071a6726cfecc325c0af10c5f1',1,'gauri::OrthographicCameraController::OrthographicCameraController()']]],
-  ['vec4_20_26_449',['vec4 &amp;',['../structgauri_1_1SpriteRendererComponent.html#a0c439657cb35b576b08aa79a130d1a26',1,'gauri::SpriteRendererComponent::vec4 &amp;() const'],['../structgauri_1_1SpriteRendererComponent.html#aa64f071e912c8b2917dd6a1b17b69b41',1,'gauri::SpriteRendererComponent::vec4 &amp;()']]]
+  ['operator_20uint32_5ft_442',['operator uint32_t',['../classgauri_1_1Entity.html#aabb79ec45121339eed5a9b09d26554b9',1,'gauri::Entity']]],
+  ['operator_21_3d_443',['operator!=',['../classgauri_1_1Entity.html#aec351e51e31762c3db716a2603e6c027',1,'gauri::Entity']]],
+  ['operator_3c_3c_444',['operator&lt;&lt;',['../namespacegauri.html#a1044f5cd43c46dae84158c09a4cc7809',1,'gauri']]],
+  ['operator_3d_3d_445',['operator==',['../classgauri_1_1Texture.html#a400afe0ed4e5e89ce8ede94276e7d789',1,'gauri::Texture::operator==()'],['../classgauri_1_1Entity.html#a011c286c3b2347dd439fa40cacbb70b2',1,'gauri::Entity::operator==()'],['../classgauri_1_1OpenGLTexture2D.html#a9413352391cadfdd9d0caac8ec91255e',1,'gauri::OpenGLTexture2D::operator==()']]],
+  ['orthographic_5fcamera_2eh_446',['orthographic_camera.h',['../orthographic__camera_8h.html',1,'']]],
+  ['orthographic_5fcamera_5fcontroller_2eh_447',['orthographic_camera_controller.h',['../orthographic__camera__controller_8h.html',1,'']]],
+  ['orthographiccamera_448',['OrthographicCamera',['../classgauri_1_1OrthographicCamera.html',1,'gauri::OrthographicCamera'],['../classgauri_1_1OrthographicCamera.html#a43d1f15531467e295b81287609744db2',1,'gauri::OrthographicCamera::OrthographicCamera()']]],
+  ['orthographiccamerabounds_449',['OrthographicCameraBounds',['../structgauri_1_1OrthographicCameraBounds.html',1,'gauri']]],
+  ['orthographiccameracontroller_450',['OrthographicCameraController',['../classgauri_1_1OrthographicCameraController.html',1,'gauri::OrthographicCameraController'],['../classgauri_1_1OrthographicCameraController.html#a38bd91071a6726cfecc325c0af10c5f1',1,'gauri::OrthographicCameraController::OrthographicCameraController()']]],
+  ['vec4_20_26_451',['vec4 &amp;',['../structgauri_1_1SpriteRendererComponent.html#a0c439657cb35b576b08aa79a130d1a26',1,'gauri::SpriteRendererComponent::vec4 &amp;() const'],['../structgauri_1_1SpriteRendererComponent.html#aa64f071e912c8b2917dd6a1b17b69b41',1,'gauri::SpriteRendererComponent::vec4 &amp;()']]]
 ];
