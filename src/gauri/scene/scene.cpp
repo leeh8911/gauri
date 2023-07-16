@@ -21,31 +21,6 @@ static void OnTransformComponent(entt::registry &registry, entt::entity entity)
 
 Scene::Scene()
 {
-#if ENTT_EXAMPLE_CODE
-    entt::entity entity = m_Registry.create();
-    m_Registry.emplace<TransformComponent>(entity, glm::mat4(1.0f));
-
-    m_Registry.on_construct<TransformComponent>().connect<OnTransformComponent>(entity);
-
-    // if (m_Registry.has<TransformComponent>(entity))
-    //{
-    //     TransformComponent &transform = m_Registry.get<TransformComponent>(entity);
-    // }
-
-    auto view = m_Registry.view<TransformComponent>();
-    for (auto entity : view)
-    {
-        TransformComponent &transform = m_Registry.get<TransformComponent>(entity);
-    }
-
-    auto group = m_Registry.group<TransformComponent>(entt::get<MeshComponent>);
-// for (auto entity : group)
-//{
-//     auto &[transform, mesh] = m_Registry.get<TransformComponent, MeshComponent>(entity);
-
-//    Renderer::Submit(mesh, transform);
-//}
-#endif
 }
 
 Scene::~Scene()
@@ -61,6 +36,20 @@ Entity Scene::CreateEntity(const std::string &name)
 }
 void Scene::OnUpdate(Timestep ts)
 {
+    // Update scripts
+    {
+        m_Registry.view<NativeScriptComponent>().each([=](auto entity, auto &nsc) {
+            // TODO: Move to Scene::OnScenePlay
+            if (!nsc.Instance)
+            {
+                nsc.Instance = nsc.InstantiateScript();
+                nsc.Instance->m_Entity = Entity{entity, this};
+                nsc.Instance->OnCreate();
+            }
+
+            nsc.Instance->OnUpdate(ts);
+        });
+    }
     // Render 2D
     Camera *mainCamera = nullptr;
     glm::mat4 *cameraTransform = nullptr;
@@ -68,7 +57,7 @@ void Scene::OnUpdate(Timestep ts)
         auto view = m_Registry.view<TransformComponent, CameraComponent>();
         for (auto entity : view)
         {
-            const auto &[transform, camera] = view.get<TransformComponent, CameraComponent>(entity);
+            auto [transform, camera] = view.get<TransformComponent, CameraComponent>(entity);
             if (camera.Primary)
             {
                 mainCamera = &camera.Camera;
@@ -84,7 +73,7 @@ void Scene::OnUpdate(Timestep ts)
         auto group = m_Registry.group<TransformComponent>(entt::get<SpriteRendererComponent>);
         for (auto entity : group)
         {
-            const auto &[transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
+            auto [transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
 
             Renderer2D::DrawQuad(transform, sprite.Color);
         }

@@ -24,6 +24,7 @@
 #include "gauri/scene/component.h"
 #include "gauri/scene/entity.h"
 #include "gauri/scene/scene.h"
+#include "gauri/scene/scriptable_entity.h"
 
 // ---- Renderer --------------------
 #include "gauri/renderer/render_command.h"

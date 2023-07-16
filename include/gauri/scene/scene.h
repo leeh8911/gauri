@@ -3,7 +3,6 @@
 #include "entt.hpp"
 
 #include "gauri/core/timestep.h"
-#include "gauri/scene/component.h"
 
 namespace gauri
 {
@@ -17,12 +16,6 @@ class Scene
     ~Scene();
 
     Entity CreateEntity(const std::string &name = std::string());
-
-    // TEMP
-    entt::registry &Reg()
-    {
-        return m_Registry;
-    }
 
     void OnUpdate(Timestep ts);
     void OnViewportResize(uint32_t width, uint32_t height);
