@@ -3,7 +3,6 @@
 #include "entt.hpp"
 
 #include "gauri/core/timestep.h"
-#include "gauri/scene/component.h"
 
 namespace gauri
 {

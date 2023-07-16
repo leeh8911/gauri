@@ -64,13 +64,17 @@ void Scene::OnUpdate(Timestep ts)
     // Update scripts
     {
         m_Registry.view<NativeScriptComponent>().each([=](auto entity, auto &nsc) {
-            if (nsc.Instance)
+            if (!nsc.Instance)
             {
                 nsc.InstantiateFunction();
-                nsc.OnCreateFunction(nsc.Instance);
+                nsc.Instance->m_Entity = Entity{entity, this};
+
+                if (nsc.OnCreateFunction)
+                    nsc.OnCreateFunction(nsc.Instance);
             }
 
-            nsc.OnUpdateFunction(nsc.Instance, ts);
+            if (nsc.OnUpdateFunction)
+                nsc.OnUpdateFunction(nsc.Instance, ts);
         });
     }
     // Render 2D
