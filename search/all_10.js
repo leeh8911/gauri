@@ -18,5 +18,6 @@ var searchData=
   ['resetstats_488',['ResetStats',['../classgauri_1_1Renderer2D.html#aa988fa9e4ec8613131dece019065016a',1,'gauri::Renderer2D']]],
   ['resize_489',['Resize',['../classgauri_1_1FrameBuffer.html#a46af401716d5cac54d7b6e6382affbd5',1,'gauri::FrameBuffer::Resize()'],['../classgauri_1_1OpenGLFrameBuffer.html#a5702d9e3c302694dbf287c6427e0882f',1,'gauri::OpenGLFrameBuffer::Resize()']]],
   ['right_490',['Right',['../structgauri_1_1OrthographicCameraBounds.html#a526c69c3afd1557135605f998918b930',1,'gauri::OrthographicCameraBounds']]],
-  ['run_491',['Run',['../classgauri_1_1Application.html#a807e209a5bbb8c81c5b76475b7e379dd',1,'gauri::Application']]]
+  ['rotation_491',['Rotation',['../structgauri_1_1TransformComponent.html#ac6748410501b9756c617115bac213a58',1,'gauri::TransformComponent']]],
+  ['run_492',['Run',['../classgauri_1_1Application.html#a807e209a5bbb8c81c5b76475b7e379dd',1,'gauri::Application']]]
 ];

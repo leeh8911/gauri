@@ -106,7 +106,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00068">68</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00071">71</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acb0653c65f036ae092961ac8ba68cb72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb0653c65f036ae092961ac8ba68cb72">&#9670;&nbsp;</a></span>Bind()</h2>
@@ -133,16 +133,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00075">75</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="structgauri_1_1NativeScriptComponent.html#ab1f83e244eb42cc0ba4179364e3410e2">InstantiateScript</a> = []() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ScriptableEntity *<span class="keyword">&gt;</span>(<span class="keyword">new</span> T()); };</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="structgauri_1_1NativeScriptComponent.html#ae6c4e66bd0755b31fc04c71946bfc755">DestroyScript</a> = [](NativeScriptComponent *nsc) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">delete</span> nsc-&gt;Instance;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            nsc-&gt;Instance = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="ttc" id="astructgauri_1_1NativeScriptComponent_html_ab1f83e244eb42cc0ba4179364e3410e2"><div class="ttname"><a href="structgauri_1_1NativeScriptComponent.html#ab1f83e244eb42cc0ba4179364e3410e2">gauri::NativeScriptComponent::InstantiateScript</a></div><div class="ttdeci">ScriptableEntity *(* InstantiateScript)()</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00072">component.h:72</a></div></div>
-<div class="ttc" id="astructgauri_1_1NativeScriptComponent_html_ae6c4e66bd0755b31fc04c71946bfc755"><div class="ttname"><a href="structgauri_1_1NativeScriptComponent.html#ae6c4e66bd0755b31fc04c71946bfc755">gauri::NativeScriptComponent::DestroyScript</a></div><div class="ttdeci">void(* DestroyScript)(NativeScriptComponent *)</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00073">component.h:73</a></div></div>
+<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00078">78</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="structgauri_1_1NativeScriptComponent.html#ab1f83e244eb42cc0ba4179364e3410e2">InstantiateScript</a> = []() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ScriptableEntity *<span class="keyword">&gt;</span>(<span class="keyword">new</span> T()); };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="structgauri_1_1NativeScriptComponent.html#ae6c4e66bd0755b31fc04c71946bfc755">DestroyScript</a> = [](NativeScriptComponent *nsc) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">delete</span> nsc-&gt;Instance;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            nsc-&gt;Instance = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="ttc" id="astructgauri_1_1NativeScriptComponent_html_ab1f83e244eb42cc0ba4179364e3410e2"><div class="ttname"><a href="structgauri_1_1NativeScriptComponent.html#ab1f83e244eb42cc0ba4179364e3410e2">gauri::NativeScriptComponent::InstantiateScript</a></div><div class="ttdeci">ScriptableEntity *(* InstantiateScript)()</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00075">component.h:75</a></div></div>
+<div class="ttc" id="astructgauri_1_1NativeScriptComponent_html_ae6c4e66bd0755b31fc04c71946bfc755"><div class="ttname"><a href="structgauri_1_1NativeScriptComponent.html#ae6c4e66bd0755b31fc04c71946bfc755">gauri::NativeScriptComponent::DestroyScript</a></div><div class="ttdeci">void(* DestroyScript)(NativeScriptComponent *)</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00076">component.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -159,7 +159,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00070">70</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00073">73</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00072">72</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00075">75</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00073">73</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="component_8h_source.html#l00076">76</a> of file <a class="el" href="component_8h_source.html">component.h</a>.</p>
 
 </div>
 </div>

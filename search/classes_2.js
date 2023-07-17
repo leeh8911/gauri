@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['camera_626',['Camera',['../classgauri_1_1Camera.html',1,'gauri']]],
-  ['cameracomponent_627',['CameraComponent',['../structgauri_1_1CameraComponent.html',1,'gauri']]]
+  ['camera_628',['Camera',['../classgauri_1_1Camera.html',1,'gauri']]],
+  ['cameracomponent_629',['CameraComponent',['../structgauri_1_1CameraComponent.html',1,'gauri']]]
 ];
