@@ -73,6 +73,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -87,16 +88,23 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for gauri::SceneCamera:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera__inherit__graph.svg" width="434" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for gauri::SceneCamera:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera__coll__graph.svg" width="520" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7d03bf36623ecf63e6ea6ac191f968eb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a> { <a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968ebaa80420eef88d11f77532f1b9cb467fa3">Perspective</a> = 0
+, <a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eba03424250432f2aa71de95579d2c0eaeb">Orthographic</a> = 1
+ }</td></tr>
+<tr class="separator:a7d03bf36623ecf63e6ea6ac191f968eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c6cdcd98f98d4e6621b23838f187029"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a6c6cdcd98f98d4e6621b23838f187029">SceneCamera</a> ()</td></tr>
@@ -105,12 +113,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9304439650127e97698a16a758a9395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c70ddbe7c991ba248000cd55b1ea63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#ae6c70ddbe7c991ba248000cd55b1ea63">SetOrthographic</a> (float size, float nearClip, float farClip)</td></tr>
 <tr class="separator:ae6c70ddbe7c991ba248000cd55b1ea63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209604364255f4a7cc0ee9ebc7c6f63c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a209604364255f4a7cc0ee9ebc7c6f63c">SetPerspective</a> (float verticalFov, float nearClip, float farClip)</td></tr>
+<tr class="separator:a209604364255f4a7cc0ee9ebc7c6f63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33dadb0ad041f58e89710fd281213bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a33dadb0ad041f58e89710fd281213bca">SetViewportSize</a> (uint32_t width, uint32_t height)</td></tr>
 <tr class="separator:a33dadb0ad041f58e89710fd281213bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3411a5489d19548c80ef9f73f6d710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#acf3411a5489d19548c80ef9f73f6d710">GetProjectionType</a> () const</td></tr>
+<tr class="separator:acf3411a5489d19548c80ef9f73f6d710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8787053a220837d9366d1b16b4e8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a6c8787053a220837d9366d1b16b4e8a4">SetProjectionType</a> (<a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a> type)</td></tr>
+<tr class="separator:a6c8787053a220837d9366d1b16b4e8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df01a8efa133081a83cfeef2b8f42d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a7df01a8efa133081a83cfeef2b8f42d8">GetOrthographicSize</a> () const</td></tr>
 <tr class="separator:a7df01a8efa133081a83cfeef2b8f42d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f5b6963389a54222c50225d1af616a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a39f5b6963389a54222c50225d1af616a">SetOrthographicSize</a> (float size)</td></tr>
 <tr class="separator:a39f5b6963389a54222c50225d1af616a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660da6ab146c2637aeec74329bf9687d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a660da6ab146c2637aeec74329bf9687d">GetOrthographicNearClip</a> () const</td></tr>
+<tr class="separator:a660da6ab146c2637aeec74329bf9687d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36054c87440c66e4073f667c73969c4a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a36054c87440c66e4073f667c73969c4a">GetOrthographicFarClip</a> () const</td></tr>
+<tr class="separator:a36054c87440c66e4073f667c73969c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef6a56f61a0491add0cdcbaebee1528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a8ef6a56f61a0491add0cdcbaebee1528">SetOrthographicNearClip</a> (float nearClip)</td></tr>
+<tr class="separator:a8ef6a56f61a0491add0cdcbaebee1528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2178b23476067e0facd41f82f59875e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a2178b23476067e0facd41f82f59875e7">SetOrthographicFarClip</a> (float farClip)</td></tr>
+<tr class="separator:a2178b23476067e0facd41f82f59875e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2689acf3f62d55a05764fe2924f5a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#afa2689acf3f62d55a05764fe2924f5a5">GetPerspectiveVerticalFov</a> () const</td></tr>
+<tr class="separator:afa2689acf3f62d55a05764fe2924f5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47c91c6f27dba433b0193591024be8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#af47c91c6f27dba433b0193591024be8f">SetPerspectiveVerticalFov</a> (float verticalFov)</td></tr>
+<tr class="separator:af47c91c6f27dba433b0193591024be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4589214da44c73c554e7483f1a294de9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a4589214da44c73c554e7483f1a294de9">GetPerspectiveNearClip</a> () const</td></tr>
+<tr class="separator:a4589214da44c73c554e7483f1a294de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3ea0d238ada90db2fda1dd9a357d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a55a3ea0d238ada90db2fda1dd9a357d1">GetPerspectiveFarClip</a> () const</td></tr>
+<tr class="separator:a55a3ea0d238ada90db2fda1dd9a357d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab5dea84ec592b35baea6c3a0fae5a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a4ab5dea84ec592b35baea6c3a0fae5a1">SetPerspectiveNearClip</a> (float nearClip)</td></tr>
+<tr class="separator:a4ab5dea84ec592b35baea6c3a0fae5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecaf9889bd89d1c8dc467bae5d8d0ca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#aecaf9889bd89d1c8dc467bae5d8d0ca8">SetPerspectiveFarClip</a> (float farClip)</td></tr>
+<tr class="separator:aecaf9889bd89d1c8dc467bae5d8d0ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ebdac212a9c49945a4f4a7918d67ee6"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Camera.html#a9ebdac212a9c49945a4f4a7918d67ee6">GetProjection</a> () const</td></tr>
 <tr class="separator:a9ebdac212a9c49945a4f4a7918d67ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,19 +160,60 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a4a32adb20fddc8de42ab34899119416b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a4a32adb20fddc8de42ab34899119416b">m_ProjectionType</a> = <a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eba03424250432f2aa71de95579d2c0eaeb">ProjectionType::Orthographic</a></td></tr>
+<tr class="separator:a4a32adb20fddc8de42ab34899119416b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd8ec8a2064051e7a4f5ee47f988905"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">m_OrthographicSize</a> = 10.0f</td></tr>
 <tr class="separator:a4dd8ec8a2064051e7a4f5ee47f988905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17993e71a0970d28124ed30b9870ba4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#af17993e71a0970d28124ed30b9870ba4">m_OrthographicNear</a> = -1.0f</td></tr>
 <tr class="separator:af17993e71a0970d28124ed30b9870ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745c9c3cc5a148cb015508eb1adf6ed1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a745c9c3cc5a148cb015508eb1adf6ed1">m_OrthographicFar</a> = 1.0f</td></tr>
 <tr class="separator:a745c9c3cc5a148cb015508eb1adf6ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816f30dc38b8c310bf89fa53347dba17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a816f30dc38b8c310bf89fa53347dba17">m_PerspectiveFov</a> = glm::radians(45.0f)</td></tr>
+<tr class="separator:a816f30dc38b8c310bf89fa53347dba17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab527771d8afd7f0169077c55e3859f35"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#ab527771d8afd7f0169077c55e3859f35">m_PerspectiveNear</a> = 0.01f</td></tr>
+<tr class="separator:ab527771d8afd7f0169077c55e3859f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bd46343675f920cbd73a2c77057d8e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a03bd46343675f920cbd73a2c77057d8e">m_PerspectiveFar</a> = 1000.0f</td></tr>
+<tr class="separator:a03bd46343675f920cbd73a2c77057d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd16c249ad361a314ba14a981f2df14"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1SceneCamera.html#a1dd16c249ad361a314ba14a981f2df14">m_AspectRatio</a> = 0.0f</td></tr>
 <tr class="separator:a1dd16c249ad361a314ba14a981f2df14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00007">7</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a7d03bf36623ecf63e6ea6ac191f968eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d03bf36623ecf63e6ea6ac191f968eb">&#9670;&nbsp;</a></span>ProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">gauri::SceneCamera::ProjectionType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d03bf36623ecf63e6ea6ac191f968ebaa80420eef88d11f77532f1b9cb467fa3"></a>Perspective&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d03bf36623ecf63e6ea6ac191f968eba03424250432f2aa71de95579d2c0eaeb"></a>Orthographic&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00010">10</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        Perspective = 0,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        Orthographic = 1</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c6cdcd98f98d4e6621b23838f187029"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c6cdcd98f98d4e6621b23838f187029">&#9670;&nbsp;</a></span>SceneCamera()</h2>
 
@@ -216,6 +291,40 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a209604364255f4a7cc0ee9ebc7c6f63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209604364255f4a7cc0ee9ebc7c6f63c">&#9670;&nbsp;</a></span>SetPerspective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetPerspective </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>verticalFov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>nearClip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>farClip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33dadb0ad041f58e89710fd281213bca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33dadb0ad041f58e89710fd281213bca">&#9670;&nbsp;</a></span>SetViewportSize()</h2>
 
@@ -244,6 +353,76 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="acf3411a5489d19548c80ef9f73f6d710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3411a5489d19548c80ef9f73f6d710">&#9670;&nbsp;</a></span>GetProjectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a> gauri::SceneCamera::GetProjectionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00024">24</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#a4a32adb20fddc8de42ab34899119416b">m_ProjectionType</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a4a32adb20fddc8de42ab34899119416b"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a4a32adb20fddc8de42ab34899119416b">gauri::SceneCamera::m_ProjectionType</a></div><div class="ttdeci">ProjectionType m_ProjectionType</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00092">scene_camera.h:92</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c8787053a220837d9366d1b16b4e8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8787053a220837d9366d1b16b4e8a4">&#9670;&nbsp;</a></span>SetProjectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetProjectionType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00029">29</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a4a32adb20fddc8de42ab34899119416b">m_ProjectionType</a> = type;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a9ebf938db2bc8681ec9119277998dd7c"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">gauri::SceneCamera::RecalculateProjection</a></div><div class="ttdeci">void RecalculateProjection()</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a6c8787053a220837d9366d1b16b4e8a4_cgraph.svg" width="639" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a7df01a8efa133081a83cfeef2b8f42d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7df01a8efa133081a83cfeef2b8f42d8">&#9670;&nbsp;</a></span>GetOrthographicSize()</h2>
 
@@ -267,11 +446,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00017">17</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">m_OrthographicSize</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a4dd8ec8a2064051e7a4f5ee47f988905"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">gauri::SceneCamera::m_OrthographicSize</a></div><div class="ttdeci">float m_OrthographicSize</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00028">scene_camera.h:28</a></div></div>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00035">35</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">m_OrthographicSize</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a4dd8ec8a2064051e7a4f5ee47f988905"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">gauri::SceneCamera::m_OrthographicSize</a></div><div class="ttdeci">float m_OrthographicSize</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00093">scene_camera.h:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,16 +478,360 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00021">21</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">m_OrthographicSize</a> = size;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a9ebf938db2bc8681ec9119277998dd7c"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">gauri::SceneCamera::RecalculateProjection</a></div><div class="ttdeci">void RecalculateProjection()</div></div>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00039">39</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a4dd8ec8a2064051e7a4f5ee47f988905">m_OrthographicSize</a> = size;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a39f5b6963389a54222c50225d1af616a_cgraph.svg" width="655" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a660da6ab146c2637aeec74329bf9687d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660da6ab146c2637aeec74329bf9687d">&#9670;&nbsp;</a></span>GetOrthographicNearClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::GetOrthographicNearClip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00044">44</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#af17993e71a0970d28124ed30b9870ba4">m_OrthographicNear</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_af17993e71a0970d28124ed30b9870ba4"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#af17993e71a0970d28124ed30b9870ba4">gauri::SceneCamera::m_OrthographicNear</a></div><div class="ttdeci">float m_OrthographicNear</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00094">scene_camera.h:94</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a36054c87440c66e4073f667c73969c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36054c87440c66e4073f667c73969c4a">&#9670;&nbsp;</a></span>GetOrthographicFarClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::GetOrthographicFarClip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00048">48</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#a745c9c3cc5a148cb015508eb1adf6ed1">m_OrthographicFar</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a745c9c3cc5a148cb015508eb1adf6ed1"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a745c9c3cc5a148cb015508eb1adf6ed1">gauri::SceneCamera::m_OrthographicFar</a></div><div class="ttdeci">float m_OrthographicFar</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00094">scene_camera.h:94</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8ef6a56f61a0491add0cdcbaebee1528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef6a56f61a0491add0cdcbaebee1528">&#9670;&nbsp;</a></span>SetOrthographicNearClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetOrthographicNearClip </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>nearClip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00052">52</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#af17993e71a0970d28124ed30b9870ba4">m_OrthographicNear</a> = nearClip;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a8ef6a56f61a0491add0cdcbaebee1528_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2178b23476067e0facd41f82f59875e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2178b23476067e0facd41f82f59875e7">&#9670;&nbsp;</a></span>SetOrthographicFarClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetOrthographicFarClip </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>farClip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00057">57</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a745c9c3cc5a148cb015508eb1adf6ed1">m_OrthographicFar</a> = farClip;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a2178b23476067e0facd41f82f59875e7_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="afa2689acf3f62d55a05764fe2924f5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2689acf3f62d55a05764fe2924f5a5">&#9670;&nbsp;</a></span>GetPerspectiveVerticalFov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::GetPerspectiveVerticalFov </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00063">63</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> glm::degrees(<a class="code" href="classgauri_1_1SceneCamera.html#a816f30dc38b8c310bf89fa53347dba17">m_PerspectiveFov</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a816f30dc38b8c310bf89fa53347dba17"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a816f30dc38b8c310bf89fa53347dba17">gauri::SceneCamera::m_PerspectiveFov</a></div><div class="ttdeci">float m_PerspectiveFov</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00096">scene_camera.h:96</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af47c91c6f27dba433b0193591024be8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47c91c6f27dba433b0193591024be8f">&#9670;&nbsp;</a></span>SetPerspectiveVerticalFov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetPerspectiveVerticalFov </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>verticalFov</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00067">67</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a816f30dc38b8c310bf89fa53347dba17">m_PerspectiveFov</a> = glm::radians(verticalFov);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_af47c91c6f27dba433b0193591024be8f_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4589214da44c73c554e7483f1a294de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4589214da44c73c554e7483f1a294de9">&#9670;&nbsp;</a></span>GetPerspectiveNearClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::GetPerspectiveNearClip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00072">72</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#ab527771d8afd7f0169077c55e3859f35">m_PerspectiveNear</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_ab527771d8afd7f0169077c55e3859f35"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#ab527771d8afd7f0169077c55e3859f35">gauri::SceneCamera::m_PerspectiveNear</a></div><div class="ttdeci">float m_PerspectiveNear</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00097">scene_camera.h:97</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55a3ea0d238ada90db2fda1dd9a357d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a3ea0d238ada90db2fda1dd9a357d1">&#9670;&nbsp;</a></span>GetPerspectiveFarClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::GetPerspectiveFarClip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00076">76</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1SceneCamera.html#a03bd46343675f920cbd73a2c77057d8e">m_PerspectiveFar</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="ttc" id="aclassgauri_1_1SceneCamera_html_a03bd46343675f920cbd73a2c77057d8e"><div class="ttname"><a href="classgauri_1_1SceneCamera.html#a03bd46343675f920cbd73a2c77057d8e">gauri::SceneCamera::m_PerspectiveFar</a></div><div class="ttdeci">float m_PerspectiveFar</div><div class="ttdef"><b>Definition:</b> <a href="scene__camera_8h_source.html#l00097">scene_camera.h:97</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ab5dea84ec592b35baea6c3a0fae5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab5dea84ec592b35baea6c3a0fae5a1">&#9670;&nbsp;</a></span>SetPerspectiveNearClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetPerspectiveNearClip </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>nearClip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00080">80</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#ab527771d8afd7f0169077c55e3859f35">m_PerspectiveNear</a> = nearClip;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a4ab5dea84ec592b35baea6c3a0fae5a1_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aecaf9889bd89d1c8dc467bae5d8d0ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecaf9889bd89d1c8dc467bae5d8d0ca8">&#9670;&nbsp;</a></span>SetPerspectiveFarClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::SceneCamera::SetPerspectiveFarClip </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>farClip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00085">85</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a03bd46343675f920cbd73a2c77057d8e">m_PerspectiveFar</a> = farClip;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classgauri_1_1SceneCamera.html#a9ebf938db2bc8681ec9119277998dd7c">RecalculateProjection</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_aecaf9889bd89d1c8dc467bae5d8d0ca8_cgraph.svg" width="664" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -339,7 +862,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a9ebf938db2bc8681ec9119277998dd7c_icgraph.svg" width="655" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classgauri_1_1SceneCamera_a9ebf938db2bc8681ec9119277998dd7c_icgraph.svg" width="100%" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -377,6 +900,30 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4a32adb20fddc8de42ab34899119416b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a32adb20fddc8de42ab34899119416b">&#9670;&nbsp;</a></span>m_ProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb">ProjectionType</a> gauri::SceneCamera::m_ProjectionType = <a class="el" href="classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eba03424250432f2aa71de95579d2c0eaeb">ProjectionType::Orthographic</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00092">92</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+
+</div>
+</div>
 <a id="a4dd8ec8a2064051e7a4f5ee47f988905"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dd8ec8a2064051e7a4f5ee47f988905">&#9670;&nbsp;</a></span>m_OrthographicSize</h2>
 
@@ -397,7 +944,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00028">28</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00093">93</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +968,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00029">29</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00094">94</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +992,79 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00029">29</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00094">94</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a816f30dc38b8c310bf89fa53347dba17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816f30dc38b8c310bf89fa53347dba17">&#9670;&nbsp;</a></span>m_PerspectiveFov</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::m_PerspectiveFov = glm::radians(45.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00096">96</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ab527771d8afd7f0169077c55e3859f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab527771d8afd7f0169077c55e3859f35">&#9670;&nbsp;</a></span>m_PerspectiveNear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::m_PerspectiveNear = 0.01f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00097">97</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a03bd46343675f920cbd73a2c77057d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03bd46343675f920cbd73a2c77057d8e">&#9670;&nbsp;</a></span>m_PerspectiveFar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauri::SceneCamera::m_PerspectiveFar = 1000.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00097">97</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +1088,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00031">31</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene__camera_8h_source.html#l00099">99</a> of file <a class="el" href="scene__camera_8h_source.html">scene_camera.h</a>.</p>
 
 </div>
 </div>
