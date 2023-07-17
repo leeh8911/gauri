@@ -34,6 +34,10 @@ Entity Scene::CreateEntity(const std::string &name)
     tag.Tag = name.empty() ? "Entity" : name;
     return entity;
 }
+void Scene::DestroyEntity(Entity entity)
+{
+    m_Registry.destroy(entity);
+}
 void Scene::OnUpdate(Timestep ts)
 {
     // Update scripts
@@ -97,5 +101,30 @@ void Scene::OnViewportResize(uint32_t width, uint32_t height)
             cameraComponent.Camera.SetViewportSize(width, height);
         }
     }
+}
+
+template <typename T> inline void Scene::OnComponentAdded(Entity entity, T &component)
+{
+}
+
+template <> void Scene::OnComponentAdded<TransformComponent>(Entity entity, TransformComponent &component)
+{
+}
+
+template <> void Scene::OnComponentAdded<SpriteRendererComponent>(Entity entity, SpriteRendererComponent &component)
+{
+}
+
+template <> void Scene::OnComponentAdded<TagComponent>(Entity entity, TagComponent &component)
+{
+}
+
+template <> void Scene::OnComponentAdded<NativeScriptComponent>(Entity entity, NativeScriptComponent &component)
+{
+}
+
+template <> void Scene::OnComponentAdded<CameraComponent>(Entity entity, CameraComponent &component)
+{
+    component.Camera.SetViewportSize(m_ViewportWidth, m_ViewportHeight);
 }
 } // namespace gauri
