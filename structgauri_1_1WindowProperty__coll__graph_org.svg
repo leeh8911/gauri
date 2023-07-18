@@ -18,7 +18,7 @@
 <polyline fill="none" stroke="black" points="0,-38.5 517,-38.5 "/>
 <text text-anchor="middle" x="258.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-19.5 517,-19.5 "/>
-<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ WindowProperty(const std::string &amp;title=&quot;Gauri Engine&quot;, uint32_t width=1280, uint32_t height=720)</text>
+<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ WindowProperty(const std::string &amp;title=&quot;Gauri Engine&quot;, uint32_t width=1600, uint32_t height=900)</text>
 </a>
 </g>
 </g>
