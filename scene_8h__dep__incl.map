@@ -1,7 +1,8 @@
 <map id="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene.h" name="/home/runner/work/gauri/gauri/gauri/include/gauri/scene/scene.h">
-<area shape="rect" id="node1" title=" " alt="" coords="271,5,711,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="399,5,839,32"/>
 <area shape="rect" id="node2" href="$entity_8h.html" title=" " alt="" coords="143,80,582,107"/>
 <area shape="rect" id="node5" href="$gauri_8h.html" title=" " alt="" coords="365,304,721,331"/>
+<area shape="rect" id="node7" href="$scene__serializer_8h.html" title=" " alt="" coords="656,80,1163,107"/>
 <area shape="rect" id="node3" href="$scriptable__entity_8h.html" title=" " alt="" coords="21,155,531,181"/>
 <area shape="rect" id="node4" href="$component_8h.html" title=" " alt="" coords="5,229,480,256"/>
 <area shape="rect" id="node6" href="$entry__point_8h.html" title=" " alt="" coords="309,379,776,405"/>
