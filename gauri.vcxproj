@@ -58,21 +58,21 @@
     <IntDir>..\bin-int\Debug-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\bin\Release-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Release-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <OutDir>..\bin\Dist-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Dist-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -600,6 +600,7 @@
     <ClInclude Include="include\gauri\scene\entity.h" />
     <ClInclude Include="include\gauri\scene\scene.h" />
     <ClInclude Include="include\gauri\scene\scene_camera.h" />
+    <ClInclude Include="include\gauri\scene\scene_serializer.h" />
     <ClInclude Include="include\gauri\scene\scriptable_entity.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
@@ -613,6 +614,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp" />
+    <ClCompile Include="src\gauri\scene\scene_serializer.cpp" />
     <ClCompile Include="src\gauri\core\application.cpp" />
     <ClCompile Include="src\gauri\core\layer.cpp" />
     <ClCompile Include="src\gauri\core\layer_stack.cpp" />
@@ -657,6 +659,9 @@
     </ProjectReference>
     <ProjectReference Include="3rdparty\imgui\ImGui.vcxproj">
       <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="3rdparty\yaml-cpp\yaml-cpp.vcxproj">
+      <Project>{88F1A057-74BE-FB62-9DD7-E90A890331F1}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -45,6 +45,7 @@
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}",
 		"%{IncludeDir.entt}",
+		"%{IncludeDir.yaml_cpp}",
     }
 
     links
@@ -52,6 +53,7 @@
         "GLFW",
         "Glad",
         "imgui",
+        "yaml-cpp",
         "Dwmapi.lib", 
         "opengl32.lib",
     }
