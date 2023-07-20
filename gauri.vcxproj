@@ -602,6 +602,7 @@
     <ClInclude Include="include\gauri\scene\scene_camera.h" />
     <ClInclude Include="include\gauri\scene\scene_serializer.h" />
     <ClInclude Include="include\gauri\scene\scriptable_entity.h" />
+    <ClInclude Include="include\gauri\utils\platform_utils.h" />
     <ClInclude Include="include\platform\opengl\opengl_buffer.h" />
     <ClInclude Include="include\platform\opengl\opengl_context.h" />
     <ClInclude Include="include\platform\opengl\opengl_frame_buffer.h" />
@@ -648,6 +649,7 @@
     <ClCompile Include="src\platform\opengl\opengl_texture.cpp" />
     <ClCompile Include="src\platform\opengl\opengl_vertex_array.cpp" />
     <ClCompile Include="src\platform\windows\windows_input.cpp" />
+    <ClCompile Include="src\platform\windows\windows_platform_utils.cpp" />
     <ClCompile Include="src\platform\windows\windows_window.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -1468,6 +1468,7 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\scene\scene_serializer.h" />
+    <ClInclude Include="include\gauri\utils\platform_utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp">
@@ -1570,5 +1571,6 @@
       <Filter>src\platform\windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\scene\scene_serializer.cpp" />
+    <ClCompile Include="src\platform\windows\windows_platform_utils.cpp" />
   </ItemGroup>
 </Project>
