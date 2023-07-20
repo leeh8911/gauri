@@ -19,7 +19,7 @@
 <text text-anchor="middle" x="140.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-63.5 281,-63.5 "/>
 <text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SceneSerializer(const Ref&lt; Scene &gt; &amp;scene)</text>
-<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void SerializeText(const std::string &amp;filepath)</text>
+<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Serialize(const std::string &amp;filepath)</text>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void SerializeRuntime(const std::string &amp;filepath)</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Deserialize(const std::string &amp;filepath)</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool DeserializeRuntime(const std::string &amp;filepath)</text>
