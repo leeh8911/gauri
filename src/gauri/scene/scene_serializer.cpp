@@ -16,6 +16,37 @@ template <> struct convert<glm::vec3>
     static Node encode(const glm::vec3 &rhs)
     {
         Node node;
+        node.push_back(rhs.x);
+        node.push_back(rhs.y);
+        node.push_back(rhs.z);
+        return node;
+    }
+    static bool decode(const Node &node, glm::vec3 &rhs)
+    {
+        rhs.x = node[0].as<float>();
+        rhs.y = node[1].as<float>();
+        rhs.z = node[2].as<float>();
+        return true;
+    }
+};
+template <> struct convert<glm::vec4>
+{
+    static Node encode(const glm::vec4 &rhs)
+    {
+        Node node;
+        node.push_back(rhs.x);
+        node.push_back(rhs.y);
+        node.push_back(rhs.z);
+        node.push_back(rhs.w);
+        return node;
+    }
+    static bool decode(const Node &node, glm::vec4 &rhs)
+    {
+        rhs.x = node[0].as<float>();
+        rhs.y = node[1].as<float>();
+        rhs.z = node[2].as<float>();
+        rhs.w = node[3].as<float>();
+        return true;
     }
 };
 } // namespace YAML
@@ -99,7 +130,7 @@ static void SerializeEntity(YAML::Emitter &out, Entity entity)
     out << YAML::EndMap; // Entity
 }
 
-void SceneSerializer::SerializeText(const std::string &filepath)
+void SceneSerializer::Serialize(const std::string &filepath)
 {
     YAML::Emitter out;
     out << YAML::BeginMap;
@@ -165,6 +196,33 @@ bool SceneSerializer::Deserialize(const std::string &filepath)
                 tc.Translation = transformComponent["Translation"].as<glm::vec3>();
                 tc.Rotation = transformComponent["Rotation"].as<glm::vec3>();
                 tc.Scale = transformComponent["Scale"].as<glm::vec3>();
+            }
+
+            auto cameraComponent = entity["CameraComponent"];
+            if (cameraComponent)
+            {
+                auto &cc = deserializedEntity.AddComponent<CameraComponent>();
+
+                const auto &cameraProps = cameraComponent["Camera"];
+                cc.Camera.SetProjectionType((SceneCamera::ProjectionType)cameraProps["ProjectionType"].as<int>());
+
+                cc.Camera.SetPerspectiveVerticalFov(cameraProps["PerspectiveVerticalFov"].as<float>());
+                cc.Camera.SetPerspectiveNearClip(cameraProps["PerspectiveNearClip"].as<float>());
+                cc.Camera.SetPerspectiveFarClip(cameraProps["PerspectiveFarClip"].as<float>());
+
+                cc.Camera.SetOrthographicSize(cameraProps["OrthographicSize"].as<float>());
+                cc.Camera.SetOrthographicNearClip(cameraProps["OrthographicNearClip"].as<float>());
+                cc.Camera.SetOrthographicFarClip(cameraProps["OrthographicFarClip"].as<float>());
+
+                cc.Primary = cameraComponent["Primary"].as<bool>();
+                cc.FixedAspectRatio = cameraComponent["FixedAspectRatio"].as<bool>();
+            }
+
+            auto spriteRendererComponent = entity["SpriteRendererComponent"];
+            if (spriteRendererComponent)
+            {
+                auto &src = deserializedEntity.AddComponent<SpriteRendererComponent>();
+                src.Color = spriteRendererComponent["Color"].as<glm::vec4>();
             }
         }
     }
