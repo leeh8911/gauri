@@ -1,10 +1,10 @@
 <map id="gauri::NativeScriptComponent" name="gauri::NativeScriptComponent">
-<area shape="rect" id="node1" title=" " alt="" coords="84,903,303,980"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,719,248,796"/>
-<area shape="rect" id="node3" href="$classgauri_1_1ScriptableEntity.html" title=" " alt="" coords="272,689,539,825"/>
-<area shape="rect" id="node4" href="$classgauri_1_1Entity.html" title=" " alt="" coords="245,388,565,627"/>
-<area shape="rect" id="node5" href="$classgauri_1_1Scene.html" title=" " alt="" coords="71,160,481,325"/>
+<area shape="rect" id="node1" title=" " alt="" coords="84,917,303,995"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,733,248,811"/>
+<area shape="rect" id="node3" href="$classgauri_1_1ScriptableEntity.html" title=" " alt="" coords="272,704,539,840"/>
+<area shape="rect" id="node4" href="$classgauri_1_1Entity.html" title=" " alt="" coords="245,403,565,641"/>
+<area shape="rect" id="node5" href="$classgauri_1_1Scene.html" title=" " alt="" coords="71,160,481,340"/>
 <area shape="rect" id="node6" title=" " alt="" coords="183,5,255,83"/>
 <area shape="rect" id="node7" title=" " alt="" coords="296,5,371,83"/>
-<area shape="rect" id="node8" title=" " alt="" coords="506,204,566,281"/>
+<area shape="rect" id="node8" title=" " alt="" coords="506,211,566,289"/>
 </map>
