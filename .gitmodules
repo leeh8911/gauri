@@ -16,3 +16,6 @@
 [submodule "3rdparty/glm"]
 	path = 3rdparty/glm
 	url = https://github.com/g-truc/glm.git
+[submodule "3rdparty/ImGuizmo"]
+	path = 3rdparty/ImGuizmo
+	url = https://github.com/leeh8911/ImGuizmo.git

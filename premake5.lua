@@ -28,6 +28,9 @@
         "3rdparty/stb_image/**.cpp",
 		"3rdparty/glm/glm/**.hpp",
 		"3rdparty/glm/glm/**.inl",
+
+		"3rdparty/ImGuizmo/ImGuizmo.h",
+		"3rdparty/ImGuizmo/ImGuizmo.cpp",
     }
     removefiles {"src/test/**.cpp", "src/test/**.h"}
 
@@ -42,6 +45,7 @@
         "%{IncludeDir.Glad}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.imgui}",
+        "%{IncludeDir.ImGuizmo}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}",
 		"%{IncludeDir.entt}",
@@ -57,6 +61,9 @@
         "Dwmapi.lib", 
         "opengl32.lib",
     }
+
+    filter "files:3rdparty/ImGuizmo/**.cpp"
+    flags {"NoPCH"}
 
     filter "system:windows"
         systemversion "latest"

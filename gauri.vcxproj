@@ -58,21 +58,21 @@
     <IntDir>..\bin-int\Debug-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\ImGuizmo;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\bin\Release-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Release-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\ImGuizmo;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <OutDir>..\bin\Dist-windows-x86_64\gauri\</OutDir>
     <IntDir>..\bin-int\Dist-windows-x86_64\gauri\</IntDir>
     <TargetName>gauri</TargetName>
     <TargetExt>.lib</TargetExt>
-    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>3rdparty\spdlog\include;3rdparty\Glad\include;3rdparty\glfw\include;3rdparty\imgui;3rdparty\ImGuizmo;3rdparty\glm;3rdparty\stb_image;3rdparty\entt\include;3rdparty\yaml-cpp\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -150,6 +150,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="3rdparty\ImGuizmo\ImGuizmo.h" />
     <ClInclude Include="3rdparty\glm\glm\common.hpp" />
     <ClInclude Include="3rdparty\glm\glm\detail\_features.hpp" />
     <ClInclude Include="3rdparty\glm\glm\detail\_fixes.hpp" />
@@ -582,6 +583,7 @@
     <ClInclude Include="include\gauri\debug\instrumentor.h" />
     <ClInclude Include="include\gauri\event\event.h" />
     <ClInclude Include="include\gauri\imgui\imgui_layer.h" />
+    <ClInclude Include="include\gauri\math\math.h" />
     <ClInclude Include="include\gauri\renderer\buffer.h" />
     <ClInclude Include="include\gauri\renderer\camera.h" />
     <ClInclude Include="include\gauri\renderer\frame_buffer.h" />
@@ -614,8 +616,10 @@
     <ClInclude Include="src\grpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="3rdparty\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\gauri\scene\scene_serializer.cpp" />
     <ClCompile Include="src\gauri\core\application.cpp" />
     <ClCompile Include="src\gauri\core\layer.cpp" />
     <ClCompile Include="src\gauri\core\layer_stack.cpp" />
@@ -623,6 +627,7 @@
     <ClCompile Include="src\gauri\core\window.cpp" />
     <ClCompile Include="src\gauri\imgui\imgui_build.cpp" />
     <ClCompile Include="src\gauri\imgui\imgui_layer.cpp" />
+    <ClCompile Include="src\gauri\math\math.cpp" />
     <ClCompile Include="src\gauri\renderer\buffer.cpp" />
     <ClCompile Include="src\gauri\renderer\frame_buffer.cpp" />
     <ClCompile Include="src\gauri\renderer\orthographic_camera.cpp" />
@@ -638,6 +643,7 @@
     <ClCompile Include="src\gauri\scene\entity.cpp" />
     <ClCompile Include="src\gauri\scene\scene.cpp" />
     <ClCompile Include="src\gauri\scene\scene_camera.cpp" />
+    <ClCompile Include="src\gauri\scene\scene_serializer.cpp" />
     <ClCompile Include="src\grpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
