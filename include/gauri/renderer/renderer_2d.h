@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gauri/renderer/camera.h"
+#include "gauri/renderer/editor_camera.h"
 #include "gauri/renderer/orthographic_camera.h"
 #include "gauri/renderer/subtexture_2d.h"
 #include "gauri/renderer/texture.h"
@@ -14,6 +15,7 @@ class Renderer2D
     static void Shutdown();
 
     static void BeginScene(const Camera &camera, const glm::mat4 &transform);
+    static void BeginScene(const EditorCamera &camera);
     static void BeginScene(const OrthographicCamera &camera); // TODO: remove
     static void EndScene();
 
@@ -68,6 +70,7 @@ class Renderer2D
     static Statistics GetStats();
 
   private:
-    static void FlushAndReset();
+    static void StartBatch();
+    static void NextBatch();
 };
 } // namespace gauri

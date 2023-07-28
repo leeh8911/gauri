@@ -3,6 +3,7 @@
 #include <entt.hpp>
 
 #include "gauri/core/timestep.h"
+#include "gauri/renderer/editor_camera.h"
 
 namespace gauri
 {
@@ -18,7 +19,8 @@ class Scene
     Entity CreateEntity(const std::string &name = std::string());
     void DestroyEntity(Entity entity);
 
-    void OnUpdate(Timestep ts);
+    void OnUpdateEditor(Timestep ts, EditorCamera &camera);
+    void OnUpdateRuntime(Timestep ts);
     void OnViewportResize(uint32_t width, uint32_t height);
 
     Entity GetPrimaryCameraEntity();

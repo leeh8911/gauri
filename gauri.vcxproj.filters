@@ -1483,6 +1483,7 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\gauri\math\math.h" />
+    <ClInclude Include="include\gauri\renderer\editor_camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp">
@@ -1594,5 +1595,6 @@
       <Filter>src\platform\windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gauri\math\math.cpp" />
+    <ClCompile Include="src\gauri\renderer\editor_camera.cpp" />
   </ItemGroup>
 </Project>
