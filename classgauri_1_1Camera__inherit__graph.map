@@ -1,4 +1,5 @@
 <map id="gauri::Camera" name="gauri::Camera">
-<area shape="rect" id="node1" title=" " alt="" coords="86,5,385,127"/>
-<area shape="rect" id="node2" href="$classgauri_1_1SceneCamera.html" title=" " alt="" coords="5,175,465,633"/>
+<area shape="rect" id="node1" title=" " alt="" coords="347,5,646,127"/>
+<area shape="rect" id="node2" href="$classgauri_1_1EditorCamera.html" title=" " alt="" coords="5,175,492,795"/>
+<area shape="rect" id="node3" href="$classgauri_1_1SceneCamera.html" title=" " alt="" coords="516,255,976,714"/>
 </map>

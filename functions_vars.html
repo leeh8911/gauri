@@ -145,7 +145,8 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>m_AspectRatio
-: <a class="el" href="classgauri_1_1OrthographicCameraController.html#a8c5c86f8d3e59c87b80b00eef884e33e">gauri::OrthographicCameraController</a>
+: <a class="el" href="classgauri_1_1EditorCamera.html#a421c8d8dcb684388ff65959701d1895a">gauri::EditorCamera</a>
+, <a class="el" href="classgauri_1_1OrthographicCameraController.html#a8c5c86f8d3e59c87b80b00eef884e33e">gauri::OrthographicCameraController</a>
 , <a class="el" href="classgauri_1_1SceneCamera.html#a1dd16c249ad361a314ba14a981f2df14">gauri::SceneCamera</a>
 </li>
 <li>m_BlockEvents
@@ -196,6 +197,9 @@ $(function() {
 <li>m_DepthAttachment
 : <a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5c28fba9da7d0faa9e6d22544d61b97b">gauri::OpenGLFrameBuffer</a>
 </li>
+<li>m_Distance
+: <a class="el" href="classgauri_1_1EditorCamera.html#a143fc214fc503c79791ea40aa937467d">gauri::EditorCamera</a>
+</li>
 <li>m_Elements
 : <a class="el" href="classgauri_1_1BufferLayout.html#a970004da928ce251c26e351f46d7855e">gauri::BufferLayout</a>
 </li>
@@ -208,6 +212,15 @@ $(function() {
 <li>m_Event
 : <a class="el" href="classgauri_1_1EventDispatcher.html#a73d1ed145ce6492529b4747b39553fcf">gauri::EventDispatcher</a>
 </li>
+<li>m_FarClip
+: <a class="el" href="classgauri_1_1EditorCamera.html#a85f18a9351ece6a3a041ea2fd00f1425">gauri::EditorCamera</a>
+</li>
+<li>m_FocalPoint
+: <a class="el" href="classgauri_1_1EditorCamera.html#aebac9d2e38a49a213aefad40ebb7bc56">gauri::EditorCamera</a>
+</li>
+<li>m_Fov
+: <a class="el" href="classgauri_1_1EditorCamera.html#a2b12016fb7a7fac73aa684b5db1dd94b">gauri::EditorCamera</a>
+</li>
 <li>m_Height
 : <a class="el" href="classgauri_1_1OpenGLTexture2D.html#a8afaf52ad2de72d32b20d41aa5b96b04">gauri::OpenGLTexture2D</a>
 , <a class="el" href="classgauri_1_1WindowResizeEvent.html#afb4dbe58fc2eb30e6eabf78886b5feb0">gauri::WindowResizeEvent</a>
@@ -217,6 +230,9 @@ $(function() {
 </li>
 <li>m_IndexBuffer
 : <a class="el" href="classgauri_1_1OpenGLVertexArray.html#ac2ef2cf859b4f4ebab2ec60b778c033a">gauri::OpenGLVertexArray</a>
+</li>
+<li>m_InitialMousePosition
+: <a class="el" href="classgauri_1_1EditorCamera.html#a04dcdb4fb152681338ed68951daacab8">gauri::EditorCamera</a>
 </li>
 <li>m_InternalFormat
 : <a class="el" href="classgauri_1_1OpenGLTexture2D.html#ae24f4ae23b481a698057301912112597">gauri::OpenGLTexture2D</a>
@@ -255,6 +271,9 @@ $(function() {
 : <a class="el" href="classgauri_1_1InstrumentationTimer.html#ac55910801771612fddb216e19a3529b6">gauri::InstrumentationTimer</a>
 , <a class="el" href="classgauri_1_1OpenGLShader.html#a96bbf1891a09f00192e3995606e18025">gauri::OpenGLShader</a>
 </li>
+<li>m_NearClip
+: <a class="el" href="classgauri_1_1EditorCamera.html#afbe52ae566c21817eced3aaf70369986">gauri::EditorCamera</a>
+</li>
 <li>m_OrthographicFar
 : <a class="el" href="classgauri_1_1SceneCamera.html#a745c9c3cc5a148cb015508eb1adf6ed1">gauri::SceneCamera</a>
 </li>
@@ -279,8 +298,12 @@ $(function() {
 <li>m_PerspectiveNear
 : <a class="el" href="classgauri_1_1SceneCamera.html#ab527771d8afd7f0169077c55e3859f35">gauri::SceneCamera</a>
 </li>
+<li>m_Pitch
+: <a class="el" href="classgauri_1_1EditorCamera.html#a85188f2193d2edc5d3c263e4a4447be5">gauri::EditorCamera</a>
+</li>
 <li>m_Position
-: <a class="el" href="classgauri_1_1OrthographicCamera.html#abc6c1ecf54d947ee321e53cbabd81548">gauri::OrthographicCamera</a>
+: <a class="el" href="classgauri_1_1EditorCamera.html#adea34c4e40319e092552ba328d8047ba">gauri::EditorCamera</a>
+, <a class="el" href="classgauri_1_1OrthographicCamera.html#abc6c1ecf54d947ee321e53cbabd81548">gauri::OrthographicCamera</a>
 </li>
 <li>m_ProfileCount
 : <a class="el" href="classgauri_1_1Instrumentor.html#a3aab6d4d62b66db3b070a4ad829d9de1">gauri::Instrumentor</a>
@@ -352,13 +375,16 @@ $(function() {
 : <a class="el" href="classgauri_1_1OpenGLVertexArray.html#a7f01c08b9fcb8ff2e60f36f2ae1d8851">gauri::OpenGLVertexArray</a>
 </li>
 <li>m_ViewMatrix
-: <a class="el" href="classgauri_1_1OrthographicCamera.html#ad23e0c66eaa9bb11b7c615f0678b997a">gauri::OrthographicCamera</a>
+: <a class="el" href="classgauri_1_1EditorCamera.html#aebf838288e5e2037d8b7df228ac77fb6">gauri::EditorCamera</a>
+, <a class="el" href="classgauri_1_1OrthographicCamera.html#ad23e0c66eaa9bb11b7c615f0678b997a">gauri::OrthographicCamera</a>
 </li>
 <li>m_ViewportHeight
-: <a class="el" href="classgauri_1_1Scene.html#a297504177715f4e5cb859ce9c50e2ecf">gauri::Scene</a>
+: <a class="el" href="classgauri_1_1EditorCamera.html#afc1c355dfae852ff124167a5d5b9959d">gauri::EditorCamera</a>
+, <a class="el" href="classgauri_1_1Scene.html#a297504177715f4e5cb859ce9c50e2ecf">gauri::Scene</a>
 </li>
 <li>m_ViewportWidth
-: <a class="el" href="classgauri_1_1Scene.html#a45fa7d953ff2db9337f80f7712c3c462">gauri::Scene</a>
+: <a class="el" href="classgauri_1_1EditorCamera.html#a1f0fe4c8152db15efcc73abf5aabd44a">gauri::EditorCamera</a>
+, <a class="el" href="classgauri_1_1Scene.html#a45fa7d953ff2db9337f80f7712c3c462">gauri::Scene</a>
 </li>
 <li>m_ViewProjectionMatrix
 : <a class="el" href="classgauri_1_1OrthographicCamera.html#ae2c417bb267237e4cf029e2286799542">gauri::OrthographicCamera</a>
@@ -376,6 +402,9 @@ $(function() {
 </li>
 <li>m_XOffset
 : <a class="el" href="classgauri_1_1MouseScrolledEvent.html#a5568b1a9f5d0606cfa53cbe0b212657e">gauri::MouseScrolledEvent</a>
+</li>
+<li>m_Yaw
+: <a class="el" href="classgauri_1_1EditorCamera.html#a42bcd947312808403bfeabd120a9716a">gauri::EditorCamera</a>
 </li>
 <li>m_YOffset
 : <a class="el" href="classgauri_1_1MouseScrolledEvent.html#a92f1cbdb70dc5c731d0895959fa54edf">gauri::MouseScrolledEvent</a>

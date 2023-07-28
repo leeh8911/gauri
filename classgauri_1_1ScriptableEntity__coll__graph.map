@@ -1,8 +1,8 @@
 <map id="gauri::ScriptableEntity" name="gauri::ScriptableEntity">
-<area shape="rect" id="node1" title=" " alt="" coords="207,704,473,840"/>
-<area shape="rect" id="node2" href="$classgauri_1_1Entity.html" title=" " alt="" coords="180,403,500,641"/>
-<area shape="rect" id="node3" href="$classgauri_1_1Scene.html" title=" " alt="" coords="5,160,416,340"/>
-<area shape="rect" id="node4" title=" " alt="" coords="117,5,189,83"/>
-<area shape="rect" id="node5" title=" " alt="" coords="231,5,305,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="441,211,501,289"/>
+<area shape="rect" id="node1" title=" " alt="" coords="213,719,480,855"/>
+<area shape="rect" id="node2" href="$classgauri_1_1Entity.html" title=" " alt="" coords="187,417,507,656"/>
+<area shape="rect" id="node3" href="$classgauri_1_1Scene.html" title=" " alt="" coords="5,160,424,355"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,5,193,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="235,5,309,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="449,219,509,296"/>
 </map>

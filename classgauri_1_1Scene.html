@@ -87,7 +87,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for gauri::Scene:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Scene__coll__graph.svg" width="422" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1Scene__coll__graph.svg" width="430" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -101,8 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a236f7021a85c7d5223015de620010401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd1d502df8ab57b7624d9dbf41fa199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a3dd1d502df8ab57b7624d9dbf41fa199">DestroyEntity</a> (<a class="el" href="classgauri_1_1Entity.html">Entity</a> entity)</td></tr>
 <tr class="separator:a3dd1d502df8ab57b7624d9dbf41fa199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf5e4db4d244cf3a63ddd395e26b911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a6bf5e4db4d244cf3a63ddd395e26b911">OnUpdate</a> (<a class="el" href="classgauri_1_1Timestep.html">Timestep</a> ts)</td></tr>
-<tr class="separator:a6bf5e4db4d244cf3a63ddd395e26b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52652e6d97780aa37dd9c23f009553d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a52652e6d97780aa37dd9c23f009553d9">OnUpdateEditor</a> (<a class="el" href="classgauri_1_1Timestep.html">Timestep</a> ts, <a class="el" href="classgauri_1_1EditorCamera.html">EditorCamera</a> &amp;camera)</td></tr>
+<tr class="separator:a52652e6d97780aa37dd9c23f009553d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179a421428639ee56cb90acc859a61a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a179a421428639ee56cb90acc859a61a8">OnUpdateRuntime</a> (<a class="el" href="classgauri_1_1Timestep.html">Timestep</a> ts)</td></tr>
+<tr class="separator:a179a421428639ee56cb90acc859a61a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2c865d701ef826c65c480b8278f28a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#a2f2c865d701ef826c65c480b8278f28a">OnViewportResize</a> (uint32_t width, uint32_t height)</td></tr>
 <tr class="separator:a2f2c865d701ef826c65c480b8278f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ba3435c35654c865ebfc6d39d6275e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgauri_1_1Entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1Scene.html#af2ba3435c35654c865ebfc6d39d6275e">GetPrimaryCameraEntity</a> ()</td></tr>
@@ -134,7 +136,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00012">12</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00013">13</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac750f0503d51883d5eba9f94c2891656"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac750f0503d51883d5eba9f94c2891656">&#9670;&nbsp;</a></span>Scene()</h2>
@@ -207,14 +209,42 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a6bf5e4db4d244cf3a63ddd395e26b911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf5e4db4d244cf3a63ddd395e26b911">&#9670;&nbsp;</a></span>OnUpdate()</h2>
+<a id="a52652e6d97780aa37dd9c23f009553d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52652e6d97780aa37dd9c23f009553d9">&#9670;&nbsp;</a></span>OnUpdateEditor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gauri::Scene::OnUpdate </td>
+          <td class="memname">void gauri::Scene::OnUpdateEditor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgauri_1_1Timestep.html">Timestep</a>&#160;</td>
+          <td class="paramname"><em>ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgauri_1_1EditorCamera.html">EditorCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a179a421428639ee56cb90acc859a61a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179a421428639ee56cb90acc859a61a8">&#9670;&nbsp;</a></span>OnUpdateRuntime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gauri::Scene::OnUpdateRuntime </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgauri_1_1Timestep.html">Timestep</a>&#160;</td>
           <td class="paramname"><em>ts</em></td><td>)</td>
@@ -335,7 +365,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00034">34</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +389,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00033">33</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00035">35</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +413,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00034">34</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00036">36</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +438,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00029">29</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00031">31</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +462,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00030">30</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +486,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00030">30</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00032">32</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
