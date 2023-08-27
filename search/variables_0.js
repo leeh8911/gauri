@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bit_1075',['bit',['../base_8h.html#a727ecaa81defe4bc91dde4a6a946fd56',1,'base.h']]],
-  ['bottom_1076',['Bottom',['../structgauri_1_1OrthographicCameraBounds.html#a684d66597da37437ea58f7bf519ff7e3',1,'gauri::OrthographicCameraBounds']]]
+  ['attachments_1090',['Attachments',['../structgauri_1_1FrameBufferAttachmentSpecification.html#a9d34da993588c8029ea9b8bd8c802f6c',1,'gauri::FrameBufferAttachmentSpecification::Attachments()'],['../namespacegauri.html#ac99e291170e1e2e4d20027a221678f0b',1,'gauri::FrameBufferSpecification::Attachments()']]]
 ];

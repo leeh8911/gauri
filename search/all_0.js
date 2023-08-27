@@ -11,5 +11,6 @@ var searchData=
   ['apptick_8',['AppTick',['../namespacegauri.html#a3317f5e2c44bf0acde96e2e04e63bba6a559b408d45669603dbac61cd15984f13',1,'gauri']]],
   ['apptickevent_9',['AppTickEvent',['../classgauri_1_1AppTickEvent.html#a8395c74e33dd59491f6aba73ae3fa506',1,'gauri::AppTickEvent::AppTickEvent()'],['../classgauri_1_1AppTickEvent.html',1,'gauri::AppTickEvent']]],
   ['appupdate_10',['AppUpdate',['../namespacegauri.html#a3317f5e2c44bf0acde96e2e04e63bba6ac177abb86f28dea426f2e3409e14bcda',1,'gauri']]],
-  ['appupdateevent_11',['AppUpdateEvent',['../classgauri_1_1AppUpdateEvent.html#aa176500a56d19e4fd171329f656f462b',1,'gauri::AppUpdateEvent::AppUpdateEvent()'],['../classgauri_1_1AppUpdateEvent.html',1,'gauri::AppUpdateEvent']]]
+  ['appupdateevent_11',['AppUpdateEvent',['../classgauri_1_1AppUpdateEvent.html#aa176500a56d19e4fd171329f656f462b',1,'gauri::AppUpdateEvent::AppUpdateEvent()'],['../classgauri_1_1AppUpdateEvent.html',1,'gauri::AppUpdateEvent']]],
+  ['attachments_12',['Attachments',['../structgauri_1_1FrameBufferAttachmentSpecification.html#a9d34da993588c8029ea9b8bd8c802f6c',1,'gauri::FrameBufferAttachmentSpecification::Attachments()'],['../namespacegauri.html#ac99e291170e1e2e4d20027a221678f0b',1,'gauri::FrameBufferSpecification::Attachments()']]]
 ];

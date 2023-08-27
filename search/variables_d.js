@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['right_1177',['Right',['../structgauri_1_1OrthographicCameraBounds.html#a526c69c3afd1557135605f998918b930',1,'gauri::OrthographicCameraBounds']]],
-  ['rotation_1178',['Rotation',['../structgauri_1_1TransformComponent.html#ac6748410501b9756c617115bac213a58',1,'gauri::TransformComponent']]]
+  ['quadcount_1194',['QuadCount',['../structgauri_1_1Renderer2D_1_1Statistics.html#a7f818bfdb1ba0b8d985ead7713b5bc37',1,'gauri::Renderer2D::Statistics']]]
 ];

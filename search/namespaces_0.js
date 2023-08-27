@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gauri_747',['gauri',['../namespacegauri.html',1,'']]],
-  ['math_748',['math',['../namespacegauri_1_1math.html',1,'gauri']]]
+  ['gauri_759',['gauri',['../namespacegauri.html',1,'']]],
+  ['math_760',['math',['../namespacegauri_1_1math.html',1,'gauri']]]
 ];

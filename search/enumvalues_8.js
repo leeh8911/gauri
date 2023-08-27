@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opengl_1235',['OpenGL',['../classgauri_1_1RendererAPI.html#a414eac154e67ae2da16115dcb2cf2978a760716b590ee7c0adc25f434f577d8be',1,'gauri::RendererAPI']]],
-  ['orthographic_1236',['Orthographic',['../classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eba03424250432f2aa71de95579d2c0eaeb',1,'gauri::SceneCamera']]]
+  ['none_1256',['None',['../classgauri_1_1RendererAPI.html#a414eac154e67ae2da16115dcb2cf2978a6adf97f83acf6453d4a6a4b1070f3754',1,'gauri::RendererAPI::None()'],['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1baaa7cec010528ee141cd629376bf7655e',1,'gauri::None()'],['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1ba6adf97f83acf6453d4a6a4b1070f3754',1,'gauri::None()'],['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a6adf97f83acf6453d4a6a4b1070f3754',1,'gauri::None()'],['../namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a6adf97f83acf6453d4a6a4b1070f3754',1,'gauri::None()']]]
 ];

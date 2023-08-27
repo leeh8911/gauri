@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['primary_1175',['Primary',['../structgauri_1_1CameraComponent.html#aa87ff8fc497c7d5bfe9c8bd3daf9d097',1,'gauri::CameraComponent']]]
+  ['offset_1192',['Offset',['../structgauri_1_1BufferElement.html#a41aa43756521f76f184ab2c4ad71d6ca',1,'gauri::BufferElement']]]
 ];

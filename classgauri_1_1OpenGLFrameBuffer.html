@@ -86,7 +86,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for gauri::OpenGLFrameBuffer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1OpenGLFrameBuffer__inherit__graph.svg" width="523" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1OpenGLFrameBuffer__inherit__graph.svg" width="576" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -128,8 +128,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af55958482daaf42c367f516d71f2f39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5c28fba9da7d0faa9e6d22544d61b97b">m_DepthAttachment</a> = 0</td></tr>
 <tr class="separator:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10bd542b510a3f12fb4353b115e6c645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">m_Specification</a></td></tr>
+<tr class="memitem:a10bd542b510a3f12fb4353b115e6c645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">m_Specification</a> {}</td></tr>
 <tr class="separator:a10bd542b510a3f12fb4353b115e6c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f5c0688309eedd51d4fbbad5fe1196"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#ab7f5c0688309eedd51d4fbbad5fe1196">m_ColorAttachmentSpecifications</a> {}</td></tr>
+<tr class="separator:ab7f5c0688309eedd51d4fbbad5fe1196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5a5da01703f15554363b42ff7aff9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#aeb5a5da01703f15554363b42ff7aff9e">m_DepthAttachmentSpecification</a> {}</td></tr>
+<tr class="separator:aeb5a5da01703f15554363b42ff7aff9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -463,7 +467,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a> gauri::OpenGLFrameBuffer::m_Specification</td>
+          <td class="memname"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a> gauri::OpenGLFrameBuffer::m_Specification {}</td>
         </tr>
       </table>
   </td>
@@ -474,6 +478,54 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00032">32</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
+
+</div>
+</div>
+<a id="ab7f5c0688309eedd51d4fbbad5fe1196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f5c0688309eedd51d4fbbad5fe1196">&#9670;&nbsp;</a></span>m_ColorAttachmentSpecifications</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a>&gt; gauri::OpenGLFrameBuffer::m_ColorAttachmentSpecifications {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00034">34</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
+
+</div>
+</div>
+<a id="aeb5a5da01703f15554363b42ff7aff9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5a5da01703f15554363b42ff7aff9e">&#9670;&nbsp;</a></span>m_DepthAttachmentSpecification</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a> gauri::OpenGLFrameBuffer::m_DepthAttachmentSpecification {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00035">35</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
 
 </div>
 </div>

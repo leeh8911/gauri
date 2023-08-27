@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['keypressed_1225',['KeyPressed',['../namespacegauri.html#a3317f5e2c44bf0acde96e2e04e63bba6ac17e6984c1e5a887a49831beadee6bca',1,'gauri']]],
-  ['keyreleased_1226',['KeyReleased',['../namespacegauri.html#a3317f5e2c44bf0acde96e2e04e63bba6a4a77f07c8ad223b71ab4ce78a63841ab',1,'gauri']]],
-  ['keytyped_1227',['KeyTyped',['../namespacegauri.html#a3317f5e2c44bf0acde96e2e04e63bba6a9afbfd35b289eb4fc7f1bc148d7b422e',1,'gauri']]]
+  ['int_1243',['Int',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a1686a6c336b71b36d77354cea19a8b52',1,'gauri']]],
+  ['int2_1244',['Int2',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a4c6bc90f2bbdf35523e29c414a57bad3',1,'gauri']]],
+  ['int3_1245',['Int3',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a56bf1b0e694b442bf4145a04b82ea943',1,'gauri']]],
+  ['int4_1246',['Int4',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a1a44f12c3427b3e11c171d09632bad8d',1,'gauri']]]
 ];

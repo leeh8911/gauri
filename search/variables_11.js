@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['width_1197',['Width',['../structgauri_1_1WindowProperty.html#ad00bdde4aa25d191d0bb6afceebb5d56',1,'gauri::WindowProperty::Width()'],['../namespacegauri.html#a2e7b9eb750c49e923bb42c0bf38f93c9',1,'gauri::FrameBufferSpecification::Width()'],['../classgauri_1_1WindowsWindow.html#a0d1f8a52be5d37d8f57d5c76a402b378',1,'gauri::WindowsWindow::WindowData::Width()']]]
+  ['viewprojectionmatrix_1214',['ViewProjectionMatrix',['../classgauri_1_1Renderer.html#a9c9228ac2438ab4d29c966ab4064dd8d',1,'gauri::Renderer::SceneData']]],
+  ['vsync_1215',['VSync',['../classgauri_1_1WindowsWindow.html#a290a705c0ecd372803a19e7db96f2d38',1,'gauri::WindowsWindow::WindowData']]]
 ];

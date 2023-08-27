@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['float_1217',['Float',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a22ae0e2b89e5e3d477f988cc36d3272b',1,'gauri']]],
-  ['float2_1218',['Float2',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a6694430a2b471b5d2de071f2ef1fdc57',1,'gauri']]],
-  ['float3_1219',['Float3',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a8a8a1d211464d4bdee46db3c75bfa121',1,'gauri']]],
-  ['float4_1220',['Float4',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20a33116adc6690289da9b82ea736864eeb',1,'gauri']]]
+  ['eventcategoryapplication_1234',['EventCategoryApplication',['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1ba8d22fb297689728e61da948fc5b7a260',1,'gauri']]],
+  ['eventcategoryinput_1235',['EventCategoryInput',['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1ba824721de6a94bcc2ae779ce6716f5231',1,'gauri']]],
+  ['eventcategorykeyboard_1236',['EventCategoryKeyboard',['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1ba9612ae674c3488e5ed04aa28b7cf32de',1,'gauri']]],
+  ['eventcategorymouse_1237',['EventCategoryMouse',['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1ba5af1dfc5120afc01a72bc1cc6234a86a',1,'gauri']]],
+  ['eventcategorymousebutton_1238',['EventCategoryMouseButton',['../namespacegauri.html#a7c36ce2e430b88c26cfcab856bd9ff1bab2d8369f1e1298f9d82b915c3b3064c6',1,'gauri']]]
 ];

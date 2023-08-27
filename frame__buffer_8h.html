@@ -74,7 +74,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">frame_buffer.h File Reference</div>  </div>
 </div><!--header-->
@@ -98,6 +99,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">gauri::FrameBufferTextureSpecification</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgauri_1_1FrameBufferAttachmentSpecification.html">gauri::FrameBufferAttachmentSpecification</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structgauri_1_1FrameBufferSpecification"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">gauri::FrameBufferSpecification</a></td></tr>
 <tr class="separator:structgauri_1_1FrameBufferSpecification"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html">gauri::FrameBuffer</a></td></tr>
@@ -107,6 +112,15 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegauri"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html">gauri</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7523291e345419b950aaf186c9fefbc8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8">gauri::FrameBufferTextureFormat</a> { <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a6adf97f83acf6453d4a6a4b1070f3754">gauri::None</a> = 0
+, <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642">gauri::RGBA8</a>
+, <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">gauri::DEPTH24STENCIL8</a>
+, <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">gauri::Depth</a> = DEPTH24STENCIL8
+ }</td></tr>
+<tr class="separator:a7523291e345419b950aaf186c9fefbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structgauri_1_1FrameBufferSpecification" id="structgauri_1_1FrameBufferSpecification"></a>
@@ -121,11 +135,11 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00009">9</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00045">45</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for gauri::FrameBufferSpecification:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structgauri_1_1FrameBufferSpecification__coll__graph.svg" width="284" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structgauri_1_1FrameBufferSpecification__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="fieldtable">
@@ -140,6 +154,12 @@ Width</td>
 <a id="a7388d8c39ca25355b7f2640c9a4dd4e7"></a>uint32_t</td>
 <td class="fieldname">
 Height</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac99e291170e1e2e4d20027a221678f0b"></a><a class="el" href="structgauri_1_1FrameBufferAttachmentSpecification.html">FrameBufferAttachmentSpecification</a></td>
+<td class="fieldname">
+Attachments</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">

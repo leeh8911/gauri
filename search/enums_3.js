@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shaderdatatype_1207',['ShaderDataType',['../namespacegauri.html#a7bd81906140bb4bdfeb5188aec001a20',1,'gauri']]]
+  ['projectiontype_1226',['ProjectionType',['../classgauri_1_1SceneCamera.html#a7d03bf36623ecf63e6ea6ac191f968eb',1,'gauri::SceneCamera']]]
 ];
