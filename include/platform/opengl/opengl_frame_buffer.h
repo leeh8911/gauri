@@ -29,6 +29,9 @@ class OpenGLFrameBuffer : public FrameBuffer
   private:
     uint32_t m_RendererID = 0;
     uint32_t m_ColorAttachment = 0, m_DepthAttachment = 0;
-    FrameBufferSpecification m_Specification;
+    FrameBufferSpecification m_Specification{};
+
+    std::vector<FrameBufferTextureSpecification> m_ColorAttachmentSpecifications{};
+    FrameBufferTextureSpecification m_DepthAttachmentSpecification{};
 };
 } // namespace gauri

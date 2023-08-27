@@ -6,9 +6,46 @@
 namespace gauri
 {
 
+enum class FrameBufferTextureFormat
+{
+    None = 0,
+
+    // Color
+    RGBA8,
+
+    // Depth/stencil
+    DEPTH24STENCIL8,
+
+    // Defaults
+    Depth = DEPTH24STENCIL8,
+};
+
+struct FrameBufferTextureSpecification
+{
+    FrameBufferTextureSpecification() = default;
+    FrameBufferTextureSpecification(FrameBufferTextureFormat format) : TextureFormat(format)
+    {
+    }
+
+    FrameBufferTextureFormat TextureFormat{FrameBufferTextureFormat::None};
+    // TODO: filtering wrap
+};
+
+struct FrameBufferAttachmentSpecification
+{
+    FrameBufferAttachmentSpecification() = default;
+    FrameBufferAttachmentSpecification(std::initializer_list<FrameBufferTextureSpecification> attachments)
+        : Attachments(attachments)
+    {
+    }
+
+    std::vector<FrameBufferTextureSpecification> Attachments{};
+};
+
 struct FrameBufferSpecification
 {
-    uint32_t Width, Height;
+    uint32_t Width{}, Height{};
+    FrameBufferAttachmentSpecification Attachments{};
     uint32_t Samples = 1;
     bool SwapChainTarget = false;
 };

@@ -7,8 +7,30 @@
 namespace gauri
 {
 static const uint32_t s_MaxFrameBufferSize = 8192;
+
+namespace utils
+{
+static bool IsDepthFormat(FrameBufferTextureFormat format)
+{
+    switch (format)
+    {
+    case FrameBufferTextureFormat::DEPTH24STENCIL8:
+        return true;
+    }
+    return false;
+}
+} // namespace utils
+
 OpenGLFrameBuffer::OpenGLFrameBuffer(const FrameBufferSpecification &spec) : m_Specification(spec)
 {
+    for (auto spec : m_Specification.Attachments.Attachments)
+    {
+        if (!utils::IsDepthFormat(spec.TextureFormat))
+            m_ColorAttachmentSpecifications.emplace_back(spec);
+        else
+            m_DepthAttachmentSpecification = spec;
+    }
+
     Invalidate();
 }
 
@@ -30,6 +52,11 @@ void OpenGLFrameBuffer::Invalidate()
     glCreateFramebuffers(1, &m_RendererID);
     glBindFramebuffer(GL_FRAMEBUFFER, m_RendererID);
 
+    // Attachments
+    for (auto &spec : m_ColorAttachmentSpecifications)
+    {
+    }
+
     glCreateTextures(GL_TEXTURE_2D, 1, &m_ColorAttachment);
     glBindTexture(GL_TEXTURE_2D, m_ColorAttachment);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, m_Specification.Width, m_Specification.Height, 0, GL_RGBA,
@@ -43,6 +70,7 @@ void OpenGLFrameBuffer::Invalidate()
     glBindTexture(GL_TEXTURE_2D, m_DepthAttachment);
     glTexStorage2D(GL_TEXTURE_2D, 1, GL_DEPTH24_STENCIL8, m_Specification.Width, m_Specification.Height);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_TEXTURE_2D, m_DepthAttachment, 0);
+
     GR_CORE_ASSERT(glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE, "Framebuffer is incomplete!");
 
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
