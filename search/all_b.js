@@ -9,7 +9,7 @@ var searchData=
   ['m_5fcamerarotation_358',['m_CameraRotation',['../classgauri_1_1OrthographicCameraController.html#a5d297ffd6248ed37c60b23d738b1bde4',1,'gauri::OrthographicCameraController']]],
   ['m_5fcamerarotationspeed_359',['m_CameraRotationSpeed',['../classgauri_1_1OrthographicCameraController.html#a79e124621a97437aeb51e73fd299f147',1,'gauri::OrthographicCameraController']]],
   ['m_5fcameratranslationspeed_360',['m_CameraTranslationSpeed',['../classgauri_1_1OrthographicCameraController.html#a666fa6c2bf239b62ad6974304c946315',1,'gauri::OrthographicCameraController']]],
-  ['m_5fcolorattachment_361',['m_ColorAttachment',['../classgauri_1_1OpenGLFrameBuffer.html#af55958482daaf42c367f516d71f2f39b',1,'gauri::OpenGLFrameBuffer']]],
+  ['m_5fcolorattachments_361',['m_ColorAttachments',['../classgauri_1_1OpenGLFrameBuffer.html#ab12b5df285d062c0bf675341733401ad',1,'gauri::OpenGLFrameBuffer']]],
   ['m_5fcolorattachmentspecifications_362',['m_ColorAttachmentSpecifications',['../classgauri_1_1OpenGLFrameBuffer.html#ab7f5c0688309eedd51d4fbbad5fe1196',1,'gauri::OpenGLFrameBuffer']]],
   ['m_5fcontext_363',['m_Context',['../classgauri_1_1WindowsWindow.html#a0f8928af09f40ff833e799bcd8991a43',1,'gauri::WindowsWindow']]],
   ['m_5fcount_364',['m_Count',['../classgauri_1_1OpenGLIndexBuffer.html#a17163bf3f122fd626e452a228cb955a6',1,'gauri::OpenGLIndexBuffer']]],

@@ -17,11 +17,11 @@
 <text text-anchor="middle" x="212" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::OpenGLFrameBuffer</text>
 <polyline fill="none" stroke="black" points="0,-170.5 424,-170.5 "/>
 <text text-anchor="start" x="8" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; uint32_t m_RendererID</text>
-<text text-anchor="start" x="8" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; uint32_t m_ColorAttachment</text>
-<text text-anchor="start" x="8" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; uint32_t m_DepthAttachment</text>
-<text text-anchor="start" x="8" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FrameBufferSpecification m_Specification</text>
-<text text-anchor="start" x="8" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; std::vector&lt; FrameBufferTextureSpecification &gt; m_ColorAttachmentSpecifications</text>
-<text text-anchor="start" x="8" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FrameBufferTextureSpecification m_DepthAttachmentSpecification</text>
+<text text-anchor="start" x="8" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FrameBufferSpecification m_Specification</text>
+<text text-anchor="start" x="8" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; std::vector&lt; FrameBufferTextureSpecification &gt; m_ColorAttachmentSpecifications</text>
+<text text-anchor="start" x="8" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FrameBufferTextureSpecification m_DepthAttachmentSpecification</text>
+<text text-anchor="start" x="8" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; std::vector&lt; uint32_t &gt; m_ColorAttachments</text>
+<text text-anchor="start" x="8" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; uint32_t m_DepthAttachment</text>
 <polyline fill="none" stroke="black" points="0,-96.5 424,-96.5 "/>
 <text text-anchor="start" x="8" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ OpenGLFrameBuffer(const FrameBufferSpecification &amp;spec)</text>
 <text text-anchor="start" x="8" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OpenGLFrameBuffer() override</text>
@@ -29,7 +29,7 @@
 <text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Bind() override</text>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Unbind() override</text>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Resize(uint32_t width, uint32_t height) override</text>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ uint32_t GetColorAttachmentRendererID() const override</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ uint32_t GetColorAttachmentRendererID(uint32_t index=0) const override</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ const FrameBufferSpecification &amp; GetSpecification() const override</text>
 </a>
 </g>
@@ -38,18 +38,18 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classgauri_1_1FrameBuffer.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="20,-226.5 20,-349.5 404,-349.5 404,-226.5 20,-226.5"/>
+<polygon fill="white" stroke="black" points="13,-226.5 13,-349.5 411,-349.5 411,-226.5 13,-226.5"/>
 <text text-anchor="middle" x="212" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBuffer</text>
-<polyline fill="none" stroke="black" points="20,-330.5 404,-330.5 "/>
+<polyline fill="none" stroke="black" points="13,-330.5 411,-330.5 "/>
 <text text-anchor="middle" x="212" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="20,-311.5 404,-311.5 "/>
-<text text-anchor="start" x="28" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~FrameBuffer()=default</text>
-<text text-anchor="start" x="28" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Bind()=0</text>
-<text text-anchor="start" x="28" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Unbind()=0</text>
-<text text-anchor="start" x="28" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Resize(uint32_t width, uint32_t height)=0</text>
-<text text-anchor="start" x="28" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual uint32_t GetColorAttachmentRendererID() const =0</text>
-<text text-anchor="start" x="28" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const FrameBufferSpecification &amp; GetSpecification() const =0</text>
-<text text-anchor="start" x="28" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static Ref&lt; FrameBuffer &gt; Create(const FrameBufferSpecification &amp;spec)</text>
+<polyline fill="none" stroke="black" points="13,-311.5 411,-311.5 "/>
+<text text-anchor="start" x="21" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~FrameBuffer()=default</text>
+<text text-anchor="start" x="21" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Bind()=0</text>
+<text text-anchor="start" x="21" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Unbind()=0</text>
+<text text-anchor="start" x="21" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Resize(uint32_t width, uint32_t height)=0</text>
+<text text-anchor="start" x="21" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual uint32_t GetColorAttachmentRendererID(uint32_t index=0) const =0</text>
+<text text-anchor="start" x="21" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const FrameBufferSpecification &amp; GetSpecification() const =0</text>
+<text text-anchor="start" x="21" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static Ref&lt; FrameBuffer &gt; Create(const FrameBufferSpecification &amp;spec)</text>
 </a>
 </g>
 </g>

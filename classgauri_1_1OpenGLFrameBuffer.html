@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9344db07dd76d870ed28f4c42dc58de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5702d9e3c302694dbf287c6427e0882f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5702d9e3c302694dbf287c6427e0882f">Resize</a> (uint32_t width, uint32_t height) override</td></tr>
 <tr class="separator:a5702d9e3c302694dbf287c6427e0882f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a3689d0175dff2afcc69c106016b14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a10a3689d0175dff2afcc69c106016b14">GetColorAttachmentRendererID</a> () const override</td></tr>
-<tr class="separator:a10a3689d0175dff2afcc69c106016b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd9626326d0ed39bd8e0a9cd088dacf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a0dd9626326d0ed39bd8e0a9cd088dacf">GetColorAttachmentRendererID</a> (uint32_t index=0) const override</td></tr>
+<tr class="separator:a0dd9626326d0ed39bd8e0a9cd088dacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d02ae259d69d9c72a78812ff33360fb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a9d02ae259d69d9c72a78812ff33360fb">GetSpecification</a> () const override</td></tr>
 <tr class="separator:a9d02ae259d69d9c72a78812ff33360fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,16 +124,16 @@ Static Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5c99584bb6487c26f17bc469e88cb275"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5c99584bb6487c26f17bc469e88cb275">m_RendererID</a> = 0</td></tr>
 <tr class="separator:a5c99584bb6487c26f17bc469e88cb275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af55958482daaf42c367f516d71f2f39b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#af55958482daaf42c367f516d71f2f39b">m_ColorAttachment</a> = 0</td></tr>
-<tr class="separator:af55958482daaf42c367f516d71f2f39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5c28fba9da7d0faa9e6d22544d61b97b">m_DepthAttachment</a> = 0</td></tr>
-<tr class="separator:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10bd542b510a3f12fb4353b115e6c645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">m_Specification</a> {}</td></tr>
 <tr class="separator:a10bd542b510a3f12fb4353b115e6c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f5c0688309eedd51d4fbbad5fe1196"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#ab7f5c0688309eedd51d4fbbad5fe1196">m_ColorAttachmentSpecifications</a> {}</td></tr>
 <tr class="separator:ab7f5c0688309eedd51d4fbbad5fe1196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5a5da01703f15554363b42ff7aff9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgauri_1_1FrameBufferTextureSpecification.html">FrameBufferTextureSpecification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#aeb5a5da01703f15554363b42ff7aff9e">m_DepthAttachmentSpecification</a> {}</td></tr>
 <tr class="separator:aeb5a5da01703f15554363b42ff7aff9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12b5df285d062c0bf675341733401ad"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#ab12b5df285d062c0bf675341733401ad">m_ColorAttachments</a> {}</td></tr>
+<tr class="separator:ab12b5df285d062c0bf675341733401ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5c28fba9da7d0faa9e6d22544d61b97b">m_DepthAttachment</a> {}</td></tr>
+<tr class="separator:a5c28fba9da7d0faa9e6d22544d61b97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -292,8 +292,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a10a3689d0175dff2afcc69c106016b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10a3689d0175dff2afcc69c106016b14">&#9670;&nbsp;</a></span>GetColorAttachmentRendererID()</h2>
+<a id="a0dd9626326d0ed39bd8e0a9cd088dacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd9626326d0ed39bd8e0a9cd088dacf">&#9670;&nbsp;</a></span>GetColorAttachmentRendererID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +304,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">uint32_t gauri::OpenGLFrameBuffer::GetColorAttachmentRendererID </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -315,13 +316,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classgauri_1_1FrameBuffer.html#a47af568d518ea671d2a410911fd97033">gauri::FrameBuffer</a>.</p>
+<p>Implements <a class="el" href="classgauri_1_1FrameBuffer.html#a21f03775964a123df6522d281ee580e7">gauri::FrameBuffer</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00019">19</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLFrameBuffer.html#af55958482daaf42c367f516d71f2f39b">m_ColorAttachment</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="ttc" id="aclassgauri_1_1OpenGLFrameBuffer_html_af55958482daaf42c367f516d71f2f39b"><div class="ttname"><a href="classgauri_1_1OpenGLFrameBuffer.html#af55958482daaf42c367f516d71f2f39b">gauri::OpenGLFrameBuffer::m_ColorAttachment</a></div><div class="ttdeci">uint32_t m_ColorAttachment</div><div class="ttdef"><b>Definition:</b> <a href="opengl__frame__buffer_8h_source.html#l00031">opengl_frame_buffer.h:31</a></div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a>(index &lt; <a class="code" href="classgauri_1_1OpenGLFrameBuffer.html#ab12b5df285d062c0bf675341733401ad">m_ColorAttachments</a>.size(), index);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLFrameBuffer.html#ab12b5df285d062c0bf675341733401ad">m_ColorAttachments</a>[index];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="ttc" id="abase_8h_html_aada7d47fe675d944b0516553e43d2c58"><div class="ttname"><a href="base_8h.html#aada7d47fe675d944b0516553e43d2c58">GR_CORE_ASSERT</a></div><div class="ttdeci">#define GR_CORE_ASSERT(x,...)</div><div class="ttdef"><b>Definition:</b> <a href="base_8h_source.html#l00037">base.h:37</a></div></div>
+<div class="ttc" id="aclassgauri_1_1OpenGLFrameBuffer_html_ab12b5df285d062c0bf675341733401ad"><div class="ttname"><a href="classgauri_1_1OpenGLFrameBuffer.html#ab12b5df285d062c0bf675341733401ad">gauri::OpenGLFrameBuffer::m_ColorAttachments</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; m_ColorAttachments</div><div class="ttdef"><b>Definition:</b> <a href="opengl__frame__buffer_8h_source.html#l00037">opengl_frame_buffer.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -350,10 +353,10 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgauri_1_1FrameBuffer.html#a6e08380c34285b11a4cf49483210b878">gauri::FrameBuffer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00024">24</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">m_Specification</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00025">25</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">m_Specification</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="ttc" id="aclassgauri_1_1OpenGLFrameBuffer_html_a10bd542b510a3f12fb4353b115e6c645"><div class="ttname"><a href="classgauri_1_1OpenGLFrameBuffer.html#a10bd542b510a3f12fb4353b115e6c645">gauri::OpenGLFrameBuffer::m_Specification</a></div><div class="ttdeci">FrameBufferSpecification m_Specification</div><div class="ttdef"><b>Definition:</b> <a href="opengl__frame__buffer_8h_source.html#l00032">opengl_frame_buffer.h:32</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -396,54 +399,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t gauri::OpenGLFrameBuffer::m_RendererID = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00030">30</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
-
-</div>
-</div>
-<a id="af55958482daaf42c367f516d71f2f39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af55958482daaf42c367f516d71f2f39b">&#9670;&nbsp;</a></span>m_ColorAttachment</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gauri::OpenGLFrameBuffer::m_ColorAttachment = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00031">31</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a5c28fba9da7d0faa9e6d22544d61b97b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c28fba9da7d0faa9e6d22544d61b97b">&#9670;&nbsp;</a></span>m_DepthAttachment</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gauri::OpenGLFrameBuffer::m_DepthAttachment = 0</td>
         </tr>
       </table>
   </td>
@@ -526,6 +481,54 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00035">35</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
+
+</div>
+</div>
+<a id="ab12b5df285d062c0bf675341733401ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12b5df285d062c0bf675341733401ad">&#9670;&nbsp;</a></span>m_ColorAttachments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint32_t&gt; gauri::OpenGLFrameBuffer::m_ColorAttachments {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00037">37</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c28fba9da7d0faa9e6d22544d61b97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c28fba9da7d0faa9e6d22544d61b97b">&#9670;&nbsp;</a></span>m_DepthAttachment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gauri::OpenGLFrameBuffer::m_DepthAttachment {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opengl__frame__buffer_8h_source.html#l00038">38</a> of file <a class="el" href="opengl__frame__buffer_8h_source.html">opengl_frame_buffer.h</a>.</p>
 
 </div>
 </div>

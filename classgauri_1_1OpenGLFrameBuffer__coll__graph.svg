@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1452;
+var viewWidth = 1580;
 var viewHeight = 778;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,24 +54,24 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>gauri::OpenGLFrameBuffer</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-774 1448,-774 1448,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-774 1576,-774 1576,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="312.5,-0.5 312.5,-134.5 665.5,-134.5 665.5,-0.5 312.5,-0.5"/>
-<text text-anchor="middle" x="489" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::OpenGLFrameBuffer</text>
-<polyline fill="none" stroke="black" points="312.5,-115.5 665.5,-115.5 "/>
-<text text-anchor="middle" x="489" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="312.5,-96.5 665.5,-96.5 "/>
-<text text-anchor="start" x="320.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ OpenGLFrameBuffer(const FrameBufferSpecification &amp;spec)</text>
-<text text-anchor="start" x="320.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OpenGLFrameBuffer() override</text>
-<text text-anchor="start" x="320.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Invalidate()</text>
-<text text-anchor="start" x="320.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Bind() override</text>
-<text text-anchor="start" x="320.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Unbind() override</text>
-<text text-anchor="start" x="320.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Resize(uint32_t width, uint32_t height) override</text>
-<text text-anchor="start" x="320.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ uint32_t GetColorAttachmentRendererID() const override</text>
-<text text-anchor="start" x="320.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ const FrameBufferSpecification &amp; GetSpecification() const override</text>
+<polygon fill="#bfbfbf" stroke="black" points="452.5,-0.5 452.5,-134.5 841.5,-134.5 841.5,-0.5 452.5,-0.5"/>
+<text text-anchor="middle" x="647" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::OpenGLFrameBuffer</text>
+<polyline fill="none" stroke="black" points="452.5,-115.5 841.5,-115.5 "/>
+<text text-anchor="middle" x="647" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="452.5,-96.5 841.5,-96.5 "/>
+<text text-anchor="start" x="460.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ OpenGLFrameBuffer(const FrameBufferSpecification &amp;spec)</text>
+<text text-anchor="start" x="460.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OpenGLFrameBuffer() override</text>
+<text text-anchor="start" x="460.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Invalidate()</text>
+<text text-anchor="start" x="460.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Bind() override</text>
+<text text-anchor="start" x="460.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Unbind() override</text>
+<text text-anchor="start" x="460.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Resize(uint32_t width, uint32_t height) override</text>
+<text text-anchor="start" x="460.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ uint32_t GetColorAttachmentRendererID(uint32_t index=0) const override</text>
+<text text-anchor="start" x="460.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ const FrameBufferSpecification &amp; GetSpecification() const override</text>
 </a>
 </g>
 </g>
@@ -79,16 +79,16 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classgauri_1_1FrameBuffer.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-182.5 0,-305.5 384,-305.5 384,-182.5 0,-182.5"/>
-<text text-anchor="middle" x="192" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBuffer</text>
-<polyline fill="none" stroke="black" points="0,-286.5 384,-286.5 "/>
-<text text-anchor="middle" x="192" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="0,-267.5 384,-267.5 "/>
+<polygon fill="white" stroke="black" points="0,-182.5 0,-305.5 398,-305.5 398,-182.5 0,-182.5"/>
+<text text-anchor="middle" x="199" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBuffer</text>
+<polyline fill="none" stroke="black" points="0,-286.5 398,-286.5 "/>
+<text text-anchor="middle" x="199" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="0,-267.5 398,-267.5 "/>
 <text text-anchor="start" x="8" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~FrameBuffer()=default</text>
 <text text-anchor="start" x="8" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Bind()=0</text>
 <text text-anchor="start" x="8" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Unbind()=0</text>
 <text text-anchor="start" x="8" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Resize(uint32_t width, uint32_t height)=0</text>
-<text text-anchor="start" x="8" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual uint32_t GetColorAttachmentRendererID() const =0</text>
+<text text-anchor="start" x="8" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual uint32_t GetColorAttachmentRendererID(uint32_t index=0) const =0</text>
 <text text-anchor="start" x="8" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual const FrameBufferSpecification &amp; GetSpecification() const =0</text>
 <text text-anchor="start" x="8" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ static Ref&lt; FrameBuffer &gt; Create(const FrameBufferSpecification &amp;spec)</text>
 </a>
@@ -97,215 +97,248 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M303.74,-177.35C327.54,-163.36 352.68,-148.59 376.51,-134.59"/>
-<polygon fill="none" stroke="midnightblue" points="301.89,-174.37 295.04,-182.46 305.44,-180.41 301.89,-174.37"/>
+<path fill="none" stroke="midnightblue" d="M363.79,-178.81C400.79,-164.4 440.11,-149.08 477.31,-134.59"/>
+<polygon fill="none" stroke="midnightblue" points="362.48,-175.57 354.43,-182.46 365.02,-182.09 362.48,-175.57"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="865,-491.5 865,-548.5 1145,-548.5 1145,-491.5 865,-491.5"/>
-<text text-anchor="middle" x="1005" y="-536.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; gauri::FrameBufferTextureSpecification &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="865,-529.5 1145,-529.5 "/>
-<text text-anchor="middle" x="1005" y="-517.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="865,-510.5 1145,-510.5 "/>
-<text text-anchor="middle" x="1005" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="white" stroke="#bfbfbf" points="416.5,-215.5 416.5,-272.5 547.5,-272.5 547.5,-215.5 416.5,-215.5"/>
+<text text-anchor="middle" x="482" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; uint32_t &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="416.5,-253.5 547.5,-253.5 "/>
+<text text-anchor="middle" x="482" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="416.5,-234.5 547.5,-234.5 "/>
+<text text-anchor="middle" x="482" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M1145.17,-498.22C1206.85,-485.93 1269.52,-468.02 1288,-444 1306.7,-419.7 1305.31,-400.31 1288,-375 1152.11,-176.3 868.17,-106.34 678.02,-81.76"/>
-<polygon fill="none" stroke="#404040" points="677.83,-81.73 671.37,-84.95 665.92,-80.24 672.37,-77.02 677.83,-81.73"/>
-<text text-anchor="middle" x="1358" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_ColorAttachmentSpecifications</text>
-</g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="structgauri_1_1FrameBufferAttachmentSpecification.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="731.5,-375.5 731.5,-443.5 1278.5,-443.5 1278.5,-375.5 731.5,-375.5"/>
-<text text-anchor="middle" x="1005" y="-431.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferAttachmentSpecification</text>
-<polyline fill="none" stroke="black" points="731.5,-424.5 1278.5,-424.5 "/>
-<text text-anchor="middle" x="1005" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="731.5,-405.5 1278.5,-405.5 "/>
-<text text-anchor="start" x="739.5" y="-393.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferAttachmentSpecification()=default</text>
-<text text-anchor="start" x="739.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferAttachmentSpecification(std::initializer_list&lt; FrameBufferTextureSpecification &gt; attachments)</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node11 -->
-<g id="edge13" class="edge">
-<title>Node3&#45;&gt;Node11</title>
-<path fill="none" stroke="#404040" d="M1005,-491.34C1005,-480.53 1005,-467.85 1005,-455.77"/>
-<polygon fill="none" stroke="#404040" points="1005,-455.52 1001,-449.52 1005,-443.52 1009,-449.52 1005,-455.52"/>
-<text text-anchor="middle" x="1042" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00"> +Attachments</text>
+<path fill="none" stroke="#404040" d="M465.56,-215.11C456.8,-196.28 450.06,-171.58 462,-153 463.97,-149.94 466.08,-146.98 468.32,-144.14"/>
+<polygon fill="none" stroke="#404040" points="468.51,-143.91 469.43,-136.76 476.39,-134.85 475.47,-142.01 468.51,-143.91"/>
+<text text-anchor="middle" x="517" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_ColorAttachments</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="structgauri_1_1FrameBufferTextureSpecification.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="405,-596.5 405,-664.5 765,-664.5 765,-596.5 405,-596.5"/>
-<text text-anchor="middle" x="585" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferTextureSpecification</text>
-<polyline fill="none" stroke="black" points="405,-645.5 765,-645.5 "/>
-<text text-anchor="middle" x="585" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="405,-626.5 765,-626.5 "/>
-<text text-anchor="start" x="413" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferTextureSpecification()=default</text>
-<text text-anchor="start" x="413" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferTextureSpecification(FrameBufferTextureFormat format)</text>
+<g id="a_node4"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="508,-381 508,-438 564,-438 564,-381 508,-381"/>
+<text text-anchor="middle" x="536" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t</text>
+<polyline fill="none" stroke="#bfbfbf" points="508,-419 564,-419 "/>
+<text text-anchor="middle" x="536" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="508,-400 564,-400 "/>
+<text text-anchor="middle" x="536" y="-388" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
-<g id="edge8" class="edge">
+<g id="edge10" class="edge">
 <title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M469.13,-596.48C437.61,-580.03 412,-555.92 412,-521 412,-521 412,-521 412,-243 412,-209.38 424.11,-174.98 438.73,-145.71"/>
-<polygon fill="none" stroke="#404040" points="438.89,-145.4 438.11,-138.23 444.43,-134.75 445.21,-141.92 438.89,-145.4"/>
-<text text-anchor="middle" x="497.5" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_DepthAttachmentSpecification</text>
+<path fill="none" stroke="#404040" d="M558.98,-380.75C564.02,-373.42 568.8,-365.24 572,-357 600.4,-283.87 573.31,-257.39 595,-182 598.43,-170.08 602.92,-157.82 607.83,-145.97"/>
+<polygon fill="none" stroke="#404040" points="607.91,-145.78 606.61,-138.69 612.65,-134.75 613.96,-141.84 607.91,-145.78"/>
+<text text-anchor="middle" x="649.5" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_DepthAttachment</text>
+<text text-anchor="middle" x="649.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;m_RendererID</text>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#404040" d="M713.01,-596.43C768.31,-582.14 832.61,-565.53 886.77,-551.54"/>
-<polygon fill="none" stroke="#404040" points="886.9,-551.51 891.71,-546.14 898.52,-548.51 893.71,-553.88 886.9,-551.51"/>
-<text text-anchor="middle" x="850" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00"> +elements</text>
+<path fill="none" stroke="#404040" d="M523.48,-380.96C520.2,-373.28 516.8,-364.88 514,-357 505.59,-333.31 497.81,-306.22 492.02,-284.62"/>
+<polygon fill="none" stroke="#404040" points="491.99,-284.53 486.6,-279.74 488.94,-272.92 494.33,-277.7 491.99,-284.53"/>
+<text text-anchor="middle" x="543" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> +elements</text>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="namespacegauri.html#structgauri_1_1FrameBufferSpecification" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="713,-215.5 713,-272.5 883,-272.5 883,-215.5 713,-215.5"/>
+<text text-anchor="middle" x="798" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferSpecification</text>
+<polyline fill="none" stroke="black" points="713,-253.5 883,-253.5 "/>
+<text text-anchor="middle" x="798" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="713,-234.5 883,-234.5 "/>
+<text text-anchor="middle" x="798" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node10 -->
+<g id="edge13" class="edge">
+<title>Node4&#45;&gt;Node10</title>
+<path fill="none" stroke="#404040" d="M564.05,-382.62C567.04,-380.01 570.06,-377.43 573,-375 583.29,-366.52 588.16,-366.98 597,-357 608.22,-344.33 602.33,-333.98 616,-324 646.48,-301.73 663.99,-320.1 699,-306 716.35,-299.01 734.1,-289.1 749.7,-279.29"/>
+<polygon fill="none" stroke="#404040" points="750.04,-279.06 752.91,-272.45 760.12,-272.55 757.25,-279.16 750.04,-279.06"/>
+<text text-anchor="middle" x="641.5" y="-349" font-family="Helvetica,sans-Serif" font-size="10.00"> +Height</text>
+<text text-anchor="middle" x="641.5" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00">+Samples</text>
+<text text-anchor="middle" x="641.5" y="-327" font-family="Helvetica,sans-Serif" font-size="10.00">+Width</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="511.5,-712.5 511.5,-769.5 658.5,-769.5 658.5,-712.5 511.5,-712.5"/>
-<text text-anchor="middle" x="585" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">FrameBufferTextureFormat</text>
-<polyline fill="none" stroke="#bfbfbf" points="511.5,-750.5 658.5,-750.5 "/>
-<text text-anchor="middle" x="585" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="511.5,-731.5 658.5,-731.5 "/>
-<text text-anchor="middle" x="585" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="white" stroke="#bfbfbf" points="804.5,-602 804.5,-659 901.5,-659 901.5,-602 804.5,-602"/>
+<text text-anchor="middle" x="853" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; T &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="804.5,-640 901.5,-640 "/>
+<text text-anchor="middle" x="853" y="-628" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="804.5,-621 901.5,-621 "/>
+<text text-anchor="middle" x="853" y="-609" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
+<!-- Node5&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
-<title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M585,-712.34C585,-701.53 585,-688.85 585,-676.77"/>
-<polygon fill="none" stroke="#404040" points="585,-676.52 581,-670.52 585,-664.52 589,-670.52 585,-676.52"/>
-<text text-anchor="middle" x="626" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> +TextureFormat</text>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="956.5,-602 956.5,-659 1053.5,-659 1053.5,-602 956.5,-602"/>
-<text text-anchor="middle" x="1005" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; T &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="956.5,-640 1053.5,-640 "/>
-<text text-anchor="middle" x="1005" y="-628" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="956.5,-621 1053.5,-621 "/>
-<text text-anchor="middle" x="1005" y="-609" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</a>
-</g>
-</g>
-<!-- Node6&#45;&gt;Node3 -->
-<g id="edge5" class="edge">
-<title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="orange" d="M1005,-591.44C1005,-577.33 1005,-561.61 1005,-548.61"/>
-<polygon fill="orange" stroke="orange" points="1001.5,-591.84 1005,-601.84 1008.5,-591.84 1001.5,-591.84"/>
-<text text-anchor="middle" x="1112.5" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; gauri::FrameBufferTextureSpecification &gt;</text>
+<title>Node5&#45;&gt;Node3</title>
+<path fill="none" stroke="orange" d="M794.32,-617.19C712.8,-596.7 567.61,-547.21 499,-444 464.26,-391.73 470.14,-313.9 476.58,-272.77"/>
+<polygon fill="orange" stroke="orange" points="793.87,-620.68 804.42,-619.66 795.53,-613.88 793.87,-620.68"/>
+<text text-anchor="middle" x="552" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; uint32_t &gt;</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="990.5,-712.5 990.5,-769.5 1019.5,-769.5 1019.5,-712.5 990.5,-712.5"/>
-<text text-anchor="middle" x="1005" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
-<polyline fill="none" stroke="#bfbfbf" points="990.5,-750.5 1019.5,-750.5 "/>
-<text text-anchor="middle" x="1005" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="990.5,-731.5 1019.5,-731.5 "/>
-<text text-anchor="middle" x="1005" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="white" stroke="#bfbfbf" points="995,-491.5 995,-548.5 1275,-548.5 1275,-491.5 995,-491.5"/>
+<text text-anchor="middle" x="1135" y="-536.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; gauri::FrameBufferTextureSpecification &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="995,-529.5 1275,-529.5 "/>
+<text text-anchor="middle" x="1135" y="-517.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="995,-510.5 1275,-510.5 "/>
+<text text-anchor="middle" x="1135" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node6 -->
+<!-- Node5&#45;&gt;Node7 -->
+<g id="edge9" class="edge">
+<title>Node5&#45;&gt;Node7</title>
+<path fill="none" stroke="orange" d="M911.23,-606.78C941.8,-594.88 979.9,-580.1 1014,-567 1029.63,-561 1046.41,-554.59 1062.35,-548.53"/>
+<polygon fill="orange" stroke="orange" points="909.63,-603.65 901.58,-610.54 912.17,-610.17 909.63,-603.65"/>
+<text text-anchor="middle" x="1121.5" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; gauri::FrameBufferTextureSpecification &gt;</text>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="838.5,-712.5 838.5,-769.5 867.5,-769.5 867.5,-712.5 838.5,-712.5"/>
+<text text-anchor="middle" x="853" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
+<polyline fill="none" stroke="#bfbfbf" points="838.5,-750.5 867.5,-750.5 "/>
+<text text-anchor="middle" x="853" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="838.5,-731.5 867.5,-731.5 "/>
+<text text-anchor="middle" x="853" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge5" class="edge">
+<title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="#404040" d="M853,-712.34C853,-699.84 853,-684.84 853,-671.18"/>
+<polygon fill="none" stroke="#404040" points="853,-671.11 849,-665.11 853,-659.11 857,-665.11 853,-671.11"/>
+<text text-anchor="middle" x="882" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> +elements</text>
+</g>
+<!-- Node7&#45;&gt;Node1 -->
 <g id="edge6" class="edge">
-<title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="#404040" d="M1005,-712.34C1005,-699.84 1005,-684.84 1005,-671.18"/>
-<polygon fill="none" stroke="#404040" points="1005,-671.11 1001,-665.11 1005,-659.11 1009,-665.11 1005,-671.11"/>
-<text text-anchor="middle" x="1034" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> +elements</text>
+<title>Node7&#45;&gt;Node1</title>
+<path fill="none" stroke="#404040" d="M1163.93,-491.5C1175.66,-478.38 1187.88,-461.69 1194,-444 1204.03,-415.02 1208.73,-401.9 1194,-375 1123.9,-247 977.2,-169.01 853.36,-123.75"/>
+<polygon fill="none" stroke="#404040" points="853.13,-123.66 846.13,-125.4 841.83,-119.61 848.83,-117.87 853.13,-123.66"/>
+<text text-anchor="middle" x="1267" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_ColorAttachmentSpecifications</text>
+</g>
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a xlink:href="structgauri_1_1FrameBufferAttachmentSpecification.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="638.5,-375.5 638.5,-443.5 1185.5,-443.5 1185.5,-375.5 638.5,-375.5"/>
+<text text-anchor="middle" x="912" y="-431.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferAttachmentSpecification</text>
+<polyline fill="none" stroke="black" points="638.5,-424.5 1185.5,-424.5 "/>
+<text text-anchor="middle" x="912" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="638.5,-405.5 1185.5,-405.5 "/>
+<text text-anchor="start" x="646.5" y="-393.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferAttachmentSpecification()=default</text>
+<text text-anchor="start" x="646.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferAttachmentSpecification(std::initializer_list&lt; FrameBufferTextureSpecification &gt; attachments)</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node12 -->
+<g id="edge16" class="edge">
+<title>Node7&#45;&gt;Node12</title>
+<path fill="none" stroke="#404040" d="M1078.44,-491.48C1051.89,-478.57 1019.81,-462.96 990.92,-448.9"/>
+<polygon fill="none" stroke="#404040" points="990.82,-448.85 983.67,-449.82 980.03,-443.6 987.17,-442.63 990.82,-448.85"/>
+<text text-anchor="middle" x="1074" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00"> +Attachments</text>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="601,-381 601,-438 657,-438 657,-381 601,-381"/>
-<text text-anchor="middle" x="629" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t</text>
-<polyline fill="none" stroke="#bfbfbf" points="601,-419 657,-419 "/>
-<text text-anchor="middle" x="629" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="601,-400 657,-400 "/>
-<text text-anchor="middle" x="629" y="-388" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="a_node8"><a xlink:href="structgauri_1_1FrameBufferTextureSpecification.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1148,-596.5 1148,-664.5 1508,-664.5 1508,-596.5 1148,-596.5"/>
+<text text-anchor="middle" x="1328" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferTextureSpecification</text>
+<polyline fill="none" stroke="black" points="1148,-645.5 1508,-645.5 "/>
+<text text-anchor="middle" x="1328" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1148,-626.5 1508,-626.5 "/>
+<text text-anchor="start" x="1156" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferTextureSpecification()=default</text>
+<text text-anchor="start" x="1156" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameBufferTextureSpecification(FrameBufferTextureFormat format)</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node1 -->
-<g id="edge7" class="edge">
+<g id="edge11" class="edge">
 <title>Node8&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M600.58,-385.74C596.04,-382.14 591.4,-378.46 587,-375 547.66,-344.06 520.87,-350.52 498,-306 472.97,-257.28 471.48,-195.22 475.84,-146.76"/>
-<polygon fill="none" stroke="#404040" points="475.85,-146.69 472.48,-140.32 477.07,-134.75 480.44,-141.13 475.85,-146.69"/>
-<text text-anchor="middle" x="551" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_ColorAttachment</text>
-<text text-anchor="middle" x="551" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;m_DepthAttachment</text>
-<text text-anchor="middle" x="551" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;m_RendererID</text>
+<path fill="none" stroke="#404040" d="M1365.36,-596.11C1383.32,-576.34 1401,-549.61 1401,-521 1401,-521 1401,-521 1401,-243 1401,-130.28 1077.1,-90.36 853.88,-76.23"/>
+<polygon fill="none" stroke="#404040" points="853.64,-76.21 847.41,-79.83 841.66,-75.47 847.9,-71.85 853.64,-76.21"/>
+<text text-anchor="middle" x="1486.5" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_DepthAttachmentSpecification</text>
+</g>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge7" class="edge">
+<title>Node8&#45;&gt;Node7</title>
+<path fill="none" stroke="#404040" d="M1280.5,-596.34C1265.57,-586.44 1248.85,-575.87 1233,-567 1224.99,-562.51 1216.46,-558.06 1207.91,-553.8"/>
+<polygon fill="none" stroke="#404040" points="1207.88,-553.79 1200.74,-554.74 1197.11,-548.51 1204.25,-547.56 1207.88,-553.79"/>
+<text text-anchor="middle" x="1279" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00"> +elements</text>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="namespacegauri.html#structgauri_1_1FrameBufferSpecification" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="613,-215.5 613,-272.5 783,-272.5 783,-215.5 613,-215.5"/>
-<text text-anchor="middle" x="698" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">gauri::FrameBufferSpecification</text>
-<polyline fill="none" stroke="black" points="613,-253.5 783,-253.5 "/>
-<text text-anchor="middle" x="698" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="613,-234.5 783,-234.5 "/>
-<text text-anchor="middle" x="698" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="a_node9"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="1254.5,-712.5 1254.5,-769.5 1401.5,-769.5 1401.5,-712.5 1254.5,-712.5"/>
+<text text-anchor="middle" x="1328" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">FrameBufferTextureFormat</text>
+<polyline fill="none" stroke="#bfbfbf" points="1254.5,-750.5 1401.5,-750.5 "/>
+<text text-anchor="middle" x="1328" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="1254.5,-731.5 1401.5,-731.5 "/>
+<text text-anchor="middle" x="1328" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge10" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="#404040" d="M629.57,-381C630.73,-364.04 633.69,-342.14 641,-324 646.94,-309.27 656.19,-294.72 665.52,-282.19"/>
-<polygon fill="none" stroke="#404040" points="665.6,-282.09 666.12,-274.9 672.96,-272.62 672.44,-279.81 665.6,-282.09"/>
-<text text-anchor="middle" x="666.5" y="-349" font-family="Helvetica,sans-Serif" font-size="10.00"> +Height</text>
-<text text-anchor="middle" x="666.5" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00">+Samples</text>
-<text text-anchor="middle" x="666.5" y="-327" font-family="Helvetica,sans-Serif" font-size="10.00">+Width</text>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge8" class="edge">
+<title>Node9&#45;&gt;Node8</title>
+<path fill="none" stroke="#404040" d="M1328,-712.34C1328,-701.53 1328,-688.85 1328,-676.77"/>
+<polygon fill="none" stroke="#404040" points="1328,-676.52 1324,-670.52 1328,-664.52 1332,-670.52 1328,-676.52"/>
+<text text-anchor="middle" x="1369" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> +TextureFormat</text>
 </g>
-<!-- Node9&#45;&gt;Node1 -->
-<g id="edge9" class="edge">
-<title>Node9&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M664.88,-215.35C641.41,-195.75 608.74,-168.48 577.92,-142.74"/>
-<polygon fill="none" stroke="#404040" points="577.64,-142.51 570.47,-141.73 568.42,-134.81 575.59,-135.59 577.64,-142.51"/>
-<text text-anchor="middle" x="642.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_Specification</text>
-</g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="675,-381 675,-438 713,-438 713,-381 675,-381"/>
-<text text-anchor="middle" x="694" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00">bool</text>
-<polyline fill="none" stroke="#bfbfbf" points="675,-419 713,-419 "/>
-<text text-anchor="middle" x="694" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="675,-400 713,-400 "/>
-<text text-anchor="middle" x="694" y="-388" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node9 -->
-<g id="edge11" class="edge">
-<title>Node10&#45;&gt;Node9</title>
-<path fill="none" stroke="#404040" d="M694.68,-380.76C695.32,-354.38 696.3,-314.4 697.03,-284.65"/>
-<polygon fill="none" stroke="#404040" points="697.03,-284.59 693.18,-278.5 697.32,-272.6 701.18,-278.69 697.03,-284.59"/>
-<text text-anchor="middle" x="744" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> +SwapChainTarget</text>
-</g>
-<!-- Node11&#45;&gt;Node9 -->
+<!-- Node10&#45;&gt;Node1 -->
 <g id="edge12" class="edge">
-<title>Node11&#45;&gt;Node9</title>
-<path fill="none" stroke="#404040" d="M942.87,-375.41C889.77,-347.13 813.71,-306.63 760.5,-278.28"/>
-<polygon fill="none" stroke="#404040" points="760.43,-278.25 753.26,-278.96 749.84,-272.61 757.02,-271.9 760.43,-278.25"/>
-<text text-anchor="middle" x="943" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> +Attachments</text>
+<title>Node10&#45;&gt;Node1</title>
+<path fill="none" stroke="#404040" d="M774.07,-215.35C757.41,-196.09 734.32,-169.41 712.4,-144.07"/>
+<polygon fill="none" stroke="#404040" points="712.24,-143.89 705.28,-141.97 704.38,-134.81 711.33,-136.73 712.24,-143.89"/>
+<text text-anchor="middle" x="770.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_Specification</text>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="582,-381 582,-438 620,-438 620,-381 582,-381"/>
+<text text-anchor="middle" x="601" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00">bool</text>
+<polyline fill="none" stroke="#bfbfbf" points="582,-419 620,-419 "/>
+<text text-anchor="middle" x="601" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="582,-400 620,-400 "/>
+<text text-anchor="middle" x="601" y="-388" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</a>
+</g>
+</g>
+<!-- Node11&#45;&gt;Node10 -->
+<g id="edge14" class="edge">
+<title>Node11&#45;&gt;Node10</title>
+<path fill="none" stroke="#404040" d="M620.31,-382.73C623.04,-379.92 625.96,-377.26 629,-375 645.29,-362.88 653.83,-367.85 671,-357 704.93,-335.55 738.8,-305.11 763.02,-281.38"/>
+<polygon fill="none" stroke="#404040" points="763.29,-281.11 764.73,-274.04 771.81,-272.65 770.37,-279.72 763.29,-281.11"/>
+<text text-anchor="middle" x="764" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> +SwapChainTarget</text>
+</g>
+<!-- Node12&#45;&gt;Node10 -->
+<g id="edge15" class="edge">
+<title>Node12&#45;&gt;Node10</title>
+<path fill="none" stroke="#404040" d="M888.93,-375.41C870.24,-348.61 843.89,-310.82 824.37,-282.82"/>
+<polygon fill="none" stroke="#404040" points="824.11,-282.45 817.4,-279.82 817.25,-272.61 823.96,-275.24 824.11,-282.45"/>
+<text text-anchor="middle" x="913" y="-338" font-family="Helvetica,sans-Serif" font-size="10.00"> +Attachments</text>
 </g>
 </g>
 </svg>
