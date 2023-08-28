@@ -85,13 +85,13 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for gauri::FrameBuffer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1FrameBuffer__inherit__graph.svg" width="576" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1FrameBuffer__inherit__graph.svg" width="576" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for gauri::FrameBuffer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1FrameBuffer__coll__graph.svg" width="542" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classgauri_1_1FrameBuffer__coll__graph.svg" width="542" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -105,6 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6ba895f332ab739c62a2830a60ca4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46af401716d5cac54d7b6e6382affbd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html#a46af401716d5cac54d7b6e6382affbd5">Resize</a> (uint32_t width, uint32_t height)=0</td></tr>
 <tr class="separator:a46af401716d5cac54d7b6e6382affbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc5971835fbff0542c2dd37e325f95f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html#accc5971835fbff0542c2dd37e325f95f">ReadPixel</a> (uint32_t attachmentIndex, int x, int y)=0</td></tr>
+<tr class="separator:accc5971835fbff0542c2dd37e325f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f03775964a123df6522d281ee580e7"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html#a21f03775964a123df6522d281ee580e7">GetColorAttachmentRendererID</a> (uint32_t index=0) const =0</td></tr>
 <tr class="separator:a21f03775964a123df6522d281ee580e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e08380c34285b11a4cf49483210b878"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacegauri.html#structgauri_1_1FrameBufferSpecification">FrameBufferSpecification</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgauri_1_1FrameBuffer.html#a6e08380c34285b11a4cf49483210b878">GetSpecification</a> () const =0</td></tr>
@@ -117,7 +119,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00053">53</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00054">54</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8ced0fe435213b8300caa119a8c05bca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ced0fe435213b8300caa119a8c05bca">&#9670;&nbsp;</a></span>~FrameBuffer()</h2>
@@ -234,6 +236,50 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a5702d9e3c302694dbf287c6427e0882f">gauri::OpenGLFrameBuffer</a>.</p>
+
+</div>
+</div>
+<a id="accc5971835fbff0542c2dd37e325f95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc5971835fbff0542c2dd37e325f95f">&#9670;&nbsp;</a></span>ReadPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int gauri::FrameBuffer::ReadPixel </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>attachmentIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgauri_1_1OpenGLFrameBuffer.html#a28841af2267c8a1474d993b7cb9905cc">gauri::OpenGLFrameBuffer</a>.</p>
 
 </div>
 </div>

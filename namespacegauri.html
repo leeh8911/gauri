@@ -297,10 +297,14 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7bd81906140bb4bdfeb5188aec001a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7523291e345419b950aaf186c9fefbc8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8">FrameBufferTextureFormat</a> { <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+<tr class="memitem:a7523291e345419b950aaf186c9fefbc8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8">FrameBufferTextureFormat</a> { <br />
+&#160;&#160;<a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
 , <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642">RGBA8</a>
+, <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a2849effb989cbdcfb4b9eb143fd826aa">RED_INTEGER</a>
 , <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">DEPTH24STENCIL8</a>
-, <a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">Depth</a> = DEPTH24STENCIL8
+, <br />
+&#160;&#160;<a class="el" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">Depth</a> = DEPTH24STENCIL8
+<br />
  }</td></tr>
 <tr class="separator:a7523291e345419b950aaf186c9fefbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -412,7 +416,7 @@ Name</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00045">45</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__buffer_8h_source.html#l00046">46</a> of file <a class="el" href="frame__buffer_8h_source.html">frame_buffer.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for gauri::FrameBufferSpecification:</div>
 <div class="dyncontent">
@@ -692,6 +696,7 @@ template&lt;typename T &gt; </div>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7523291e345419b950aaf186c9fefbc8a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642"></a>RGBA8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7523291e345419b950aaf186c9fefbc8a2849effb989cbdcfb4b9eb143fd826aa"></a>RED_INTEGER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3"></a>DEPTH24STENCIL8&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1"></a>Depth&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -702,13 +707,15 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Color</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642">RGBA8</a>,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// Depth/stencil</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">DEPTH24STENCIL8</a>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Defaults</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">Depth</a> = <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">DEPTH24STENCIL8</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a2849effb989cbdcfb4b9eb143fd826aa">RED_INTEGER</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Depth/stencil</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">DEPTH24STENCIL8</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Defaults</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">Depth</a> = <a class="code" href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">DEPTH24STENCIL8</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="ttc" id="anamespacegauri_html_a7523291e345419b950aaf186c9fefbc8a2849effb989cbdcfb4b9eb143fd826aa"><div class="ttname"><a href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a2849effb989cbdcfb4b9eb143fd826aa">gauri::FrameBufferTextureFormat::RED_INTEGER</a></div><div class="ttdeci">@ RED_INTEGER</div></div>
 <div class="ttc" id="anamespacegauri_html_a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1"><div class="ttname"><a href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a675056ad1441b6375b2c5abd48c27ef1">gauri::FrameBufferTextureFormat::Depth</a></div><div class="ttdeci">@ Depth</div></div>
 <div class="ttc" id="anamespacegauri_html_a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3"><div class="ttname"><a href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8a7ca3e26e4e5c35e4408bd49c1e32e9a3">gauri::FrameBufferTextureFormat::DEPTH24STENCIL8</a></div><div class="ttdeci">@ DEPTH24STENCIL8</div></div>
 <div class="ttc" id="anamespacegauri_html_a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642"><div class="ttname"><a href="namespacegauri.html#a7523291e345419b950aaf186c9fefbc8ab4b279046a02077466fa26cabb00c642">gauri::FrameBufferTextureFormat::RGBA8</a></div><div class="ttdeci">@ RGBA8</div></div>
